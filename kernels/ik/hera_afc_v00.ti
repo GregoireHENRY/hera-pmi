@@ -1,0 +1,482 @@
+KPL/IK
+
+HERA Asteroid Framing Camera Instrument kernel
+==============================================================================
+
+   This instrument kernel (I-kernel) contains Asteroid Framing Camera (AFC)
+   optics, detector, and field-of-view parameters.
+
+
+Version and Date
+------------------------------------------------------------------------------
+
+   Version 0.0 -- December 3, 2018 -- Marc Costa Sitja, ESAC/ESA
+
+      Initial release based on DAWN Framing Camera instrument kernel.
+
+
+References
+------------------------------------------------------------------------------
+
+   1. ``Kernel Pool Required Reading''
+
+   2. ``C-kernel Required Reading''
+
+   3. Hera Frames Definition Kernel (FK), latest version.
+  
+   4. ``Calibration Pipeline'', Schroeder & Gutierrez-Marques,
+      DA-FC-MPAE-RP-272 issue 2, March 2011.
+   
+   5. ``The HERA Framing Camera'', Sierks et al., Space Sci Rev.,
+      DOI 10.1007/s11214-011-9745-4.
+
+
+Implementation Notes
+------------------------------------------------------------------------------
+
+   Applications that need SPICE I-kernel data must ``load'' the I-kernel file,
+   normally during program initialization.
+
+   Loading the kernel using the SPICELIB routine FURNSH causes the data items 
+   and their associated values present in the kernel to become associated with
+   a data structure called the ``kernel pool''. The application program may 
+   then obtain the value(s) for any IK data item using the SPICELIB routines 
+   GDPOOL, GIPOOL, GCPOOL. Routine GETFOV may be used if the file contains 
+   instrument field-of-view (FOV) specification. See [1] for details.
+
+   This file was created with, and can be updated with a text editor or word 
+   processor.
+
+
+Conventions for Specifying Data
+------------------------------------------------------------------------------
+
+   Data items are specified using ``keyword=value'' assignments [1]. All 
+   keywords referencing values in this I-kernel start with the characters 
+   `INS' followed by the NAIF HERA instrument ID code, constructed using the
+   spacecraft ID number (-667) followed by the NAIF three digit ID number. 
+   This number identifies the generic FC, one of the filters, or the
+   radiator. The ID numbers are defined in [3]
+   as follows:
+
+               Instrument name          ID
+               --------------------   -------
+               HERA_AFC               -667100
+               HERA_AFC_FILTER_1      -667101
+               HERA_AFC_FILTER_2      -667102
+               HERA_AFC_FILTER_3      -667103
+               HERA_AFC_FILTER_4      -667104
+               HERA_AFC_FILTER_5      -667105
+               HERA_AFC_FILTER_6      -667106
+               HERA_AFC_FILTER_7      -667107
+               HERA_AFC_FILTER_8      -667108
+               HERA_AFC_RAD           -667109
+
+   The remainder of the keyword is an underscore character followed by the 
+   unique name of the data item. For example, the f/ratio of the FC is
+   specified by
+
+               INS-667100_F/RATIO
+
+   The upper bound on the length of all keywords is 32 characters.
+
+   If a keyword is included in more than one file, or if the same keyword 
+   appears more than once within a single file, the last assignment supersedes
+   any earlier assignments.
+
+
+Overview
+------------------------------------------------------------------------------
+
+   From [4] and [5]:
+
+   The HERA Asteroid Framing Camera comprises a refractive lens system, a set
+   of 7 band-pass filters and a clear filter with wheel mechanism, a baffle
+   with a door in front of the optics tube, a CCD at the focal plane, a thermal
+   stabilization system, and supporting electronics. The active area of the 
+   Atmel/Thomson TH7888A CCD is sized 1024 x 1024 pixels or 14.34 x 14.34 mm 
+   (14.00 x 14.00 micron per pixel).
+
+
+Mounting Alignment
+------------------------------------------------------------------------------
+
+   Refer to the latest version of the HERA Frames Definition Kernel (FK) [4]
+   for the FC Areference frame definitions and mounting alignment information.
+
+
+Apparent FOV Layout
+------------------------------------------------------------------------------
+
+   This section provides a diagram illustrating the FC apparent AFOV layout
+   in the corresponding reference frames. Pixel (0,0) is in the lower left
+   corner of the image, and pixel (1023,1023) is in the top right corner.
+   +X, +Y, +Z axes are defined in the HERA Frames Definition Kernel (FK) [3].
+   
+
+                        |      5.47 deg     |      Boresight (+Z axis)
+                        |<----------------->|       is into the page
+                        |                   |
+                          1024 pixels/line
+       ---              +-------------------+
+        ^               |                   |
+        |               |                   |
+        |               |       +Zfc1       |
+        |               |       +Zfc2       |
+        |5.47 deg  1024 |         x-------------> +Xfc1
+        |         lines |         |         |     +Xfc2
+        |               |         |         |
+        |               |         |         |
+        v               |         |         |
+       ---            (0,0)-------|---------+
+                      Pixel       |
+                                  | +Yfc1
+                                  v +Yfc2
+
+
+Optical Parameters
+------------------------------------------------------------------------------
+
+   The following AFC nominal first order optical parameters are, from [4]:
+
+      ------------------------------------------------------------------
+             parameter                    FC1                 FC2
+      ------------------------------------------------------------------
+      Focal Length, mm                    150.0               150.0
+      f/ratio                             f/7.5               f/7.5
+      IFOV, rad/pixel                     0.0000932           0.0000932
+      Field of view, deg                  5.47                5.47
+      ------------------------------------------------------------------
+
+   In reality, the pixels are not square, being slightly larger in the X 
+   direction than the Y direction. Focal lengths are also different for each 
+   filter.
+   
+   The keywords below provide the optical parameters for each filter of both 
+   cameras. Angular size values are given in radians. Focal length is given in
+   mm, and its uncertainty is 0.01 mm. The FOV is calculated from the focal 
+   length given here and the pixel dimensions specified in the ``CCD 
+   Parameters'' section; it does not include the radial distortion described 
+   in the ``Optical Distortion'' section. The first vector element of the IFOV
+   and FOV angular size keywords refers to the X direction, the second to the 
+   Y direction. 
+
+   FC filters
+
+      \begindata
+
+         INS-667100_FOCAL_LENGTH       = ( 150.07                   )
+         INS-667100_IFOV               = ( 0.000093242, 0.000093184 )
+         INS-667100_FOV_ANGULAR_SIZE   = ( 0.095480, 0.095420       )
+         INS-667100_F/RATIO            = ( 7.5                      )
+
+         INS-667101_FOCAL_LENGTH       = ( 150.07                   )
+         INS-667101_IFOV               = ( 0.000093242, 0.000093184 )
+         INS-667101_FOV_ANGULAR_SIZE   = ( 0.095480, 0.095420       )
+         INS-667101_F/RATIO            = ( 7.5                      )
+
+         INS-667102_FOCAL_LENGTH       = ( 150.11                   )
+         INS-667102_IFOV               = ( 0.000093223, 0.000093165 )
+         INS-667102_FOV_ANGULAR_SIZE   = ( 0.095461, 0.095401       )
+         INS-667102_F/RATIO            = ( 7.5                      )
+
+         INS-667103_FOCAL_LENGTH       = ( 150.04                   )
+         INS-667103_IFOV               = ( 0.000093261, 0.000093202 )
+         INS-667103_FOV_ANGULAR_SIZE   = ( 0.095499, 0.095439       )
+         INS-667103_F/RATIO            = ( 7.5                      )
+
+         INS-667104_FOCAL_LENGTH       = ( 150.12                   )
+         INS-667104_IFOV               = ( 0.000093215, 0.000093156 )
+         INS-667104_FOV_ANGULAR_SIZE   = ( 0.095452, 0.095392       )
+         INS-667104_F/RATIO            = ( 7.5                      )
+
+         INS-667105_FOCAL_LENGTH       = ( 150.16                   )
+         INS-667105_IFOV               = ( 0.000093190, 0.000093132 )
+         INS-667105_FOV_ANGULAR_SIZE   = ( 0.095427, 0.095367       )
+         INS-667105_F/RATIO            = ( 7.5                      )
+
+         INS-667106_FOCAL_LENGTH       = ( 150.08                   )
+         INS-667106_IFOV               = ( 0.000093238, 0.000093179 )
+         INS-667106_FOV_ANGULAR_SIZE   = ( 0.095476, 0.095416       )
+         INS-667106_F/RATIO            = ( 7.5                      )
+
+         INS-667107_FOCAL_LENGTH       = ( 150.06                   )
+         INS-667107_IFOV               = ( 0.000093254, 0.000093196 )
+         INS-667107_FOV_ANGULAR_SIZE   = ( 0.095492, 0.095432       )
+         INS-667107_F/RATIO            = ( 7.5                      )
+
+         INS-667108_FOCAL_LENGTH       = ( 150.38                   )
+         INS-667108_IFOV               = ( 0.000093053, 0.000092994 )
+         INS-667108_FOV_ANGULAR_SIZE   = ( 0.095286, 0.095226       )
+         INS-667108_F/RATIO            = ( 7.5                      )
+
+      \begintext
+
+
+CCD Parameters
+------------------------------------------------------------------------------
+
+   The AFC uses a CCD detector of the same type with the following
+   nominal geometry parameters, from [5]. Note that the pixels are not 
+   perfectly square, as described in the ``Optical Parameters'' section.
+
+      --------------------------------------------
+             parameter                     value  
+      --------------------------------------------
+      Pixel Size, microns                    14.00
+      Detector Array Size                  1024
+      Detector Array Center                 511.5
+      --------------------------------------------
+
+   The values are given in microns for PIXEL_SIZE keywords and in counts for
+   PIXEL_SAMPLES, PIXEL_LINES, and CENTER keywords.
+
+      \begindata
+
+         INS-667100_PIXEL_SIZE         = ( 14.004, 13.995 )
+         INS-667100_PIXEL_SAMPLES      = ( 1024           )
+         INS-667100_PIXEL_LINES        = ( 1024           )
+         INS-667100_CCD_CENTER         = ( 511.5,  511.5  )
+                                                          
+         INS-667101_PIXEL_SIZE         = ( 14.004, 13.995 )
+         INS-667101_PIXEL_SAMPLES      = ( 1024           )
+         INS-667101_PIXEL_LINES        = ( 1024           )
+         INS-667101_CCD_CENTER         = ( 511.5,  511.5  )
+
+         INS-667102_PIXEL_SIZE         = ( 14.004, 13.995 )
+         INS-667102_PIXEL_SAMPLES      = ( 1024           )
+         INS-667102_PIXEL_LINES        = ( 1024           )
+         INS-667102_CCD_CENTER         = ( 511.5,  511.5  )
+
+         INS-667103_PIXEL_SIZE         = ( 14.004, 13.995 )
+         INS-667103_PIXEL_SAMPLES      = ( 1024           )
+         INS-667103_PIXEL_LINES        = ( 1024           )
+         INS-667103_CCD_CENTER         = ( 511.5,  511.5  )
+
+         INS-667104_PIXEL_SIZE         = ( 14.004, 13.995 )
+         INS-667104_PIXEL_SAMPLES      = ( 1024           )
+         INS-667104_PIXEL_LINES        = ( 1024           )
+         INS-667104_CCD_CENTER         = ( 511.5,  511.5  )
+
+         INS-667105_PIXEL_SIZE         = ( 14.004, 13.995 )
+         INS-667105_PIXEL_SAMPLES      = ( 1024           )
+         INS-667105_PIXEL_LINES        = ( 1024           )
+         INS-667105_CCD_CENTER         = ( 511.5,  511.5  )
+
+         INS-667106_PIXEL_SIZE         = ( 14.004, 13.995 )
+         INS-667106_PIXEL_SAMPLES      = ( 1024           )
+         INS-667106_PIXEL_LINES        = ( 1024           )
+         INS-667106_CCD_CENTER         = ( 511.5,  511.5  )
+
+         INS-667107_PIXEL_SIZE         = ( 14.004, 13.995 )
+         INS-667107_PIXEL_SAMPLES      = ( 1024           )
+         INS-667107_PIXEL_LINES        = ( 1024           )
+         INS-667107_CCD_CENTER         = ( 511.5,  511.5  )
+
+         INS-667108_PIXEL_SIZE         = ( 14.004, 13.995 )
+         INS-667108_PIXEL_SAMPLES      = ( 1024           )
+         INS-667108_PIXEL_LINES        = ( 1024           )
+         INS-667108_CCD_CENTER         = ( 511.5,  511.5  )
+
+      \begintext
+
+
+Filter Parameters
+------------------------------------------------------------------------------
+
+   This section contains AFC filter parameters. The AFC has a single broad
+   band filter (F1) and 7 narrow band (color) filters (F2-F8).
+
+   The following filter band center, band width, and effective wavelength (all
+   in nm) data are taken from [5]. FWHM is the Full Width at Half Maximum. The
+   effective wavelength is defined as the integral over the product of the 
+   wavelength and the solar spectrum, divided by the integral over the solar 
+   spectrum.
+
+      -------------------------------------------
+      filter      band       FWHM      effective
+        #        center                wavelength
+      -------------------------------------------
+        1         735         682         732
+        2         548         43          555
+        3         749         44          749
+        4         918         45          917
+        5         978         85          965
+        6         829         36          829
+        7         650         42          653
+        8         428         40          438
+      -------------------------------------------
+
+   Given below are the center wavelength (BANDCENTER), the FWHM (BANDWIDTH), 
+   and effective wavelength (EFF_WAVELENGTH) for each of the filters, all in 
+   nm. The nominal values are those for filter 1.
+
+      \begindata
+
+         INS-667100_BANDCENTER         = ( 735 )
+         INS-667100_BANDWIDTH          = ( 682 )
+         INS-667100_EFF_WAVELENGTH     = ( 732 )
+
+         INS-667101_BANDCENTER         = ( 735 )
+         INS-667101_BANDWIDTH          = ( 682 )
+         INS-667101_EFF_WAVELENGTH     = ( 732 )
+
+         INS-667102_BANDCENTER         = ( 548 )
+         INS-667102_BANDWIDTH          = ( 43  )
+         INS-667102_EFF_WAVELENGTH     = ( 555 )
+
+         INS-667103_BANDCENTER         = ( 749 )
+         INS-667103_BANDWIDTH          = ( 44  )
+         INS-667103_EFF_WAVELENGTH     = ( 749 )
+
+         INS-667104_BANDCENTER         = ( 918 )
+         INS-667104_BANDWIDTH          = ( 45  )
+         INS-667104_EFF_WAVELENGTH     = ( 917 )
+
+         INS-667105_BANDCENTER         = ( 978 )
+         INS-667105_BANDWIDTH          = ( 85  )
+         INS-667105_EFF_WAVELENGTH     = ( 965 )
+
+         INS-667106_BANDCENTER         = ( 829 )
+         INS-667106_BANDWIDTH          = ( 36  )
+         INS-667106_EFF_WAVELENGTH     = ( 829 )
+
+         INS-667107_BANDCENTER         = ( 650 )
+         INS-667107_BANDWIDTH          = ( 42  )
+         INS-667107_EFF_WAVELENGTH     = ( 653 )
+
+         INS-667108_BANDCENTER         = ( 428 )
+         INS-667108_BANDWIDTH          = ( 40  )
+         INS-667108_EFF_WAVELENGTH     = ( 438 )
+
+      \begintext
+
+
+FOV Definitions
+------------------------------------------------------------------------------
+
+   This section contains definitions for the AFC FOVs. These definitions
+   are provided in a format required by the SPICE (CSPICE) function GETFOV
+   (getfov_c).
+   
+   The set of assignments in the data section below defines the AFC FOVs with
+   respect to the corresponding frames to be a rectangle with the corners
+   defined by the first and last pixels of the first and last lines of the
+   CCD and the boresight along the +Z axis. This FOV definition uses the
+   FOV_ANGULAR_SIZE values from the ``Optical Parameters'' section above
+   converted to degrees.
+
+   FC1 filters
+
+      \begindata
+
+         INS-667100_FOV_FRAME          = 'HERA_AFC'
+         INS-667100_FOV_SHAPE          = 'RECTANGLE'
+         INS-667100_BORESIGHT          = ( 0.0, 0.0, 1.0    )
+         INS-667100_FOV_CLASS_SPEC     = 'ANGLES'
+         INS-667100_FOV_REF_VECTOR     = ( 1.0, 0.0, 0.0    )
+         INS-667100_FOV_REF_ANGLE      = ( 2.7353005        )
+         INS-667100_FOV_CROSS_ANGLE    = ( 2.7335816        )
+         INS-667100_FOV_ANGLE_UNITS    = 'DEGREES'
+  
+         INS-667101_FOV_FRAME          = 'HERA_AFC'
+         INS-667101_FOV_SHAPE          = 'RECTANGLE'
+         INS-667101_BORESIGHT          = ( 0.0, 0.0, 1.0    )
+         INS-667101_FOV_CLASS_SPEC     = 'ANGLES'
+         INS-667101_FOV_REF_VECTOR     = ( 1.0, 0.0, 0.0    )
+         INS-667101_FOV_REF_ANGLE      = ( 2.7353005        )
+         INS-667101_FOV_CROSS_ANGLE    = ( 2.7335816        )
+         INS-667101_FOV_ANGLE_UNITS    = 'DEGREES'
+  
+         INS-667102_FOV_FRAME          = 'HERA_AFC'
+         INS-667102_FOV_SHAPE          = 'RECTANGLE'
+         INS-667102_BORESIGHT          = ( 0.0, 0.0, 1.0    )
+         INS-667102_FOV_CLASS_SPEC     = 'ANGLES'
+         INS-667102_FOV_REF_VECTOR     = ( 1.0, 0.0, 0.0    )
+         INS-667102_FOV_REF_ANGLE      = ( 2.7347562        )
+         INS-667102_FOV_CROSS_ANGLE    = ( 2.7330373        )
+         INS-667102_FOV_ANGLE_UNITS    = 'DEGREES'
+  
+         INS-667103_FOV_FRAME          = 'HERA_AFC'
+         INS-667103_FOV_SHAPE          = 'RECTANGLE'
+         INS-667103_BORESIGHT          = ( 0.0, 0.0, 1.0    )
+         INS-667103_FOV_CLASS_SPEC     = 'ANGLES'
+         INS-667103_FOV_REF_VECTOR     = ( 1.0, 0.0, 0.0    )
+         INS-667103_FOV_REF_ANGLE      = ( 2.7358448        )
+         INS-667103_FOV_CROSS_ANGLE    = ( 2.7341260        )
+         INS-667103_FOV_ANGLE_UNITS    = 'DEGREES'
+  
+         INS-667104_FOV_FRAME          = 'HERA_AFC'
+         INS-667104_FOV_SHAPE          = 'RECTANGLE'
+         INS-667104_BORESIGHT          = ( 0.0, 0.0, 1.0    )
+         INS-667104_FOV_CLASS_SPEC     = 'ANGLES'
+         INS-667104_FOV_REF_VECTOR     = ( 1.0, 0.0, 0.0    )
+         INS-667104_FOV_REF_ANGLE      = ( 2.7344984        )
+         INS-667104_FOV_CROSS_ANGLE    = ( 2.7327795        )
+         INS-667104_FOV_ANGLE_UNITS    = 'DEGREES'
+  
+         INS-667105_FOV_FRAME          = 'HERA_AFC'
+         INS-667105_FOV_SHAPE          = 'RECTANGLE'
+         INS-667105_BORESIGHT          = ( 0.0, 0.0, 1.0    )
+         INS-667105_FOV_CLASS_SPEC     = 'ANGLES'
+         INS-667105_FOV_REF_VECTOR     = ( 1.0, 0.0, 0.0    )
+         INS-667105_FOV_REF_ANGLE      = ( 2.7337822        )
+         INS-667105_FOV_CROSS_ANGLE    = ( 2.7320633        )
+         INS-667105_FOV_ANGLE_UNITS    = 'DEGREES'
+  
+         INS-667106_FOV_FRAME          = 'HERA_AFC'
+         INS-667106_FOV_SHAPE          = 'RECTANGLE'
+         INS-667106_BORESIGHT          = ( 0.0, 0.0, 1.0    )
+         INS-667106_FOV_CLASS_SPEC     = 'ANGLES'
+         INS-667106_FOV_REF_VECTOR     = ( 1.0, 0.0, 0.0    )
+         INS-667106_FOV_REF_ANGLE      = ( 2.7351859        )
+         INS-667106_FOV_CROSS_ANGLE    = ( 2.7334670        )
+         INS-667106_FOV_ANGLE_UNITS    = 'DEGREES'
+  
+         INS-667107_FOV_FRAME          = 'HERA_AFC'
+         INS-667107_FOV_SHAPE          = 'RECTANGLE'
+         INS-667107_BORESIGHT          = ( 0.0, 0.0, 1.0    )
+         INS-667107_FOV_CLASS_SPEC     = 'ANGLES'
+         INS-667107_FOV_REF_VECTOR     = ( 1.0, 0.0, 0.0    )
+         INS-667107_FOV_REF_ANGLE      = ( 2.7356443        )
+         INS-667107_FOV_CROSS_ANGLE    = ( 2.7339254        )
+         INS-667107_FOV_ANGLE_UNITS    = 'DEGREES'
+  
+         INS-667108_FOV_FRAME          = 'HERA_AFC'
+         INS-667108_FOV_SHAPE          = 'RECTANGLE'
+         INS-667108_BORESIGHT          = ( 0.0, 0.0, 1.0    )
+         INS-667108_FOV_CLASS_SPEC     = 'ANGLES'
+         INS-667108_FOV_REF_VECTOR     = ( 1.0, 0.0, 0.0    )
+         INS-667108_FOV_REF_ANGLE      = ( 2.7297428        )
+         INS-667108_FOV_CROSS_ANGLE    = ( 2.7280239        )
+         INS-667108_FOV_ANGLE_UNITS    = 'DEGREES'
+  
+      \begintext
+
+
+Radiator Sun Avoidance FOV Definitions
+------------------------------------------------------------------------------
+
+   The Sun avoidance FOV for the AFC radiators is a 175 degree cone centered
+   on the spacecraft -X axis [3].
+
+      \begindata
+
+         INS-667109_FOV_FRAME          = 'HERA_SPACECRAFT'
+         INS-667109_FOV_SHAPE          = 'CIRCLE'
+         INS-667109_BORESIGHT          = ( -1.0, 0.0, 0.0 )
+         INS-667109_FOV_CLASS_SPEC     = 'ANGLES'
+         INS-667109_FOV_REF_VECTOR     = ( 0.0, 1.0, 0.0  )
+         INS-667109_FOV_REF_ANGLE      = ( 87.5           )
+         INS-667109_FOV_ANGLE_UNITS    = 'DEGREES'
+
+      \begintext
+
+
+Optical Distortion
+------------------------------------------------------------------------------
+
+   TBD.
+
+
+End of IK file.

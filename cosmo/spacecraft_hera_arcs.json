@@ -1,0 +1,153 @@
+{
+   "version": "1.0",
+   "name": "Cosmographia MPO Example",
+   "items": [
+      {
+         "class": "spacecraft",
+         "name": "HERA",
+         "startTime": "2022-01-01 01:00:00.000  UTC",
+         "arcs": [
+            {
+               "endTime": "2028-01-01 00:00:00.000  UTC",
+               "center": "Sun",
+               "trajectory": {
+                  "type": "Spice",
+                  "target": "HERA",
+                  "center": "Sun"
+               },
+               "bodyFrame": {
+                  "type": "Spice",
+                  "name": "HERA_SPACECRAFT"
+               }
+            }
+         ],
+      "geometry": {
+        "type": "Mesh",
+        "meshRotation": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "size": 0.1,
+        "source": "hera.cmod"
+      },
+      "label": {
+        "color": [
+          1,
+          1,
+          1
+        ]
+      },
+      "trajectoryPlot": {
+        "color": [
+          1,
+          0,
+          0
+        ],
+        "lineWidth": 1,
+        "duration": "7 d",
+        "lead": 0.0,
+        "fade": 0.25,
+        "sampleCount": 500
+      }
+    },
+{
+         "class": "spacecraft",
+         "name": "DIDYMAIN",
+         "startTime": "2022-01-01 01:00:00.000  UTC",
+         "arcs": [
+            {
+               "endTime": "2028-01-01 00:00:00.000  UTC",
+               "center": "Sun",
+               "trajectory": {
+                  "type": "Spice",
+                  "target": "DIDYMAIN",
+                  "center": "Sun"
+               },
+               "bodyFrame": {
+                  "type": "Spice",
+                  "name": "DIDYMAIN_FIXED"
+               }
+            }
+         ],
+      "geometry": {
+        "type": "Mesh",
+        "meshRotation": [
+           1.0,
+           0.0,
+           0.0,
+           0.0
+        ],
+        "size": 0.4132996146435453,
+        "source": "didymain.3ds"
+      },
+      "label": {
+        "color": [
+          1,
+          1,
+          1
+        ]
+      },
+      "trajectoryPlot": {
+        "color": [
+          1,
+          0,
+          0
+        ],
+        "lineWidth": 5,
+        "duration": "2 d",
+        "lead": 0.25,
+        "fade": 0.0,
+        "sampleCount": 500
+      }
+    },
+     {
+         "class": "spacecraft",
+         "name": "DIDYMOON",
+         "startTime": "2022-01-01 01:00:00.000  UTC",
+         "arcs": [
+            {
+               "endTime": "2028-01-01 00:00:00.000  UTC",
+               "center": "Sun",
+               "trajectory": {
+                  "type": "Spice",
+                  "target": "DIDYMOON",
+                  "center": "Sun"
+               },
+               "bodyFrame": {
+                  "type": "Spice",
+                  "name": "DIDYMOON_FIXED"
+               }
+            }
+         ],
+      "geometry": {
+        "type": "Globe",
+         "radii": [
+               0.04095,
+               0.032365,
+               0.032365
+            ]
+      },
+      "label": {
+        "color": [
+          1,
+          1,
+          1
+        ]
+      },
+      "trajectoryPlot": {
+        "color": [
+          1,
+          0,
+          0
+        ],
+        "lineWidth": 5,
+        "duration": "2 d",
+        "lead": 0.25,
+        "fade": 0.0,
+        "sampleCount": 500
+      }
+    }
+  ]
+}

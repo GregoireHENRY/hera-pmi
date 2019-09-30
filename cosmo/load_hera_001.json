@@ -1,0 +1,8 @@
+{
+   "version": "1.0",
+   "name": "Cosmographia BEPIC Example",
+   "require": [
+        "spice_hera.json",
+        "spacecraft_hera_arcs.json"
+    ]
+}

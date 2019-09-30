@@ -1,0 +1,7 @@
+{
+   "version": "1.0",
+   "name": "Cosmographia HERA Example",
+   "spiceKernels": [
+      "D:/Projects/rob/hera/kernels/mk/hera_study.tm"
+   ]
+}

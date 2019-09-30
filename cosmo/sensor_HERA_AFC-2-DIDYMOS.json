@@ -1,0 +1,33 @@
+{
+   "version": "1.0",
+   "name": "Cosmographia BEPIC Example",
+   "items": [
+      {
+         "class": "Sensor",
+         "name": "HERA_AFC-2",
+         "parent": "HERA",
+         "center": "HERA",
+         "trajectoryFrame": {
+            "type": "BodyFixed",
+            "body": "HERA"
+         },
+         "geometry": {
+            "type": "Spice",
+            "instrName": "HERA_AFC-2",
+            "rangeTracking": true,
+            "target": "DIDYMOS",
+            "range": 500,
+            "frustumColor": [
+               0.0,
+               1.0,
+               0.0
+            ],
+            "frustumOpacity": 0.3,
+            "gridOpacity": 0.8,
+            "footprintOpacity": 0.8,
+            "sideDivisions": 125,
+            "onlyVisibleDuringObs": false
+         }
+      }
+   ]
+}
