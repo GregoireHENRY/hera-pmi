@@ -1,0 +1,1714 @@
+                                                                              
+Doc. ID: RO-SGS-IF-0001                                                       
+EAICD                                                                         
+Version: 5.1                                                                  
+ROSETTA-NAVCAM                                                                
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+ROSETTA-NAVCAM                                                                
+                                                                              
+                                                                              
+                                                                              
+to                                                                            
+                                                                              
+                                                                              
+                                                                              
+Planetary Science Archive                                                     
+                                                                              
+Interface Control Document                                                    
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+Prepared By:                                                                  
+                                                                              
+Bernhard Geiger, Maud Barthelemy, Colin Archibald                             
+                                                                              
+Approved By:                                                                  
+                                                                              
+David Heather                                                                 
+                                                                              
+Table 1: Distribution List.                                                   
+                                                                              
+Recipient    |      Organisation      | Contact                               
+                                                                              
+Rosetta SGS  |    ESA/ESAC            |                                       
+                                                                              
+                                                                              
+Table 2: Document Change Log.                                                 
+                                                                              
+Date of Update | Update to  Document | New Version | Name                     
+                                                                              
+2010 Oct 20    | Creation of document| V 1.0       |Colin Archibald           
+                                                                              
+2012 Jun 26    | Corrections         | V 2.0       |Maud Barthelemy           
+                                                                              
+2013 Jan 08    | Corrections         | V 3.0       |Bernhard Geiger           
+                                                                              
+2013 Aug 30    | Corrections         | V 3.1       |Bernhard Geiger           
+              
+2015 Feb 06    | Major revision      | V 4.0       |Bernhard Geiger           
+               | description of comet|             |                          
+               | phase datasets      |             |                          
+               | authorship changed  |             |                          
+
+2015 Sep 28    | Minor revision      | V 4.1       |Bernhard Geiger
+
+2015 Dec 14    | Minor revision      | V 4.2       |Bernhard Geiger
+
+2016 Feb 03    | Minor revision      | V 4.3       |Bernhard Geiger
+
+2016 Mar 08    | Minor revision      | V 5.0       |Bernhard Geiger
+               | after archive review|             |               
+
+2016 Mar 31    | Minor revision      | V 5.1       |Bernhard Geiger
+
+                                                                              
+Contents                                                                      
+                                                                              
+1  Introduction                                                              1
+                                                                              
+1.1  Purpose and Scope . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.2  Archiving Authorities  . . . . . . . . . . . . . . . . . . . . . . . . .1
+1.3  Contents . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . 1
+1.4  Intended Readership . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.5  Applicable Documents . . . . . . . . . . . . . . . . . .  . . . . . .   2
+1.6  Reference Documents  . . . . . . . . . . . . . . . . . . . . . . . . . .2
+1.7  Contact Names and Addresses  . . . . . . . . . . . . . . . . . . . . . .3
+                                                                              
+2  Overview of Instrument Design                                             4
+                                                                              
+2.1  Architecture and Configurations  . . . . . . . . . . . . . . . . . . . .4
+    2.1.1  Camera Optical Head  . . . . . . . . . . . . . . . . . . . . . . .5
+    2.1.2  Camera Electronic Unit  . . . . . . . . . . . . . . . . . . . . . 6
+    2.1.3  Camera Baffle . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+2.2  Operating Modes . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+                                                                              
+3  Data Handling Process and Product Generation                              8
+                                                                              
+3.1  Telemetry Data . . . . . . . . . . . . . . . . . . . . . . . . . . . . .8
+3.2  Data Product levels . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+    3.2.1  Uncalibrated Data . . . . . . . . . . . . . . . . . . . . . . . . 9
+3.2.2  Geometrically Calibrated Data  . . . . . . . . . . . . . . . . . . . .9
+3.2.3  Radiometrically Calibrated Data . . . . . . . . . . . . . . . . . . . 9
+                                                                              
+4  Archive Conventions and Meta-Information                                 10
+                                                                              
+4.1  Format and Conventions . . . . . . . . . . . . . . . . . . . . . . . . 10
+    4.1.1  Dataset ID Formation . . . . . . . . . . . . . . . . . . . . . . 10
+    4.1.2  File Naming Convention . . . . . . . . . . . . . . . . . . . . . 13
+    4.1.3  PDS Standards  . . . . . . . . . . . . . . . . . . . . . . . . . 13
+    4.1.4  Time Standards  . . . . . . . . . . . . . . . . . . . . . . . . .13
+4.2  Reference Frames and Geometry  . . . . . . . . . . . . . . . . . . . . 14
+    4.2.1  Camera Reference Frames . . . . . . . . . . . . . . . . . . . . .14
+    4.2.2 Image Orientation  . . . . . . . . . . . . . . . . . . . . . . . .14
+    4.2.3  Window Size and Position . . . . . . . . . . . . . . . . . . . . 15
+    4.2.4  Geometric Calibration . . . . . . . . . . . . . . . . . . . . . .15
+    4.2.5  Geometric Information in Label Files . . . . . . . . . . . . . . 15
+4.3  Data Quality  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .16
+4.4  Observation Type . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+                                                                              
+5  Dataset Content                                                          19
+                                                                              
+5.1  Volume Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .19
+5.2  Dataset Naming  . . . . . . . . . . . . . . . . . . . . . . . . . . . .19
+5.3  Directories . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  20
+                                                                              
+6  Product File Content                                                     23
+                                                                              
+6.1  Content of *.LBL Files . . . . . . . . . . . . . . . . . . . . . . . . 23
+6.2  Content of *.FIT File Header . . . . . . . . . . . . . . . . . . . . . 30
+                                                                              
+7  Product File Content - Cruise Phase                                      32
+                                                                              
+List of Tables                                                                
+                                                                              
+1  Distribution List. . . . . . . . . . . . . . . . . . . . . . . . . . . . ii
+2  Document Change Log.  . . . . . . . . . . . . . . . . . . . . . . . . . .ii
+3  List of contacts for the NavCam instrument archive. . . . . . . . . . . . 3
+4  Overview of NavCam properties . . . . . . . . . . . . . . . . . . . . . . 4
+5  Data Processing levels.  . . . . . . . . . . . . . . . . . . . . . . . . .8
+6  Description of Components of the DATA_SET_ID.  . . . . . . . . . . . . . 11
+7  List of TARGET_ID values for Rosetta.  . . . . . . . . . . . . . . . . . 11
+8  List of MISSION_PHASE_NAME and ABBREVIATION values.  . . . . . . . . . . 12
+9  File naming parameters. . . . . . . . . . . . . . . . . . . . . . . . . .13
+10 Parameters for geometric correction......................................16
+11 Mandatory keywords and standard values for the VOLUME object. . . . . . .19
+12  Data set naming parameters.  . . . . . . . . . . . . . . . . . . . . . .20
+13  Keywords used in the label files.  . . . . . . . . . . . . . . . . . . .24
+14  Rosetta mission specific dictionary entries. . . . . . . . . . . . . . .26
+15  Correspondence between PDS and FITS keywords. . . . . . . . . . . . . . 30
+16  Keywords used in the label files (Cruise Phase). . . . . . . . . . . . .32
+17  Rosetta mission specific dictionary entries (Cruise Phase). . . . . . . 34
+                                                                              
+List of Acronyms                                                              
+                                                                              
+A/D Analogue-to-Digital                                                       
+AIU Avionics Interface Unit                                                   
+AOCS Attitude and Orbit Control System                                        
+APID Application Process Identi er                                            
+CAM-BAF Camera Ba  e                                                          
+CAM-EU Camera Electronic Unit                                                 
+CAM-OH Camera Optical Head                                                    
+CCD Charge Coupled Device                                                     
+CODMAC Committee On Data Management, Archiving, and Computation               
+DDS Data Distribution System                                                  
+DMS Data Management System                                                    
+DNA Defocused imaging with No Attenuation                                     
+EAICD Experiment to Archive Interface Control Document                        
+ESA European Space Agency                                                     
+ESAC European Space Astronomy Centre                                          
+ESOC European Space Operations Centre                                         
+EU Electronic Unit                                                            
+FA Focused imaging with Attenuation                                           
+FITS Flexible Image Transport System                                          
+FNA Focused imaging with No Attenuation                                       
+FOV Field of View                                                             
+ftp file transfer protocol                                                    
+HK Housekeeping                                                               
+JPEG Joint Photographic Experts Group                                         
+NASA National Aeronautics and Space Administration                            
+NavCam Navigation Camera                                                      
+OBT On-Board Time                                                             
+OH Optical Head                                                               
+PDS Planetary Data System                                                     
+PSA Planetary Science Archive                                                 
+PSA-DH Planetary Science Archive Data Handler                                 
+RMOC Rosetta Mission Operations Centre                                        
+RO Rosetta Orbiter                                                            
+S/C Spacecraft                                                                
+SCIOPS Science Operations Department                                          
+SGS Science Ground Segment                                                    
+SSMM Solid State Mass Memory                                                  
+TC Telecommand                                                                
+TM Telemetry                                                                  
+UTC Coordinated Universal Time                                                
+WCS World Coordinate System (FITS)                                            
+                                                                              
+1  Introduction                                                               
+                                                                              
+1.1  Purpose and Scope                                                        
+                                                                              
+This Experiment to Archive Interface Control Document (EAICD) has two main    
+purposes. Firstly, it gives users of the Navigation Camera (NavCam) instrument
+data a detailed description of the product and how it was generated, including
+data sources and destinations. Secondly, it acts as an interface between the  
+NavCam data producers and the data archiving authority. One point of note is  
+that there are two identical NavCams installed on the Rosetta spacecraft,     
+however, for the purposes of this document the singular is generally referred 
+to when discussing the NavCams.                                               
+                                                                              
+1.2  Archiving Authorities                                                    
+                                                                              
+The Planetary Data System (PDS) standard is used as the archiving standard by:
+                                                                              
+    - the National Aeronautics and Space Administration (NASA) for U.S.       
+    Planetary Missions, implemented by PDS;                                   
+                                                                              
+    - the European Space Agency (ESA) for European Planetary Missions,        
+    implemented by the Science Operations Department (SCIOPS) of ESA.         
+                                                                              
+ESA implements an on-line science archive, the Planetary  (PSA), for several  
+reasons:                                                                      
+                                                                              
+    - to support and ease data ingestion;                                     
+                                                                              
+     - to offer additional services to the scientific user community and      
+     science operations teams, such as, e.g.:                                 
+                                                                              
+         1.  queries that allow searches across instruments, missions        
+         and scientific disciplines;                                          
+                                                                              
+         2.  several data delivery options, such as:                          
+             - direct download of data products, linked files and datasets;  
+             - file transfer protocol (ftp) download of data products, linked 
+             files and datasets.                                             
+                                                                              
+The PSA aims for on-line ingestion of logical archive volumes and will offer  
+the creation of physical archive volumes on request.                          
+                                                                              
+1.3  Contents                                                                 
+                                                                              
+This document describes the data flow of the NavCam instrument on Rosetta     
+from the Spacecraft (S/C) until the insertion into the PSA by ESA. It includes
+information on how data were processed, formatted, labelled and uniquely      
+identified; along with discussing the general naming schemes for NavCam data  
+volumes, datasets, data and label files. The standards used to generate such 
+products are explained and the design of the dataset structure and data      
+products are also given within this document.                                 
+                                                                              
+                                                                              
+                                                                              
+1.4  Intended Readership                                                      
+                                                                              
+The staff of the archiving authority (PSA, PDS), members of the Rosetta       
+Science Ground Segment and the instrument team community as well as any       
+potential user of the NavCam data.                                            
+                                                                              
+1.5  Applicable Documents                                                     
+                                                                              
+ AD1: Rosetta Archive Generation, Validation and Transfer Plan, January 10,   
+2006, RO-EST-PL-5011                                                          
+ AD2: Rosetta Archive Conventions, Issue 7, Rev. 6, March 21, 2014,           
+RO-EST-TN-3372                                                                
+                                                                              
+1.6  Reference Documents                                                      
+                                                                              
+ RD1: Rosetta Navigation Camera User's Manual, January 2002, RO-GAL-MA-2008   
+ RD2: Rosetta Navigation Camera Design Description, January 2002,             
+      RO-GAL-RP-2007                                                               
+ RD3: Navigation Camera TM/TC and Software ICD, November 2001, RO-MMT-IF-2007 
+ RD4: Rosetta SPICE Frame Kernel, ROS V25.TF                                  
+ RD5: Rosetta Data Delivery Interface Document, Appendix H, November 2013,    
+      RO-ESC-IF-5003                                                               
+ RD6: Scholten F., Preusker F., Jorda L., and Hviid S., Reference Frames and 
+      Mapping Schemes of Comet 67P/C-G, 
+      RO-C-MULTI-5-67P-SHAPE-V1.0:CHEOPS_REF_FRAME_V1, 
+      ESA Planetary Science Archive and NASA Planetary Data System, 2015.
+ RD7: Preusker F., et al., Shape model, reference system definition, and 
+      cartographic mapping standards for comet 67P/Churyumov-Gerasimenko - 
+      Stereo-photogrammetric analysis of Rosetta/OSIRIS image data, 2015, 
+      Astronomy & Astrophysics, 583, A33.
+      http://dx.doi.org/10.1051/0004-6361/201526349
+                   
+Note: The reference documents RD1, RD2, and RD3 contain proprietary information 
+by the instrument manufacturer and are therefore not publicly available.
+             
+1.7  Contact Names and Addresses                                              
+                                                                              
+Table 3: List of contacts for the NavCam instrument archive.                  
+                                                                              
+SCI-OO, ESAC             | Bernhard Geiger   |   Tel.:                        
+Camino bajo del Castillo |                   |  +34 91 81 31 169              
+Villanueva de la Canada  |                   | E-Mail:                        
+28691, Madrid, Spain.    |                   | Bernhard.Geiger@sciops.esa.int 
+------------------------------------------------------------------------------
+SCI-OO, ESAC             | Maud Barthelemy   |   Tel.:                        
+Camino bajo del Castillo |                   |  +34 91 81 31 248              
+Villanueva de la Canada  |                   | E-Mail:                        
+28691, Madrid, Spain.    |                   | Maud.Barthelemy@sciops.esa.int 
+----------------------------------------------------------------------------  
+SCI-OO, ESAC             | David Heather     |   Tel.:                        
+Camino bajo del Castillo |                   |  +34 91 81 31 183              
+Villanueva de la Canada  |                   | E-Mail:                        
+28691, Madrid, Spain.    |                   | David.Heather@sciops.esa.int   
+----------------------------------------------------------------------------  
+SCI-OO, ESAC             | Michael Kueppers  |   Tel.:                        
+Camino bajo del Castillo |                   |  +34 91 81 31 149              
+Villanueva de la Canada  |                   | E-Mail:                        
+28691, Madrid, Spain.    |                   | Michael.Kueppers@sciops.esa.int
+                                                                              
+                                                                              
+2  Overview of Instrument Design                                              
+                                                                              
+In order to fully satisfy the requirements and objectives regarding navigation
+and attitude control, Galileo Avionica developed a mission-specific Navigation
+Camera for Rosetta by building on the heritage of existing models. Table 4    
+provides an overview of some of the physical and operational parameters of the
+NavCam (from [RD2]).                                                                       
+                                                                              
+Table 4: Overview of NavCam properties.                                       
+                                                                              
+Parameter                         Value                 Comment               
+                                                                              
+Mass CAM-OH                  | 6.050 kg       | Camera Optical Head           
+                                                                              
+Mass CAM-EU                  | 2.700 kg       | Camera Electronic Unit        
+                                                                              
+Mass CAM-BAF                 | 1.408 kg       | Camera Baffle                 
+                                                                              
+Total Mass                   | 10.158 kg      |                               
+                                                                              
+Total Power                  | 16.8 W         |                               
+                                                                              
+Field of View                | 5deg x 5deg    |                               
+                                                                              
+Sensor Type                  |  CCD           | CCD47-20 by e2v               
+                                                                              
+Number of Pixels             | 1024 x 1024    |                               
+
+Dynamic Range                | 12 bits        | Saturation at Digital Number 4095
+
+Focal Length                 | 152.5 mm       | Effective Focal Length        
+                                                                              
+Pixel Size                   | 13  micro m    |                               
+                                                                              
+Pixel Angular Size           | 17.6 arcsec    |                               
+                                                                              
+Aperture                     | 70 mm          | Non-Attenuated Modes          
+                             | 30 mm          | Attenuated Mode               
+                                                                              
+F/Number                     | f/2.2          | Non-Attenuated Modes          
+                             | f/5.1          | Attenuated Mode               
+                                                                              
+Limit Magnitude              | Mv = 11        | Exposure time 5 s, SNR        
+                                                                              
+Saturation Magnitude         | Mv = 1.6       | Whole spectral range,         
+                             | Mv = 0.8       | G2 Class; exposure time = 10ms
+Integration Time             | 10 ms          | Minimum,                      
+                             | 30 s           | Maximum                       
+                                                                              
+Bias error (1 sigma)         | 0.2 pixels     | Mv = 11, exposure time = 5 s, 
+                             |                | Defocused mode                
+NEA (1 sigma)                | 0.1 pixels     | Mv = 11, exposure time = 5 s, 
+                             |                | Defocused mode                
+                                                                              
+Commanded Window Size        | 20 x 20        | Minimum pixel array           
+                             | 1024 x 1024    | Maximum pixel array           
+CCD Operative Temp.          | -50 C          | Minimum                       
+Range                        | +50 C          | Maximum                       
+                                                                              
+CCD Performance Temp.        | -25 C          | Minimum                       
+Range                        | 0 C            | Maximum                       
+                                                                              
+2.1  Architecture and Con gurations                                           
+                                                                              
+The Rosetta NavCam consists of a Camera Optical Head (CAM-OH), a Camera       
+Electronic (CAM-EU) and a Camera Baffle (CAM-BAF). Information given in this  
+section is mainly extracted from the User's Manual [RD1] and the Design       
+Description Document [RD2]. In general the Rosetta NavCam camera has three    
+major functions:                                                              
+                                                                              
+1.  Track point-like targets (in Point Target Tracking Mode).                 
+                                                                              
+2.  Track one extended object, during asteroid y-by and comet approach phases 
+(in Asteroid Tracking Mode).                                                  
+                                                                              
+3.  Acquire navigation images of asteroids and the comet nucleus (Imaging     
+mode, also per-formed in Asteroid Tracking Mode).                             
+                                                                              
+2.1.1  Camera Optical Head                                                    
+                                                                              
+The Camera Optical Head for the Rosetta NavCam contains the optical system,   
+the CCD detector and the electronics required to operate the CCD. It also     
+supports the dust cover and attenuation mechanism in front of the optics.     
+Figure 1 depicts three possible configurations of the optical system with     
+exchangeable first element.                                                   
+                                                                              
+- DNA mode. Defocused not attenuated. The first element is a plano-parallel   
+window. The aperture is 70mm. This mode is used for determining the position  
+of point sources with improved centroiding. During the comet escort phase this
+mode is also used by default as a dust cover when the camera is not operated. 
+                                                                              
+ ROSETTA:CAM_COVER_POSITION = DEFOC_NATT                                      
+                                                                              
+- FA mode. Focused attenuated. The first lens is a quasi-plano parallel       
+window, i.e. a lens with a very low converging power, in order to focus the   
+image on the CCD. One face has an attenuation coating in order to decrease the 
+transmission. The aperture is 30mm. This mode is used for imaging and         
+navigation close to the extended comet nucleus.                               
+                                                                              
+ ROSETTA:CAM_COVER_POSITION = FOC_ATT                                         
+                                                                              
+- FNA mode. Focused not attenuated. The first lens is a quasi-plano parallel  
+window with an aperture of 70mm. The image is focused on the CCD and there is 
+no attenuation coating.                                                       
+                                                                              
+ ROSETTA:CAM_COVER_POSITION = FOC_NATT.                                       
+                                                                              
+For each acquired image the mission specific keyword                          
+ROSETTA:CAM_COVER_POSITION records the applicable cover position in the       
+meta-information of the data product files (see Table 14). The effects of the 
+reduced aperture and the attenuation coating combined result in a reduction of
+the transmission by a factor of 580 for the attenuated mode. For the defocused
+mode the point spread function is broader. For a point source located in the  
+centre of a pixel approximately 50-55% of the signal are counted in the       
+respective pixel, whereas this fraction ranges between 65 and 70% for the     
+focused modes.                                                                
+                                                                              
+Figure 1: Optical system of the NavCam with exchangeable first element. The   
+lenses are made of radiation resistant glasses with high transmission in the  
+visible wavelength range (LAK9 G15 and SF6 G05 produced by Schott) [RD2].    
+                                                                              
+The CCD detector is a front-illuminated frame transfer device with a broad    
+spectral sensitivity in the visible range. Two different values of the gain   
+can be selected when commanding the camera.                                   
+                                                                              
+1. High Gain -- 10 electrons per Digital Number. Increases the grey signal
+level resolution when faint targets are imaged. In this case the A/D Converter 
+saturates (at 12 bits) before saturation of the CCD is reached.
+ROSETTA:CAM_GAIN = HIGH                     
+                                                                              
+2. Low Gain -- 17 electrons per Digital Number. The A/D Converter saturates 
+at the same time as the CCD and so the full dynamic range can be used.         
+ROSETTA:CAM_GAIN = LOW                                                        
+                                                                              
+The relative amplification factor between high and low gain is approximately 1.7.
+The chosen gain settings are documented in the mission specific keyword           
+ROSETTA:CAM_GAIN of the product files (see Table 14).                         
+                                                                              
+2.1.2  Camera Electronic Unit                                                 
+                                                                              
+The Camera Electronic Unit contains the digital electronics and interfaces for
+data transfer with the Avionics Interface Unit (AIU) and the Solid State Mass 
+Memory (SSMM). Another major function of this module is to provide the        
+programmable constant-current driver for both the heater in the optical head  
+and the stepper motor that actuates the attenuation cover mechanism of the    
+NavCam.                                                                       
+                                                                              
+2.1.3  Camera Baffle                                                          
+                                                                              
+The Camera Baffle provides protection against stray light produced by the Sun 
+and reflected from planetary bodies and the satellite. This level of          
+protection allows the tracking of faint objects. The baffle is mechanically   
+supported by the S/C structure so as to avoid mechanical stress of the optical
+head. This is done owing to the required high pointing stability of the camera
+boresight in order to achieve the desired accuracy.                           
+                                                                              
+2.2  Operating Modes                                                          
+                                                                              
+The following series of operating modes are available in order to exploit the 
+capabilities of the NavCam:                                                   
+                                                                              
+ - Off Mode.                                                                  
+ - Initialisation Mode.                                                       
+ - Stand-by Mode.                                                             
+ - Imaging Mode. In this mode the instrument operates as a standard camera in 
+  order to acquire images of star-fields or extended objects in the field of  
+  view such as the comet nucleus during the escort phase.                     
+  INSTRUMENT MODE ID = "IMAGING"                                              
+                                                                              
+ - Point Target Tracking Mode. In this mode the NavCam can track              
+  simultaneously up to five point-like objects in the field of view.          
+                                                                              
+ - Asteroid (Extended Object) Tracking Mode. In this mode the NavCam can      
+  detect and track an extended object in the eld of view. Optionally          
+  information on the position of this object can be fed into the autonomous   
+  attitude control system of the spacecraft. (This was done during the        
+  asteroid fly-bys.) In the Asteroid Tracking Mode images can also be         
+  acquired and downlinked in the same way as in the Imaging Mode.             
+  INSTRUMENT MODE ID = "ASTEROID TRACKING"                                    
+                                                                              
+- Self Test Mode.                                                             
+                                                                              
+Image data can be generated and downlinked to ground in the Imaging and       
+Asteroid (Ex-tended Object) Tracking modes. In the archived datasets, the    
+used mode is indicated by the INSTRUMENT MODE ID keyword of the label files   
+as indicated above (see also Table 13).                                       
+                                                                              
+3  Data Handling Process and Product Generation                               
+                                                                              
+The NavCam data are primarily used by the Flight Dynamics Team of the Rosetta 
+Mission Operations Centre (RMOC) located at ESOC in Darmstadt, Germany. The   
+images acquired with this camera are essential for determining the spacecraft 
+position with respect to the comet nucleus and hence for safely navigating    
+Rosetta. In addition, the images are also processed from the raw telemetry    
+data at the Rosetta Science Ground Segment (SGS) based at ESAC near Madrid,   
+Spain. The data are made available to the Rosetta instrument team community   
+shortly after acquisition in order to support analysis and interpretation of  
+their scientific data. Later, datasets of the product files are prepared for  
+public release via the Planetary Science Archive (PSA).                       
+                                                                              
+3.1  Telemetry Data                                                           
+                                                                              
+For generating the product files the following telemetry data are processed:  
+                                                                              
+ - Science Data Report: TM APID 460 (CAM1) and 476 (CAM2), Type 20,           
+Subtype 13. This set of telemetry data contains images as well as a number of 
+meta data parameters. The latter are included in the label files of the       
+generated data products.                                                      
+                                                                              
+ - Housekeeping and Health-Check Report: TM APID 452 (CAM1) and 468 (CAM2),   
+Type 3, Subtype 25. From the set of available housekeeping parameters only the
+CCD temperature and the optics temperature are extracted and included in the  
+label files of the generated data products.                                   
+                                                                              
+3.2  Data Product levels                                                      
+                                                                              
+Table 5: Data Processing levels.                                              
+                                                                              
+PSA     |  CODMAC  | Description                                              
+1a      |1         | Raw telemetry packet data that have been separated by    
+        |          | instrument. This is the level which is distributed by the
+        |          | DDS (ESOC).                                              
+1b      |2         | level 1a data that have been sorted by instrument data   
+        |          | types and instrument modes. Data are in scienti cally    
+        |          | useful form, e.g. as images. These data are still        
+        |          | uncalibrated.                                            
+2       |3         | level 1b data with calibration and corrections applied to
+        |          | yield data in scientific units.                          
+3       |5         | Higher level data products developed for specific        
+        |          | scientific investigations.                               
+                                                                              
+Table 5 summarises the definition of data product levels according to both PSA
+and CODMAC (Committee On Data Management, Archiving, and Computation).        
+                                                                              
+3.2.1  Uncalibrated Data                                                      
+                                                                              
+Uncalibrated data, i.e. products at CODMAC level 2, were released for the     
+entire cruise phase including images from the Earth and Mars swing-bys as well
+as distant (unresolved) navigation images of the visited asteroids 2878 Steins
+and 21 Lutetia. Presently the images acquired after hibernation exit during   
+the comet approach and escort phases are successively being archived and made 
+available. The uncalibrated data products consist of image files with         
+extensive meta-information. For each image pixel the original unaltered       
+digital number values are given as read out from the CCD.                     
+
+3.2.2  Radiometrically Calibrated Data                                        
+                                                                              
+Radiometrically calibrated data, i.e. products at CODMAC level 3, are         
+currently not yet available but are foreseen to be provided. This requires    
+removing artefacts caused by the optical system and the CCD detector from the 
+raw images and converting the digital number counts into physical radiance    
+units. It is currently not planned by the Rosetta SGS to generate higher level
+data products such as map projections on a shape model for the comet nucleus  
+images.       
+
+3.2.3  Geometrically Calibrated Data                                          
+                                                                              
+Accurate geometric information is required for the operational objective of   
+the NavCam and the respective image characteristics are therefore well        
+established (see Section 4.2.4). However, it is not appropriate to generate   
+geometrically calibrated data products by re-sampling the images. The         
+correction shall better be taken into account for each specific application by
+directly using the existing data products.                                    
+                                                                
+                                                                              
+4  Archive Conventions and Meta-Information                                   
+                                                                              
+This chapter describes general rules and conventions for producing the        
+datasets and also gives an overview of important meta-information included in 
+the product files.                                                            
+                                                                              
+4.1  Format and Conventions                                                   
+                                                                              
+The directory tree must be compatible, in terms of directory organisation and 
+naming and file organisation, with the PDS standards and such that:           
+                                                                              
+ - each logical archive volume shall contain one NavCam PDS dataset;         
+ datasets will contain data from both NavCams;                               
+                                                                              
+ - one dataset shall be created for each separate mission phase; a different 
+  dataset shall be created for each processing level;                        
+                                                                              
+ - the top level directory of each logical archive volume shall match that of 
+  the NavCam dataset ID; and,                                                
+                                                                              
+ - the volume set name shall be as that of the dataset.                      
+                                                                              
+4.1.1  Dataset ID Formation                                                  
+                                                                              
+The dataset ID formation shall be done according to the following rule:      
+                                                                              
+DATA SET ID = <INST HOST>-<TARGET ID>-<INST>-<CODMAC fileVEL>-                
+                                                                              
+<MISSION PHASE ABBREVIATION>-<VERSION>                                        
+                                                                              
+Each of the components are described, briefly, in Table 6, with a list of     
+options for TARGET_ID and MISSION_PHASE being given in Tables 7 and 8         
+respectively. Examples include:                                               
+                                                                              
+ RO-X-NAVCAM-2-PRL-COM-V1.0                                                   
+                                                                              
+ RO-C-NAVCAM-2-PRL-MTP004-V1.0                                                
+                                                                              
+In some instances there are several TARGET ID terms in the DATA SET ID naming 
+formation. These terms are combined and included in a list, separated by      
+hyphens, between the <INST HOST> and <INST> terms in the dataset name.       
+Examples from the cruise phase include:                                       
+                                                                              
+ RO-A-CAL-NAVCAM-2-AST2-V1.0                                                  
+                                                                              
+ RO-E-X-NAVCAM-2-CR1-V1.0                                                     
+                                                                              
+Table 6: Description of Components of the DATA SET ID.                        
+Component       | Examples       | Description                                
+INST_HOST       | RO             | Rosetta Orbiter                            
+                                                                              
+TARGET_ID       | A, C, E, M     | Asteroid, Comet, Earth, Mars               
+                                                                              
+INST            | NAVCAM         | Navigation Camera                          
+                                                                              
+CODMAC_LEVEL    | 2, 3, 5        | See Table 5                                
+                                                                              
+MISSION_PHASE   | AST1,          | Asteroid 1 Flyby, Earth Swingby 3, Cruise  
+ABBREVIATION    | EAR3,          | 4-B, Mars Swingby, see Table 8             
+                | CR4B,          |                                            
+                | MARS           |                                            
+                                                                              
+VERSION         | Vx.y      e.g. | x and y are numerical values indicating    
+                | V1.0,  V1.1,   | the version level and revision number      
+                | V2.0           |                                            
+----------------------------------------------------------------------------- 
+                                                                              
+Table 7: List of TARGET ID values for Rosetta.                                
+                                                                              
+Abbreviation    | TARGET_TYPE    | TARGET_NAME                                
+     A          | ASTEROID       | 21 LUTETIA                                 
+                |                | 2867 STEINS                                
+     C          | COMET          | C/LINEAR (2002 T7)                         
+                |                | 9P/TEMPEL 1 (1867 G1)                      
+                |                | 67P/CHURYUMOV-GERASIMENKO 1 (1969R1)       
+     E          | PLANET         | EARTH                                      
+     J          | PLANET         | JUPITER                                    
+     M          | PLANET         | MARS                                       
+                | SATELLITE      | MOON                                       
+                | STAR           | ZETA CAS, ALPHA LYR                       
+    CAL         | CALIBRATION    | CALIBRATION                                
+     X          | N/A            | CHECKOUT                                   
+----------------------------------------------------------------------------- 
+                                                                              
+Table 8: List of MISSION PHASE NAME and ABBREVIATION values.                  
+                                                                              
+Phase Name                       Abbreviation           Start Time            
+GROUND                            GRND               2000-01-01 00:00:00      
+                                                                              
+LAUNCH                            LEOP               2004-03-03 00:00:00      
+                                                                              
+COMMISSIONING 1                   CVP1               2004-03-05 00:00:00      
+                                                                              
+CRUISE 1                          CR1                2004-06-07 00:00:00      
+                                                                              
+COMMISSIONING 2                   CVP2               2004-09-06 00:00:00      
+                                                                              
+EARTH SWING-BY 1                  EAR1               2004-10-17 00:00:00      
+                                                                              
+CRUISE 2                          CR2                2005-04-05 00:00:00      
+                                                                              
+MARS SWING-BY                     MARS               2006-07-29 00:00:00      
+                                                                              
+CRUISE 3                          CR3                2007-05-29 00:00:00      
+                                                                              
+EARTH SWING-BY 2                  EAR2               2007-09-13 00:00:00      
+                                                                              
+CRUISE 4-1                        CR4A               2008-01-28 00:00:00      
+                                                                              
+STEINS FLY-BY                     AST1               2008-08-04 00:00:00      
+                                                                              
+CRUISE 4-2                        CR4B               2008-10-06 00:00:00      
+                                                                              
+EARTH SWING-BY 3                  EAR3               2009-09-14 00:00:00      
+                                                                              
+CRUISE 5                          CR5                2009-12-14 00:00:00      
+                                                                              
+LUTETIA FLY-BY                    AST2               2010-05-17 00:00:00      
+                                                                              
+RENDEZVOUS MANOEUVRE 1            RVM1               2010-09-04 00:00:00      
+                                                                              
+CRUISE 6                          CR6                2011-07-14 00:00:00      
+                                                                              
+PRELANDING COMMISSIONING          PRL-COM            2014-01-20 10:00:00      
+                                                                              
+PRELANDING MTP003                 PRL-MTP003         2014-05-07 12:48:00      
+                                                                              
+PRELANDING MTP004                 PRL-MTP004         2014-06-04 10:50:00      
+                                                                              
+PRELANDING MTP005                 PRL-MTP005         2014-07-02 08:35:00      
+                                                                              
+PRELANDING MTP006                 PRL-MTP006         2014-08-01 10:00:00      
+                                                                              
+PRELANDING MTP007                 PRL-MTP007         2014-09-02 10:00:00      
+                                                                              
+PRELANDING MTP008                 PRL-MTP008         2014-09-23 10:00:00      
+                                                                              
+PRELANDING MTP009                 PRL-MTP009         2014-10-24 10:00:00      
+                                                                              
+COMET ESCORT 1 MTP010             ESC1-MTP010        2014-11-21 23:25:00      
+                                                                              
+COMET ESCORT 1 MTP011             ESC1-MTP011        2014-12-19 23:25:00      
+                                                                              
+COMET ESCORT 1 MTP012             ESC1-MTP012        2015-01-13 23:25:00      
+                                                                              
+COMET ESCORT 1 MTP013             ESC1-MTP013        2015-02-10 23:25:00      
+                                                                              
+COMET ESCORT 2 MTP014             ESC2-MTP014        2015-03-10 23:25:00      
+                                                                              
+COMET ESCORT 2 MTP015             ESC2-MTP015        2015-04-08 11:25:00      
+                                                                              
+COMET ESCORT 2 MTP016             ESC2-MTP016        2015-05-05 23:25:00      
+                                                                              
+COMET ESCORT 2 MTP017             ESC2-MTP017        2015-06-02 23:25:00      
+                                                                              
+COMET ESCORT 3 MTP018             ESC3-MTP018        2015-06-30 23:25:00      
+                                                                              
+COMET ESCORT 3 MTP019             ESC3-MTP019        2015-07-28 23:25:00      
+                                                                              
+COMET ESCORT 3 MTP020             ESC3-MTP020        2015-08-25 23:25:00      
+                                                                              
+COMET ESCORT 3 MTP021             ESC3-MTP021        2015-09-22 23:25:00      
+                                                                              
+COMET ESCORT 4 MTP022             ESC4-MTP022        2015-10-20 23:25:00      
+                                                                              
+COMET ESCORT 4 MTP023             ESC4-MTP023        2015-11-17 23:25:00      
+                                                                              
+COMET ESCORT 4 MTP024             ESC4-MTP024        2015-12-15 23:25:00      
+                                                                              
+ROSETTA EXTENSION 1 MTP025        EXT1-MTP025        2016-01-12 23:25:00      
+                                                                              
+ROSETTA EXTENSION 1 MTP026        EXT1-MTP026        2016-02-09 23:25:00      
+                                                                              
+ROSETTA EXTENSION 1 MTP027        EXT1-MTP027        2016-03-08 23:25:00      
+
+ROSETTA EXTENSION 2 MTP028        EXT2-MTP028        2016-04-05 23:25:00      
+
+ROSETTA EXTENSION 2 MTP029        EXT2-MTP029        2016-05-03 23:25:00      
+
+ROSETTA EXTENSION 2 MTP030        EXT2-MTP030        2016-05-31 23:25:00      
+
+ROSETTA EXTENSION 3 MTP031        EXT3-MTP031        2016-06-28 23:25:00      
+
+ROSETTA EXTENSION 3 MTP032        EXT3-MTP032        2016-07-26 23:25:00      
+
+ROSETTA EXTENSION 3 MTP033        EXT3-MTP033        2016-08-23 23:25:00      
+
+
+4.1.2  File Naming Convention                                                 
+                                                                              
+Each image data product is generated in the form of a binary file (*.IMG) and 
+a FITS-format file (*.FIT) with associated label files (*.LBL) of the same    
+name that point to the image file. The label files contain meta-information   
+about the camera operating parameters and geometric conditions. For every     
+image a browse version file (*.JPG) with reduced resolution and an associated 
+label file are created. The file naming convention for these files is as      
+follows:                                                                      
+                                                                              
+<MISSION> <CAM#> <YYYYMMDDThhmmss><F>.<EXT>                                   
+                                                                              
+Table 9 summarises the definitions of each part:                              
+                                                                              
+Table 9: File naming parameters.                                              
+Variable       Possible Values             Description                        
+MISSION       | ROS                    | The Rosetta mission.                 
+CAM#          | CAM1, CAM2             | Denotes which NavCam pro-            
+              |                        | duced the data.                      
+EXT           | IMG, FIT, JPG, LBL     | Denotes the  file type in ques-      
+              |                        | tion.                                
+F             | F, or absent           | Is present for the FIT format        
+              |                        | file and its label file.             
+-------------------------------------------------------------------------     
+                                                                              
+The parameter <YYYYMMDDThhmmss> is the Coordinated Universal Time (UTC)       
+without the fractional seconds (see Section 4.1.4) and provides the date and  
+time at which the image was acquired on-board the spacecraft.                 
+                                                                              
+4.1.3  PDS Standards                                                          
+                                                                              
+Each complete volume produced will be compliant with both the PDS and PSA     
+standards. In general each individual file is created using PDS Version 3     
+standards. The PDS format uses the ISO 9660 level 2 standard for the file     
+names. Hence, no complete file name shall be longer than 31 characters and the
+"27.3" structure shall be obeyed, that is, a maximum of 27 characters before  
+the "." for the file name and 3 characters after for the extension type.      
+                                                                              
+4.1.4  Time Standards                                                         
+                                                                              
+Two time standards are used in the meta-information of the NavCam data        
+product files:                                                                
+                                                                              
+ - UTC is expressed in the format <YYYYMMDDThhmmss.fff>                       
+    where YYYYMMDD provides the calendar date (year, month and day), T is a   
+    fixed separator and hhmmss. fff indicates the time in hours, minutes,     
+    seconds and fractions of a second. UTC is used in the following keywords  
+    for time stamping the data products:                                      
+                                                                              
+     - PRODUCT_CREATION_TIME                                                  
+     - IMAGE_TIME                                                             
+     - START_TIME                                                             
+     - STOP_TIME                                                              
+                                                                              
+Here START_TIME = IMAGE_TIME - 0.5 EXPOSURE_DURATION and                      
+STOP_TIME = IMAGE TIME + 0.5 EXPOSURE TIME.                                   
+                                                                              
+ - Spacecraft Clock Time is given in the format                               
+    1/<time counter high value>.<time counter low value>                      
+    where the high counter roughly corresponds to the number of seconds since 
+    initialisation, and the low value counts ticks of duration 1/65536        
+    second. (Example: 1/123772074.26377). The following keywords contain      
+    spacecraft clock time:                                                    
+        - SPACECRAFT CLOCK START COUNT                                        
+        - SPACECRAFT CLOCK STOP COUNT                                         
+
+For datasets up to and including MTP012 rounding errors of 1ms can occurr in the 
+START_TIME and STOP_TIME keyword values due to an inappropriate computation procedure.
+                              
+4.2  Reference Frames and Geometry                                            
+                                                                              
+4.2.1  Camera Reference Frames                                                
+                                                                              
+For data processing and analysis purposes the NavCam reference frames are     
+defined as follows:                                                           
+                                                                              
+ - The +Z axis points along the camera boresight (optical axis).              
+                                                                              
+ - The +X axis is parallel to the apparent image columns. It is nominally     
+  co-aligned with the S/C +X axis.                                            
+                                                                              
+ - The +Y axis completes the right hand frame. It is nominally parallel to    
+  the apparent image lines and co-aligned with the S/C +Y axis.               
+                                                                              
+ - The origin of the frame is located at the camera focal point.              
+
+The actual NavCam boresight directions in the spacecraft reference frame were 
+determined by in-flight calibration and are as follows.
+
+CAM1 (NAVCAM-A): ( -0.000584, -0.003128, 0.999995 ).
+CAM2 (NAVCAM-B): (  0.000116,  0.002098, 0.999998 ).
+
+The full alignment rotation matrices are specified in the Rosetta SPICE 
+frame-kernel [RD4]. Note that the values for CAM1 were updated in version 2.5 
+of the frame-kernel, which has been used for generating the archive datasets 
+(V1.0) from period MTP018 onwards.
+                                                                              
+4.2.2  Image Orientation                                                      
+                                                                              
+The images in the data product files are oriented such that the CCD columns   
+(and therefore the X axis) appear in vertical direction and the lines (and    
+therefore the Y axis) in horizontal direction. The binary files start with    
+the first byte of the first line read out from the CCD. This first line       
+corresponds to the bottom of the image in the orientation mentioned above.    
+Accordingly, the relevant keywords in the image description section of the    
+product label files are specified as SAMPLE_DISPLAY_DIRECTION = "RIGHT" and   
+LINE_DISPLAY_DIRECTION = "UP".                                                
+                                                                              
+The orientation of the X and Y axes is such that line and column number counts
+increase with increasing coordinate value. However, the optics of the         
+instrument introduces an inversion of the image. This means that the signs of 
+both coordinate values need to be reversed when transforming the position of  
+an object in space into image coordinates. Or in other words, the image needs 
+to be rotated by 180 degrees in order to match the orientation of the imaged  
+scene.                                                                        
+                                                                              
+4.2.3  Window Size and Position                                               
+                                                                              
+The camera software allows the user to specify sub-frames in order to reduce  
+the data volume for downlink. In the product label files the size of the      
+images is indicated by the standard keywords LINES and LINE_SAMPLES of the    
+image description section. The specific keywords                              
+ROSETTA:CAM_WINDOW_POS_ALONG_ROW                                              
+and                                                                           
+ROSETTA:CAM_WINDOW_POS_ALONG_COL,                                             
+respectively, indicate the central column and row numbers of the commanded    
+sub-images (see Table 14). For full images with 1024x1024 pixels the value of 
+both of these keywords is set to 511, which corresponds to the centre of the  
+CCD.                                                                          
+                                                                              
+4.2.4  Geometric Calibration                                                  
+
+The optical system of the camera is designed in such a way that geometric 
+distortion over the whole field of view is small (~1% at the edge). Nevertheless
+for the purposes of precise navigation and astrometric registration these effects 
+need to be taken into account. The simplified procedure below for computing the 
+view direction as a function of image pixel was extracted from Appendix H of the 
+Data Delivery Interface Document [RD5]. It is accurate to one pixel over the full CCD.
+
+For a given pixel position (i, j) on the camera CCD, the corresponding direction 
+vector (x, y, z) in camera frame can be obtained as follows with parameter values 
+as listed in Table 10:
+
+Convert pixel coordinates into spatial position in the detector plane relative to 
+the image centre:
+px=(i-511)*0.013
+py=(j-511)*0.013.
+
+Apply a radial distortion correction relative to the linear position:
+pxCorr=px*[1+cx*(px^2+py^2)]
+pyCorr=py*[1+cy*(px^2+py^2)].
+
+The (un-normalised) direction vector in camera frame is then given by:
+(x, y, z) = (-pxCorr/fx, -pyCorr/fy, 1).
+
+The sign change in x- and y-coordinates assures the appropriate image orientation as 
+mentioned in Section 4.2.2.
+
+Table 10: Parameters for geometric correction.
+
+Parameter | CAM1            | CAM2
+cx        | -0.00012044038  | -0.00011708484
+cy        | -0.000114420733 | -0.000111645333
+fx        | 152.5159        | 152.4893
+fy        | 152.4949        | 152.4854
+                                                                              
+4.2.5  Geometric Information in Label Files                                   
+                                                                              
+The label files include the following geometric variables:                    
+                                                                              
+ - SC_SUN_POSITION_VECTOR                                                     
+   The vector from the spacecraft to the Sun in equatorial J2000 inertial     
+   frame.                                                                     
+                                                                              
+ - SC_TARGET_POSITION_VECTOR                                                  
+   The vector from the spacecraft to the centre of the comet nucleus in       
+   equatorial J2000 inertial frame.                                           
+                                                                              
+ - SC_TARGET_VELOCITY_VECTOR                                                  
+    The spacecraft to comet nucleus velocity vector in in equatorial J2000    
+    inertial frame.                                                           
+                                                                              
+ - TARGET_CENTER_DISTANCE                                                     
+    The distance between the spacecraft and the comet nucleus centre.         
+    (Note that also for checkout and stellar calibration images the comet     
+    nucleus distance is given here.)                                          
+                                                                              
+ - SUB_SPACECRAFT_LATITUDE and SUB_SPACECRAFT_LONGITUDE                       
+    The latitude and longitude of the sub-spacecraft point derived from the   
+    Flight Dynamics body-fixed reference frame implicitly specified by the    
+    information provided in the comet attitude file CATT [RD5].
+    By construction the "Cheops reference frame" introduced in [RD6,RD7] is 
+    equivalent to the Flight Dynamics body-fixed frame.              
+                                                                              
+ - RIGHT ASCENSION and DECLINATION                                            
+    Right Ascension and Declination of the camera boresight direction in      
+    equatorial J2000 inertial frame.                                          
+                                                                              
+ - CELESTIAL_NORTH_CLOCK_ANGLE                                                
+    The direction of celestial north at the centre of the image - measured    
+    from the 'upward' direction, clockwise to the direction toward            
+    celestial north.                                                          
+                                                                              
+ - SOLAR_ELONGATION                                                           
+    The angle between the line of sight of observation and the direction to   
+    the Sun.                                                                  
+                                                                              
+All geometric values are calculated for the time t = IMAGE_TIME (and not      
+START_TIME). The values of the keywords SC_SUN_POSITION_VECTOR, 
+SC_TARGET_POSITION_VECTOR, SC_TARGET_VELOCITY_VECTOR, and TARGET_CENTER_DISTANCE 
+are determined taking into account light time and aberration corrections.
+RIGHT_ASCENSION and DECLINATION are computed with aberration corrections. 
+No correction is applied for obtaining the values of SUB_SPACECRAFT_LATITUDE and
+SUB_SPACECRAFT_LONGITUDE.
+                                                                              
+4.3  Data Quality                                                             
+                                                                              
+The keyword DATA_QUALITY_ID indicates whether the lines of an image were      
+completely acquired (value 0) or the image is incomplete and lines are missing
+(value 1). The number of missing lines is given in the Rosetta mission        
+specific keyword ROSETTA:CAM_MISSING_LINES (see Table 14).                    
+                                                                              
+The keyword ROSETTA:CAM_DATA_VALID with the possible values OK or NOT OK      
+reports the result of a periodic instrument health check which is included in 
+the science telemetry data. This error flag is set, for example, if the       
+instrument CCD temperature is not within the performance range of [-25 C,0 C].
+This is the case for a large fraction of the images taken during the comet    
+escort phase. However, the lower temperatures measured are still within the   
+operating range and do not affect the image quality.                          
+
+Instrument temperatures are extracted from housekeeping telemetry (see Section 3.1).
+If for a given image acquisition time no housekeeping information is available 
+in an interval of +/- 1 minute the values are reported as "UNK" in the keyword 
+INSTRUMENT_TEMPERATURE.
+
+4.4  Observation Type                                                         
+                                                                              
+The keyword OBSERVATION TYPE was used in the label files in order to provide  
+information about the purpose of the images acquired. The values of the keyword 
+are as follows:
+                                                                              
+ - NAVIGATION IMAGE                                                           
+    The image was commanded for navigation purposes by the Flight Dynamics    
+    team.                                                                     
+                                                                              
+ - CONTEXT IMAGE                                                              
+    The image was requested by the instrument team community via the Science  
+    Ground Segment in order to provide context information for other scientific 
+    measurements. From August 2015 additional context images were also scheduled 
+    directly by the Science Ground Segment for regular activity monitoring 
+    around perihelion.                                                 
+                                                                              
+ - CALIBRATION                                                                
+    The image was acquired for calibration purposes. This also includes images 
+    specifically scheduled for characterising the dust environment. 
+                                                                              
+ - CHECKOUT                                                                   
+    The image was acquired as an instrument checkout or test.                 
+
+The TARGET_NAME keyword is always specified as "67P/CHURYUMOV-GERASIMENKO 1 (1969 R1)"
+for navigation and context images, although the latter also include a large number of
+instances for which the comet nucleus is not in the field of view.
+
+5  Dataset Content                                                            
+                                                                              
+This section contains information common to all datasets produced for the    
+Rosetta NavCam.                                                               
+                                                                              
+5.1  Volume Set                                                               
+                                                                              
+The following conditions shall remain true for the NavCam datasets at all    
+times:                                                                        
+                                                                              
+ - Each logical archive volume shall contain one NavCam dataset.             
+                                                                              
+ - Necessary documentation for the logical archive volumes shall be provided  
+  by the Planetary Science Archive Data Handlers (PSA-DHs). Any other         
+  non-data file necessary for the logical archive volume will be provided by  
+  the PSA-DHs.                                                                
+                                                                              
+It shall be possible to modify and implement the structure of the directory   
+tree with new sub-directories, whenever needed. The creation and management of
+the directories shall be performed by the PSA-DHs.                            
+                                                                              
+The keywords mandatory for the VOLUME object of the Rosetta mission are       
+presented in Table 11:                                                        
+                                                                              
+Table 11: Mandatory keywords and standard values for the VOLUME object.       
+                                                                              
+Keyword            | Required   | Max. | Standard Value(s)                    
+                   |            |Length|                                      
+DATA_SET_ID        | yes        | 40   | see Section 4.1.1                    
+DESCRIPTION        | yes        | N/A  | "N/A"                                
+MEDIUM_TYPE        | yes        | 30   | "ELECTRONIC"                         
+PUBLICATION_DATE   | yes        | 10   | YYYY-MM-DD                           
+VOLUME_FORMAT      | yes        | 20   | "ANSI"                               
+VOLUME_ID          | yes        | 12   | "N/A"                                
+VOLUME_NAME        | yes        | 60   | "N/A"                                
+VOLUME_SERIES_NAME | yes        | 60   | "N/A"                                
+VOLUME_SET_NAME    | yes        | 60   | "N/A"                                
+VOLUME_SET_ID      | yes        | 40   | "N/A"                                
+VOLUME_VERSION_ID  | yes        | 12   | "N/A"                                
+VOLUMES            | yes        | N/A  | "UNK"                                
+------------------------------------------------------------                  
+                                                                              
+5.2  Dataset Naming                                                          
+                                                                              
+The dataset naming for the Rosetta NavCam follows the following              
+formation rule:                                                               
+                                                                              
+DATA SET NAME = <INSTRUMENT HOST NAME> <TARGET>( <OPTIONAL>)                  
+                                                                              
+<INST> <CODMAC LEVEL> <MISSION PHASE ABBREVIATION> <VERSION>                  
+                                                                              
+where each of these parameters is defined in Table 12:                        
+                                                                              
+Table 12: Data set naming parameters.                                         
+                                                                              
+ Parameter                     |  Value(s)                                    
+INSTRUMENT_HOST_NAME           | ROSETTA-ORBITER                              
+TARGET                         | see Table 7                                  
+INST                           | NAVCAM                                       
+CODMAC_LEVEL                   | see Table 5                                  
+MISSION_PHASE_ABBREVIATION     | see Table 8                                  
+VERSION                        | e.g. V1.0, V2.4 etc.                         
+                                                                              
+Examples include:                                                             
+                                                                              
+ - "ROSETTA-ORBITER CHECK NAVCAM 2 PRELANDING COMMISSIONING V1.0"             
+ - "ROSETTA-ORBITER 67P NAVCAM 2 PRELANDING MTP004 V1.0"                      
+                                                                              
+5.3  Directories                                                              
+                                                                              
+Root Directory                                                                
+                                                                              
+The top-level structure of the ROOT directory of a data archive volume        
+corresponds to chapter 19 of the PDS Standards Reference (summarised here):   
+                                                                              
+ - AAREADME.TXT: This file describes the complete volume. It provides an      
+  overview of what can be found in the volume including the organisational    
+  attributes and general instructions for use along with contact information. 
+                                                                              
+ - ERRATA.TXT: This file describes known errors or de ciencies in this archive
+  volume set.                                                                 
+                                                                              
+ - VOLDESC.CAT: This file contains the VOLUME object, which gives a high-level
+  description of the volume contents.                                         
+                                                                              
+Sub-directories (except the DATA and EXTRAS directories) include a file, 
+xxxxINFO.TXT, that briefly describes the contents of that directory. In case 
+that an important instrument characteristic cannot be described with an 
+existing PDS keyword, the information will be supplied in a separate parameter 
+file.       
+                                                                              
+BROWSE Directory                                                              
+                                                                              
+This directory contains one or two sub-directories (CAM1 and/or CAM2) with a  
+set of thumbnail images in *.JPG format (one corresponding to each *.IMG file 
+in the DATA directory) and an associated *.LBL for each one. Other files that 
+are included here are:  
+
+ - BROWINFO.TXT: This file describes the contents of the directory.           
+ - *.LBL: Detached label files for the browse products.                       
+ - *.JPG: Browse product images of reduced size in JPEG format. These         
+  thumbnail images were created from the raw binary data using the convert    
+  tool of the ImageMagick package (v6.8.9-6) and standard parameter settings  
+  (-contrast-stretch 2%x1%). The grey scale conversion from the raw data was  
+  not tuned to specific image contents and therefore in some cases the        
+  resulting image can be dominated by detector noise.                         
+                                                                              
+CATALOG Directory                                                             
+                                                                              
+This directory contains the catalogue object files for the complete volume.   
+Files include:                                                                
+                                                                              
+ - CATINFO.TXT: A description of the contents of the CATALOG directory.       
+                                                                              
+.- MISSION.CAT: Contains PDS mission catalogue information about the Rosetta  
+  Mission (provided by ESA).                                                  
+                                                                              
+ - INSTHOST.CAT: Contains PDS instrument host catalogue information about the 
+  Rosetta S/C and the mounting relationship of the instruments within the S/C 
+  (provided by ESA).                                                          
+                                                                              
+ - NAVCAM_INST.CAT: Contains PDS instrument catalogue information about the   
+ instrument (likely to be the same in all deliveries, unless updates are      
+ needed).                                                                     
+                                                                              
+ - DATASET.CAT: Contains PDS dataset catalogue information about the dataset
+  currently being submitted.                                                  
+                                                                              
+ - REF.CAT: PDS reference catalogue information about every journal article,  
+ book or other published reference mentioned in the above catalogue objects or
+ their components.                                                            
+                                                                              
+ - SOFTWARE.CAT: PDS software catalogue information about the software        
+ submitted in the dataset.                                                   
+                                                                              
+ - TARGET.CAT: Contains PDS target catalogue information about the observation
+ targets, i.e. comet, asteroid, Earth or Mars (provided by ESA).              
+                                                                              
+ - NAVCAM PERS.CAT: Contains PDS personnel catalogue information about the    
+ instrument team responsible for generating the data products.                
+                                                                              
+It should be noted here that the last two  files are optional and may not be  
+found in the volume.                                                          
+                                                                              
+DATA Directory                                                                
+                                                                              
+This directory contains one or two sub-directories (CAM1 and/or CAM2) with the
+data products in the form of binary files (*.IMG) and FITS-format (*.FIT)     
+files, each with a corresponding detached *.LBL (label) file.                 
+                                                                              
+DOCUMENT Directory                                                            
+                                                                              
+Included here is a copy of all the documentation relative to the data         
+production and the volume as a whole, specific files are:                     
+                                                                              
+ - DOCINFO.TXT: A description of the contents of the document directory.      
+                                                                              
+ - RO-SGS-IF-0001.PDF: The EAICD (this document) for the NavCam instrument.   
+                                                                              
+ - RO-SGS-IF-0001.TXT: The ASCII version of the above file.                   
+                                                                              
+ - RO-SGS-IF-0001.LBL: The label of the above files.                          
+
+EXTRAS Directory
+
+This directory contains one or two sub-directories (CAM1 and/or CAM2) with the 
+data products in the form of FITS-format (*.FIT) files with a corresponding 
+detached *.LBL (label) file.
+                                                                              
+INDEX Directory                                                               
+                                                                              
+Contains index files which summarise all of the data products in the volume by
+mode, key instrument parameters or mission phase. Particular files include:   
+                                                                              
+ - INDXINFO.TXT: A description of the contents of the directory.              
+                                                                              
+ - INDEX.LBL: The detached label file for the file INDEX.TAB. The INDEX TABLE 
+ specific object should be used to identify and describe the columns of the   
+ index table.                                                                 
+                                                                              
+ - INDEX.TAB: Includes the index of the volume in a tabular format.           
+                                                                              
+ - BROWSE INDEX.LBL: The detached label for BROWSE INDEX.TAB.                 
+                                                                              
+ - BROWSE INDEX.TAB: This file includes an index of the browse products in    
+ tabular format.                                                              
+                                                                              
+6  Product File Content                                                       
+                                                                              
+According to the PDS formatting standard, each data product must be           
+accompanied by a descriptive *.LBL to describe the content. For the NavCam    
+these label files shall be in the detached form and will appear as separate   
+files (see Section 4.1.2). The image data are provided in binary as well as in
+a FITS format version. There are separate label files for each of them. The 
+product file versions in binary format with their PDS format label files are 
+stored in the DATA directory, whereas the FITS format image files and their 
+label files are contained in the EXTRAS directory.     
+                                                                              
+6.1  Content of *.LBL Files                                                   
+                                                                              
+The following shall remain true for all label files in all volumes for the    
+Rosetta NavCam:                                                               
+                                                                              
+ - The format follows PDS standards for formatting and character usage.       
+                                                                              
+ - The labels shall use only valid keywords that appear in both the PDS and   
+ PSA dictionaries.                                                            
+                                                                              
+ - The character set used shall be that of ASCII 7 bit; specifically          
+ characters within and including the code range 001 to 127.                   
+                                                                              
+ - The characters <CR> and <LF> shall be used and shall be present at the end 
+ of each line of every label file.                                            
+                                                                              
+ - Each label file shall not exceed a maximum 80-character limit; including   
+ the <CR> <LF> characters.                                                    
+                                                                              
+ - Every line that is less than the permitted 80 character maximum shall be   
+ padded out to be of a length equal to 80.                                    
+                                                                              
+Table 13 provides the list of keywords used in label files within the NavCam  
+volumes. Table 14 contains Rosetta mission specific dictionary entries.       
+                                                                              
+Table 13: Keywords used in the label files.                                   
+                                                                              
+Keyword                           | Max.   | Value(s)                         
+                                  | Length |                                  
+PDS_VERSION_ID                    | 6      | PDS3                             
+FILE_NAME                         | N/A    | filename                         
+RECORD_TYPE                       | 20     | FIXED_LENGTH                     
+RECORD_BYTES                      | N/A    | bytes per image line (binary)    
+FILE_RECORDS                      | N/A    | number of image lines (binary)   
+INTERCHANGE FORMAT                | 6      | BINARY or FITS                   
+DATA_SET_ID                       | 40     | see Section 4.1.1                
+DATA_SET_NAME                     | 60     | see Section 5.2                  
+PRODUCT_ID                        | 40     | filename without extension       
+PRODUCT_CREATION_TIME             | 24     | YYYY-MM-DDThh:mm:ss.fff          
+PRODUCT_TYPE                      | 30     | EDR                              
+PROCESSING_LEVEL_ID               | N/A    | "2"                              
+IMAGE_TIME                        | 24     | YYYY-MM-DDThh:mm:ss.fff          
+START_TIME                        | 24     | YYYY-MM-DDThh:mm:ss.fff          
+STOP_TIME                         | 24     | YYYY-MM-DDThh:mm:ss.fff          
+SPACECRAFT_CLOCK_START_COUNT      | 30     | see Section 4.1.4                
+SPACECRAFT_CLOCK_STOP_COUNT       | 30     | see Section 4.1.4                
+MISSION_ID                        | N/A    | ROSETTA                          
+MISSION_NAME                      | 60     | INTERNATIONAL ROSETTA MISSION    
+MISSION_PHASE_NAME                | 30     | see Table 8                      
+INSTRUMENT_HOST_ID                | 6      | RO                               
+INSTRUMENT_HOST_NAME              | 60     | ROSETTA-ORBITER                  
+TARGET_NAME                       | 120    | see Table 7                      
+TARGET_TYPE                       | 120    | see Table 7                      
+OBSERVATION_TYPE                  | 30     | see Section 4.4                  
+PRODUCER_ID                       | 20     | ESA-ESAC                         
+PRODUCER_FULL_NAME                | 60     | BERNHARD GEIGER                  
+PRODUCER_INSTITUTION_NAME         | 60     | EUROPEAN SPACE AGENCY ESAC       
+INSTRUMENT_ID                     | 12     | NAVCAM                           
+INSTRUMENT_NAME                   | 60     | NAVIGATION CAMERA                
+INSTRUMENT_TYPE                   | 30     | CCD CAMERA                       
+CHANNEL_ID                        | 4      | CAM1 or CAM2                     
+EXPOSURE_DURATION                 | N/A    | sss.fff <s>                      
+DATA_QUALITY_ID                   | 3      | 0 or 1                           
+DATA_QUALITY_DESC                 | N/A    | 0: Image complete, 1: Lines      
+                                  |        | missing                          
+INSTRUMENT_MODE_ID                | 20     | IMAGING or ASTEROID TRACKING     
+INSTRUMENT_MODE_DESC              | N/A    | Instrument operating mode        
+INSTRUMENT_TEMPERATURE            | N/A    | CCD and optics temperature       
+                                  |        | retrieved from HK TM             
+INSTRUMENT_TEMPERATURE_POINT      | 60     | ("CCD_T1","OPTICS_T7")           
+COORDINATE_SYSTEM_ID              | 30     | J2000                            
+SC_SUN_POSITION_VECTOR            | N/A    | vector from s/c to Sun in        
+                                  |        | J2000 coordinates                
+SC_TARGET_POSITION_VECTOR         | N/A    | vector from s/c to comet in      
+                                  |        | J2000 coordinates                
+SC_TARGET_VELOCITY_VECTOR         | N/A    | relative comet to s/c velocity   
+                                  |        | vector in J2000                  
+TARGET_CENTER_DISTANCE            | N/A    | distance between spacecraft and  
+                                  |        | comet                            
+SUB_SPACECRAFT_LATITUDE           | N/A    | latitude of the sub-spacecraft   
+                                  |        | point on the surface             
+SUB_SPACECRAFT_LONGITUDE          | N/A    | longitude of the sub-spacecraft  
+                                  |        | point on the surface             
+RIGHT_ASCENSION                   | N/A    | right ascension of boresight     
+                                  |        | direction (J2000)                
+DECLINATION                       | N/A    | declination of boresight         
+                                  |        | direction (J2000)                
+CELESTIAL_NORTH_CLOCK_ANGLE       | N/A    | direction of celestial North on  
+                                  |        | the image                        
+SOLAR_ELONGATION                  | N/A    | angle between boresight and Sun  
+                                  |        | directions                       
+NOTE                              | N/A    | list of SPICE kernels and        
+                                  |        | description of coordinate systems
+                                  |        | used.                            
+----------------------------------------------------------------------------- 
+                                                                              
+Table 14: Rosetta mission specific dictionary entries.                        
+                                                                              
+Keyword                                    | Value(s)                         
+                                                                              
+ROSETTA:CAM_ABSOLUTE_FRAME_NUMBER          | frame number since instrument    
+                                           | start-up                         
+ROSETTA:CAM_MODE_FRAME_NUMBER              | frame number in current mode     
+                                                                              
+ROSETTA:CAM_COVER_POSITION                 | FOC_NATT, FOC_ATT , or           
+                                           | DEFOC_NATT see p.5               
+ROSETTA:CAM_GAIN                           | LOW or HIGH, see p.6             
+ROSETTA:CAM_DATA_VALID                     | OK or NOT_OK, see p.16           
+ROSETTA:CAM_WINDOW_POS_ALONG_ROW           | see p.15                         
+ROSETTA:CAM_WINDOW_POS_ALONG_COL           | see p.15                         
+ROSETTA:CAM_MISSING_LINES                  | number of missing image          
+ROSETTA:PIPELINE_VERSION_ID                | version identifier of the data   
+                                           | processing pipeline              
+---------------------------------------------------------------------------   
+                                                                              
+The following is an example for the label file of one of the binary image     
+files in a dataset:                                                           
+
+PDS_VERSION_ID                 = PDS3                                         
+                                                                              
+/***      FILE CHARACTERISTICS                                            ***/
+FILE_NAME                      = "ROS_CAM1_20150328T193655.LBL"               
+RECORD_TYPE                    = FIXED_LENGTH                                 
+RECORD_BYTES                   = 2048                                         
+FILE_RECORDS                   = 1024                                         
+INTERCHANGE_FORMAT             = BINARY                                       
+                                                                              
+/***      POINTERS TO DATA OBJECTS                                        ***/
+^IMAGE                         = ("ROS_CAM1_20150328T193655.IMG",1)           
+                                                                              
+/***      IDENTIFICATION DATA ELEMENTS                                    ***/
+DATA_SET_ID                    = "RO-C-NAVCAM-2-ESC2-MTP014-V1.0"             
+DATA_SET_NAME      = "ROSETTA-ORBITER 67P NAVCAM 2 COMET ESCORT 2 MTP014 V1.0"
+PRODUCT_ID                     = "ROS_CAM1_20150328T193655"                   
+PRODUCT_CREATION_TIME          = 2015-08-06T14:16:35                          
+PRODUCT_TYPE                   = EDR                                          
+PROCESSING_LEVEL_ID            = "2"                                          
+IMAGE_TIME                     = 2015-03-28T19:36:55.585                      
+START_TIME                     = 2015-03-28T19:36:54.930                      
+STOP_TIME                      = 2015-03-28T19:36:56.240                      
+SPACECRAFT_CLOCK_START_COUNT   = "1/386192139.60769"                          
+SPACECRAFT_CLOCK_STOP_COUNT    = "1/386192141.15549"                          
+MISSION_ID                     = "ROSETTA"                                    
+MISSION_NAME                   = "INTERNATIONAL ROSETTA MISSION"              
+MISSION_PHASE_NAME             = "COMET ESCORT 2 MTP014"                      
+INSTRUMENT_HOST_ID             = RO                                           
+INSTRUMENT_HOST_NAME           = "ROSETTA-ORBITER"                            
+TARGET_NAME                    = "67P/CHURYUMOV-GERASIMENKO 1 (1969 R1)"      
+TARGET_TYPE                    = "COMET"                                      
+OBSERVATION_TYPE               = "NAVIGATION IMAGE"                           
+PRODUCER_ID                    = "ESA-ESAC"                                   
+PRODUCER_FULL_NAME             = "BERNHARD GEIGER"                            
+PRODUCER_INSTITUTION_NAME      = "EUROPEAN SPACE AGENCY-ESAC"                 
+                                                                              
+/***      INSTRUMENT RELATED PARAMETERS                                   ***/
+INSTRUMENT_ID                  = NAVCAM                                       
+INSTRUMENT_NAME                = "NAVIGATION CAMERA"                          
+INSTRUMENT_TYPE                = "CCD CAMERA"                                 
+CHANNEL_ID                     = "CAM1"                                       
+EXPOSURE_DURATION              =  1.31 <s>                                    
+DATA_QUALITY_ID                = "0"                                          
+DATA_QUALITY_DESC              = "0: Image Complete, 1: Lines Missing."       
+INSTRUMENT_MODE_ID             = "IMAGING"                                    
+INSTRUMENT_MODE_DESC           = "Instrument OPERATING MODE (from TM data)"   
+INSTRUMENT_TEMPERATURE         = (  -34.53 <degC>,   -0.86 <degC> )           
+INSTRUMENT_TEMPERATURE_POINT   = (       "CCD_T1",    "OPTICS_T7" )           
+                                                                              
+/***      ROSETTA MISSION SPECIFIC DATA DICTIONARY ENTRIES                ***/
+ROSETTA:CAM_ABSOLUTE_FRAME_NUMBER   = 309753                                  
+ROSETTA:CAM_MODE_FRAME_NUMBER       = 32                                      
+ROSETTA:CAM_COVER_POSITION          = FOC_ATT                                 
+ROSETTA:CAM_GAIN                    = HIGH                                    
+ROSETTA:CAM_DATA_VALID              = NOT_OK                                  
+ROSETTA:CAM_WINDOW_POS_ALONG_ROW    = 511                                     
+ROSETTA:CAM_WINDOW_POS_ALONG_COL    = 511                                     
+ROSETTA:CAM_MISSING_LINES           = 0                                       
+ROSETTA:PIPELINE_VERSION_ID         = "1.0.4"                                 
+                                                                              
+/***      SPACECRAFT POSITION AND POINTING (J2000)                        ***/
+COORDINATE_SYSTEM_ID           = J2000                                        
+SC_SUN_POSITION_VECTOR         = (  -268600658.434 <km>,                      
+                                      99882541.307 <km>,                      
+                                      81769242.381 <km>  )                    
+SC_TARGET_POSITION_VECTOR      = (          11.329 <km>,                      
+                                            16.166 <km>,                      
+                                           -23.128 <km>  )                    
+SC_TARGET_VELOCITY_VECTOR      = (           0.199 <m/s>,                     
+                                             0.996 <m/s>,                     
+                                            -0.487 <m/s> )                    
+TARGET_CENTER_DISTANCE         =      30.407 <km>                             
+SUB_SPACECRAFT_LATITUDE        =   24.019228 <deg>                            
+SUB_SPACECRAFT_LONGITUDE       =    1.007555 <deg>                            
+RIGHT_ASCENSION                =   53.516115 <deg>                            
+DECLINATION                    =  -51.549175 <deg>                            
+CELESTIAL_NORTH_CLOCK_ANGLE    =  271.453524 <deg>                            
+SOLAR_ELONGATION               =  112.365959 <deg>                            
+NOTE                           = "SPICE KERNELS USED:                         
+                                 NAIF0011.TLS                                 
+                                 ROS_150717_STEP.TSC                          
+                                 ROS_V24.TF                                   
+                                 RORB_DV_129_01_______00199.BSP               
+                                 RATT_DV_129_01_01____00199.BC                
+                                 CORB_DV_129_01_______00199.BSP               
+                                 CATT_DV_129_01_______00199.BC                
+                                 ROS_CHURYUMOV_V01.TF                         
+                                 DE405.BSP                                    
+The values of the keywords SC_SUN_POSITION_VECTOR, SC_TARGET_POSITION_VECTOR, 
+SC_TARGET_VELOCITY_VECTOR, CELESTIAL_NORTH_CLOCK_ANGLE, RIGHT_ASCENSION, and  
+DECLINATION are related to the equatorial J2000 inertial frame.               
+The values of SUB_SPACECRAFT_LATITUDE and SUB_SPACECRAFT_LONGITUDE refer to   
+the Cheops reference frame which is identical to the Flight Dynamics          
+body-fixed frame implicitly specified by the information provided in the      
+comet attitude file CATT.                                                     
+All values are computed for the time t = IMAGE_TIME. Distances are given in   
+<km>, velocities in <m/s>, and angles in <deg>."                              
+                                                                              
+/***      IMAGE DESCRIPTION                                               ***/
+OBJECT                         = IMAGE                                        
+   DERIVED_MAXIMUM             = 3552                                         
+   DERIVED_MINIMUM             = 229                                          
+   LINES                       = 1024                                         
+   LINE_SAMPLES                = 1024                                         
+   SAMPLE_TYPE                 = LSB_UNSIGNED_INTEGER                         
+   SAMPLE_BITS                 = 16                                           
+   SOURCE_SAMPLE_BITS          = 12                                           
+   SAMPLE_DISPLAY_DIRECTION    = "RIGHT"                                      
+   LINE_DISPLAY_DIRECTION      = "UP"                                         
+END_OBJECT                     = IMAGE                                        
+                                                                              
+END     
+                                                                          
+                                                                              
+6.2  Content of *.FIT File Header                                             
+                                                                              
+The labels for the FITS-format file versions contain identical                
+meta-information and only minor changes owing to the di erences of the image  
+file format. The *.FIT image files also contain meta-data in their header so  
+that the files can be used independently of the PDS dataset structure.        
+Astrometric registration information is included in the form of WCS keywords. 
+However, the geometric distortion (see Section 4.2.4) towards the edge of the 
+field of view is not modelled here. Table 15 shows the correspondence between 
+PDS and FITS keywords used in the label file and the header, respectively.    
+                                                                              
+Table 15: Correspondence between PDS and FITS keywords.                       
+                                                                              
+PDS Keyword                       |   FITS Keyword                            
+DATA_SET_ID                       | DATASET                                   
+PRODUCT_ID                        | OBS_ID                                    
+PRODUCT_CREATION_TIME             | DATE                                      
+PROCESSING_LEVEL_ID               | CODMAC                                    
+IMAGE_TIME                        | IMG-TIME                                  
+START_TIME                        | DATE-OBS                                  
+STOP_TIME                         | TIME-END                                  
+SPACECRAFT_CLOCK_START_COUNT      | SCLKSTAR                                  
+SPACECRAFT_CLOCK_STOP_COUNT       | SCLKSTOP                                  
+MISSION_PHASE_NAME                | MISSPHAS                                  
+INSTRUMENT_HOST_NAME              | part of INSTRUME                          
+TARGET_NAME                       | OBJECT                                    
+OBSERVATION_TYPE                  | OBS-TYPE                                  
+PRODUCER_FULL_NAME                | AUTHOR                                    
+PRODUCER_INSTITUTION_NAME         | ORIGIN                                    
+INSTRUMENT_NAME                   | part of INSTRUME                          
+CHANNEL_ID                        | part of INSTRUME                          
+EXPOSURE_DURATION                 | EXPTIME                                   
+INSTRUMENT_MODE_ID                | OBS_MODE                                  
+INSTRUMENT_TEMPERATURE            | CCDTEMP, OPTTEMP                          
+ROSETTA:CAM_ABSOLUTE_FRAME_NUMBER | ABSFRAME                                  
+ROSETTA:CAM_MODE_FRAME_NUMBER     | MODFRAME                                  
+ROSETTA:CAM_COVER_POSITION        | FILTER                                    
+ROSETTA:CAM_GAIN                  | GAIN                                      
+ROSETTA:CAM_DATA_VALID            | DATA_VAL                                  
+ROSETTA:CAM_WINDOW_POS_ALONG_ROW  | used in CRPIX1 (see note below)                           
+ROSETTA:CAM_WINDOW_POS_ALONG_COL  | used in CRPIX2 (see note below)                           
+ROSETTA:CAM_MISSING_LINES         | LINEMISS                                  
+ROSETTA:PIPELINE_VERSION_ID       | CONFIGUR                                  
+COORDINATE_SYSTEM_ID              | EQUINOX                                   
+SC_SUN_POSITION_VECTOR            | SC-SUN_X,SC-SUN_Y,SC-SUN_Z                
+SC_TARGET_POSITION_VECTOR         | SC-COM_X,SC-COM_Y,SC-COM_Z                
+SC_TARGET_VELOCITY_VECTOR         | SC-COMVX,SC-COMVY,SC-COMVZ                
+TARGET_CENTER_DISTANCE            | TARGDIST                                  
+SUB_SPACECRAFT_LATITUDE           | SSP_LAT                                   
+SUB_SPACECRAFT_LONGITUDE          | SSP_LON                                   
+RIGHT_ASCENSION                   | CRVAL1                                    
+DECLINATION                       | CRVAL2                                    
+CELESTIAL_NORTH_CLOCK_ANGLE       | implicit in CDx_y                         
+SOLAR_ELONGATION                  | SUNANGLE                                  
+NOTE                              | SP_KERNx                                  
+DERIVED_MAXIMUM                   | DATAMAX                                   
+DERIVED_MINIMUM                   | DATAMIN                                   
+LINES                             | NAXIS2                                    
+LINE_SAMPLES                      | NAXIS1                                    
+SAMPLE_BITS                       | BITPIX                                    
+SOURCE_SAMPLE_BITS                | determines SATURATE                       
+----------------------------------------------------------------------------- 
+
+Note: For the FITS-WCS keywords CRPIX1 and CRPIX2, respectively, the convention 
+is such that the counts start with 1.0 in the centre of the first row and column. 
+The coordinates of the centre of a full-frame image are therefore (512.5, 512.5).
+                                       
+7  Product File Content - Cruise Phase                                        
+                                                                              
+The datasets created and archived for the Rosetta cruise phase did not contain
+FITS-versions of the product files. In addition, the label files only         
+contained a reduced set of keywords. For reference Tables 16 and 17 are       
+maintained which summarise the available information as applicable in earlier 
+versions of this document.                                                    
+                                                                              
+Table 16: Keywords used in the label  files (Cruise Phase).                   
+                                                                              
+Keyword                   | Max.   |Value(s)                                  
+                          | Length |                                          
+PDS_VERSION_ID            |   6    | PDS3                                     
+FILE_NAME                 | N/A    | filename                                 
+RECORD_TYPE               | 20     | FIXED_LENGTH                             
+RECORD_BYTES              | N/A    | bytes per image line                     
+FILE_RECORDS              | N/A    | number of image lines                    
+INTERCHANGE FORMAT        | 6      | BINARY                                   
+DATA_SET_ID               | 40     | see Section 4.1.1                        
+DATA_SET_NAME             | 60     | see Section 5.2                          
+PRODUCT_ID                | 40     | filename without extension               
+PRODUCT_CREATION_TIME     | 24     | YYYY-MM-DDThh:mm:ss.fff                  
+PRODUCT_TYPE              | 30     | EDR                                      
+PROCESSING_LEVEL_ID       | N/A    | "2"                                      
+IMAGE_TIME                | 24     | YYYY-MM-DDThh:mm:ss.fff                  
+START_TIME                | 24     | YYYY-MM-DDThh:mm:ss.fff                  
+STOP_TIME                 | 24     | YYYY-MM-DDThh:mm:ss.fff                  
+SPACECRAFT_CLOCK_START    | 30     | see Section 4.1.4                        
+_COUNT                    |        |                                          
+SPACECRAFT_CLOCK_STOP     | 30     | see Section 4.1.4                        
+_COUNT                    |        |                                          
+MISSION_ID                | N/A    | ROSETTA                                  
+MISSION_NAME              | 60     | "INTERNATIONAL ROSETTA                   
+                          |        | MISSION"                                 
+INSTRUMENT_HOST_NAME      | 60     | "ROSETTA-ORBITER"                        
+INSTRUMENT_HOST_ID        | 6      | RO                                       
+TARGET_NAME               | 120    | see Table 7                              
+TARGET_TYPE               | 20     | see Table 7                              
+TARGET_DESC               | N/A    | text description of target               
+MISSION_PHASE_NAME        | 30     | see Table 8                              
+PRODUCER_INSTITUTION_NAME | 60     | "EUROPEAN SPACE AGENCY-ESAC"             
+PRODUCER_ID               | 20     | "ESA-ESAC"                               
+PRODUCER_FULL_NAME        | 60     | "BERNHARD GEIGER"                        
+NOTE                      | N/A    | list of SPICE kernels used               
+INSTRUMENT_ID             | 12     | NAVCAM                                   
+INSTRUMENT_NAME           | 60     | "NAVIGATION CAMERA"                      
+INSTRUMENT_TYPE           | 30     | "CCD CAMERA"                             
+CHANNEL_ID                | 4      |"CAM1" or "CAM2"                          
+EXPOSURE_DURATION         | N/A    | sss.fff <s>                              
+DATA_QUALITY_ID           | 3      | 0 or 1                                   
+DATA_QUALITY_DESC         | N/A    | "0:  Image Complete, 1: Lines Missing"   
+INSTRUMENT_MODE_ID        | 20     | "IMAGING" or "ASTEROID TRACKING"         
+INSTRUMENT_MODE_DESC      | N/A    | "Value of OPERATING MODE param. in TM    
+                          |        | data"                                    
+INSTRUMENT_TEMPERATURE    | N/A    | CCD and optics temperature re-           
+                          |        | trieved from HK TM                       
+INSTRUMENT_TEMPERATURE    | 60     | ("CCD_T1", "OPTICS_T7")                  
+_POINT                    |        |                                          
+SUN_POSITION_VECTOR       | N/A    | spacecraft position in                   
+                          |        | ECLIPJ2000 coordinates                   
+RIGHT_ASCENSION           | N/A    | right ascension of boresight direc-      
+                          |        | tion (J2000)                             
+DECLINATION               | N/A    | declination of boresight direction       
+                          |        |  (J2000)                                 
+----------------------------------------------------------------------------- 
+                                                                              
+Table 17: Rosetta mission specific dictionary entries (Cruise Phase).         
+                                                                              
+Keyword                             | Value(s)                                
+ROSETTA:CAM_ABSOLUTE_FRAME_NUMBER   |frame  number  since  instru-            
+                                    | ment start-up                           
+ROSETTA:CAM_MODE_FRAME_NUMBER       | frame  number  in  current              
+                                    | mode                                    
+ROSETTA:CAM_COVER_POSITION          | FOC_NATT, FOC_ATT , or DEFOC            
+                                    | _NATT, see p.5                          
+ROSETTA:CAM_GAIN                    | LOW or HIGH, see p.15                   
+ROSETTA:CAM_DATA_VALID              | OK or NOT OK, see p.16                  
+ROSETTA:CAM_WINDOW_POS_ALONG_ROW    | see p.15                                
+ROSETTA:CAM_WINDOW_POS_ALONG_COL    | see p.15                                
+ROSETTA:CAM_MISSING_LINES           | number  of  missing  image              
+                                    | lines, see p.16                         
+----------------------------------------------------------------------------- 
+                                                                              
+                                                                              
+The following is an example for the label  file of one of the images in a     
+cruise phase dataset:                                                         
+                                                                              
+PDS_VERSION_ID                 = PDS3                                         
+                                                                              
+/***      FILE CHARACTERISTICS                                            ***/
+FILE_NAME                      = "ROS_CAM1_20050304T121959.LBL"               
+RECORD_TYPE                    = FIXED_LENGTH                                 
+RECORD_BYTES                   = 1010                                         
+FILE_RECORDS                   = 505                                          
+INTERCHANGE_FORMAT             = BINARY                                       
+                                                                              
+/***      POINTERS TO DATA OBJECTS                                        ***/
+^IMAGE                         = ("ROS_CAM1_20050304T121959.IMG",1)           
+                                                                              
+/***      IDENTIFICATION DATA ELEMENTS                                    ***/
+DATA_SET_ID                    = "RO-E-NAVCAM-2-EAR1-V1.0"                    
+DATA_SET_NAME                  = "ROSETTA-ORBITER-EARTH-NAVCAM-2-EAR1-V1.0"   
+PRODUCT_ID                     = "ROS_CAM1_20050304T121959"                   
+PRODUCT_CREATION_TIME          = 2013-05-20T12:40:47                          
+PRODUCT_TYPE                   = EDR                                          
+PROCESSING_LEVEL_ID            = "2"                                          
+IMAGE_TIME                     = 2005-03-04T12:19:59.721                      
+START_TIME                     = 2005-03-04T12:19:59.635                      
+STOP_TIME                      = 2005-03-04T12:19:59.806                      
+SPACECRAFT_CLOCK_START_COUNT   = "1/68559580.16188"                           
+SPACECRAFT_CLOCK_STOP_COUNT    = "1/68559580.27329"                           
+MISSION_ID                     = "ROSETTA"                                    
+MISSION_NAME                   = "INTERNATIONAL ROSETTA MISSION"              
+INSTRUMENT_HOST_NAME           = "ROSETTA-ORBITER"                            
+INSTRUMENT_HOST_ID             = RO                                           
+TARGET_NAME                    = "MOON"                                       
+TARGET_TYPE                    = "SATELLITE"                                  
+TARGET_DESC                    = "N/A"                                        
+MISSION_PHASE_NAME             = "EARTH SWING-BY 1"                           
+PRODUCER_INSTITUTION_NAME      = "EUROPEAN SPACE AGENCY-ESAC"                 
+PRODUCER_ID                    = "ESA-ESAC"                                   
+PRODUCER_FULL_NAME             = "BERNHARD GEIGER"                            
+NOTE                           = "SPICE KERNELS USED:                         
+                                 NAIF0009.TLS                                 
+                                 ROS_100903_STEP.TSC                          
+                                 ORHR_______________00109.BSP                 
+                                 ROS_V16.TF                                   
+                                 ATNR_P040302093352_00109.BC"                 
+                                                                              
+/***      INSTRUMENT RELATED PARAMETERS                                   ***/
+INSTRUMENT_ID                  = NAVCAM                                       
+INSTRUMENT_NAME                = "NAVIGATION CAMERA"                          
+INSTRUMENT_TYPE                = "CCD CAMERA"                                 
+CHANNEL_ID                     = "CAM1"                                       
+EXPOSURE_DURATION              =  0.17 <s>                                    
+DATA_QUALITY_ID                = "0"                                          
+DATA_QUALITY_DESC              = "0: Image Complete, 1: Lines Missing."       
+INSTRUMENT_MODE_ID             = "ASTEROID TRACKING"                          
+INSTRUMENT_MODE_DESC           = "Value of OPERATING MODE param. in TM data"  
+INSTRUMENT_TEMPERATURE         = (  -26.96 <degC>,    2.80 <degC> )           
+INSTRUMENT_TEMPERATURE_POINT   = (       "CCD_T1",    "OPTICS_T7" )           
+                                                                              
+/***      ROSETTA MISSION SPECIFIC DATA DICTIONARY ENTRIES                ***/
+ROSETTA:CAM_ABSOLUTE_FRAME_NUMBER   = 1040                                    
+ROSETTA:CAM_MODE_FRAME_NUMBER       = 120                                     
+ROSETTA:CAM_COVER_POSITION          = FOC_ATT                                 
+ROSETTA:CAM_GAIN                    = LOW                                     
+ROSETTA:CAM_DATA_VALID              = NOT_OK                                  
+ROSETTA:CAM_WINDOW_POS_ALONG_ROW    = 511                                     
+ROSETTA:CAM_WINDOW_POS_ALONG_COL    = 511                                     
+ROSETTA:CAM_MISSING_LINES           = 0                                       
+                                                                              
+/***   SPACECRAFT POSITION (ECLIPJ2000) AND INSTRUMENT POINTING (J2000)   ***/
+SC_SUN_POSITION_VECTOR         = (  -142749814.88 <km>,                       
+                                      41057152.20 <km>,                       
+                                         -5491.19 <km>  )                     
+RIGHT_ASCENSION                =  19.272287 <h>                               
+DECLINATION                    = -25.560962 <deg>                             
+                                                                              
+/***      IMAGE DESCRIPTION                                               ***/
+OBJECT                         = IMAGE                                        
+   DERIVED_MAXIMUM             = 2801                                         
+   DERIVED_MINIMUM             = 177                                          
+   LINES                       = 505                                          
+   LINE_SAMPLES                = 505                                          
+   SAMPLE_TYPE                 = LSB_UNSIGNED_INTEGER                         
+   SAMPLE_BITS                 = 16                                           
+   SOURCE_SAMPLE_BITS          = 12                                           
+   SAMPLE_DISPLAY_DIRECTION    = "RIGHT"                                      
+   LINE_DISPLAY_DIRECTION      = "UP"                                         
+END_OBJECT                     = IMAGE                                        
+                                                                              
+END                                                                           
