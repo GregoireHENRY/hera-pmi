@@ -1,0 +1,14 @@
+drwxr-xr-x    2 5749     5749         4096 Sep 10 08:10 .
+drwxr-xr-x   10 5749     5749         4096 Sep 10 08:10 ..
+-rw-r--r--    1 5749     5749         2796 Mar 02  2019 hera_dsk_surfaces_v00.tf
+-rw-r--r--    1 5749     5749         3092 Jun 13 14:37 hera_dsk_surfaces_v01.tf
+-rw-r--r--    1 5749     5749         3324 Sep 10 08:10 hera_dsk_surfaces_v02.tf
+-rw-r--r--    1 5749     5749         9038 Mar 02  2019 hera_ops_v00.tf
+-rw-r--r--    1 5749     5749         9028 Sep 10 08:10 hera_ops_v01.tf
+-rw-r--r--    1 5749     5749         3834 Sep 10 08:10 hera_sc_didymain_npo_v01.tf
+-rw-r--r--    1 5749     5749         3890 Jan 22  2019 hera_sc_didymos_npo_v00.tf
+-rw-r--r--    1 5749     5749         2201 Jan 22  2019 hera_v00.tf
+-rw-r--r--    1 5749     5749        22937 Jan 19  2019 hera_v01.tf
+-rw-r--r--    1 5749     5749        27712 Jan 22  2019 hera_v02.tf
+-rw-r--r--    1 5749     5749        30376 Mar 04  2019 hera_v03.tf
+-rw-r--r--    1 5749     5749        42756 Sep 10 08:10 hera_v04.tf

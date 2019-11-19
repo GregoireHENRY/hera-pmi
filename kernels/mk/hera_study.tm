@@ -1,6 +1,6 @@
 KPL/MK
 
-Meta-kernel for HERA Dataset v050 -- Studies 20190909_001
+Meta-kernel for HERA Dataset v051 -- Studies 20190920_001
 ==========================================================================
 
    This meta-kernel lists the hera Studies SPICE kernels
@@ -38,12 +38,12 @@ Implementation Notes
 
 -------------------
 
-   This file was created on September 9, 2019 by Marc Costa Sitja ESA/ESAC.
+   This file was created on September 20, 2019 by Marc Costa Sitja ESA/ESAC.
 
 
    \begindata
 
-     PATH_VALUES       = ( 'D:\Projects\rob\hera\kernels' )
+     PATH_VALUES       = ( '/home/greg/hera/kernels' )
 
      PATH_SYMBOLS      = ( 'KERNELS' )
 
@@ -97,7 +97,7 @@ SPICE Kernel Dataset Version
 
    \begindata
 
-      SKD_VERSION = 'v050_20190909_001'
+      SKD_VERSION = 'v051_20190920_001'
 
    \begintext
 

@@ -11,8 +11,8 @@ do_print   = 0;
 do_save    = 0;
 p          = 11.92*3600;
 day        = 86400;
-timesetup  = {'2027-JUN-4 00:00:00' '2027-JUN-06 12:00:00' 100};
-path       = 'D:/Projects/rob/hera/kernels/';
+timesetup  = {'2027-FEB-25 08:18' '2027-MAR-28 08:15' 60};
+path       = '../kernels/';
 
 %
 % HERA:      -999
@@ -50,16 +50,17 @@ METHOD    = 'NEAR POINT/ELLIPSOID';
 CORR      = 'NONE';
 
 % COMPUTE
-fprintf('Computing..\t\t'); tic;
+fprintf('Computing..\t'); tic;
 if (do_compute)
 [utc0,utcf] = fromto(timesetup{1}, timesetup{2});
-t    = (et-et(1))/day;
-r1   = cspice_spkpos(OBJ1, et, FRAMESAT, CORR, SAT);
-r2   = cspice_spkpos(OBJ2, et, FRAMESAT, CORR, SAT);
-ang1 = cspice_angvec2(SUN, SAT, et, FRAME1, CORR, OBJ1);
-ang2 = cspice_angvec2(SUN, SAT, et, FRAME2, CORR, OBJ2);
-fov1 = cspice_fovtrg(INSTR, OBJ1, SHAPE2, FRAME1, CORR, SAT, et);
-fov2 = cspice_fovtrg(INSTR, OBJ2, SHAPE2, FRAME2, CORR, SAT, et);
+t     = (et-et(1))/day;
+r1    = cspice_spkpos(OBJ1, et, FRAMESAT, CORR, SAT);
+r2    = cspice_spkpos(OBJ2, et, FRAMESAT, CORR, SAT);
+ang1  = cspice_angvec2(SUN, SAT, et, FRAME1, CORR, OBJ1);
+ang2  = cspice_angvec2(SUN, SAT, et, FRAME2, CORR, OBJ2);
+fov1  = cspice_fovtrg(INSTR, OBJ1, SHAPE2, FRAME1, CORR, SAT, et);
+fov2  = cspice_fovtrg(INSTR, OBJ2, SHAPE2, FRAME2, CORR, SAT, et);
+shdw2 = cspice_occult(OBJ2,SHAPE1,FRAME2,OBJ1,SHAPE2,FRAME1,CORR,SAT,et);
 d1=sqrt(sum(r1.^2)); d2=sqrt(sum(r2.^2));
 r1=r1*1e3; r2=r2*1e3;
 end; toc;
@@ -89,14 +90,14 @@ movegui([2000, 400]);
 end; toc;
 
 % PRINT
-fprintf('Printing..\t\t'); tic;
+fprintf('Printing..\t'); tic;
 if (do_print)
 imgname = sprintf('images/didymoon_data_from%sto%s.png',utc0,utcf);
 print(gcf, imgname, '-dpng','-r600');
 end; toc;
 
 % SAVE
-fprintf('Saving..\t\t'); tic;
+fprintf('Saving..\t'); tic;
 save('et','et');
 if (do_save)
 r=r2; d=d2; ang=ang2; fov=fov2;

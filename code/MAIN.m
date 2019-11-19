@@ -1,7 +1,7 @@
 function MAIN()
 
 % Parameters
-model   = 'ground';
+model   = 'delbo';
 savefig = 0;
 
 % Simulation
@@ -9,8 +9,8 @@ sets = SETTINGS(model);
 
 ind=1:1;
 for ii=ind
-    if (ii==1), preload=0; 
-    else, preload=1; 
+    if (ii==1), preload=0;
+    else, preload=1;
     end
     
     args = SETARGS(preload, sets);

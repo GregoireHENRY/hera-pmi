@@ -31,29 +31,29 @@ function sets = SETTINGS(model)
 % p: 11.92h
 % gamma: 500
 % dau: 1.074, 1.574, 2.073
-% dsph: 5°
-% obl: 162°
+% dsph: 5ï¿½
+% obl: 162ï¿½
 %
 % delbo
 % -----
 % p: 6h
-% gamma: 10, 100, 1000, 10000
-% dt: 0.05, 4, 30, 100 (change dt in t settings according to gamma)
+% gamma: 10,   50, 100, 200
+% dt:    0.05, 1,  4,   30   (change dt in t settings according to gamma)
 % dau: 1.1
 % A: 0.1
-% obl: 0°
+% obl: 0ï¿½
 %
 % ground
 % ------
-% obl: 0°
+% obl: 0ï¿½
 
 % Settings
 p     = 11.92*3600;
-dt    = 30;
+dt    = 0.05;
 tf    = 20*p;
 t     = 0:dt:tf;
-dau   = 1.6;
-gamma = 500;
+dau   = 1.7557;
+gamma = 30;
 rho   = 2147;
 cp    = 600;
 A     = 0.07;
@@ -76,7 +76,7 @@ elseif (strcmp(model, 'ground'))
 elseif (strcmp(model,'contour'))
 else, error('model %s not recognized', model);
 end
-obl     = 162*pi/180;
+obl     = 0*pi/180;
 
 sets = struct( ...
     'p',       p,       ...

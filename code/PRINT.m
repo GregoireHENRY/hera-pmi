@@ -74,28 +74,22 @@ if (savefig), fprintf('saving as png.. ');
 end
 
 elseif (strcmp(model, 'delbo'))
-load(sprintf('yq_v6_g%d.mat',sets.gamma),'yq');
-tp = linspace(0,6,numel(yq));
+%load(sprintf('yq_v6_g%d.mat',sets.gamma),'yq');
+tp = linspace(0,11.92,100);
 indi = floor(linspace(1,size(u,2),numel(tp)));
 u = u(indi);
 close all;
-subplot 211;
 hold on; grid on; box on;
-xlim([0 6]); ylim([80 400]); xticks(0:1:6); yticks(0:20:400);
+xlim([0 11.92]); ylim([80 400]); xticks(0:1:11.92); yticks(0:20:400);
 xlabel('Time [h]'); ylabel('Temperature [K]');
-plot(tp,u,'-','color',color{1},'DisplayName',sprintf("%d",sets.gamma));
-plot(tp,yq,'--','color',color{1},'DisplayName',sprintf("%d",sets.gamma));
-legend('Location', 'bestoutside'); set(gca,'layer','top');
-subplot 212;
-hold on; grid on; box;
-xlim([0 6]); ylim([0 16]); xticks(0:1:6); yticks(0:2:16);
-xlabel('Time [h]'); ylabel('Temperature [K]');
-plot(tp,abs(u-yq),'-o','markersize',2,'color',color{1},...
-     'DisplayName',sprintf("%d", sets.gamma));
+plot(tp,u,'-','color','k','DisplayName',sprintf("%d",sets.gamma));
 legend('Location', 'bestoutside'); set(gca,'layer','top');
 imgname = sprintf('images/temperature_equator_gamma_%d.png',sets.gamma);
+if (1)
+save(sprintf('u_r%.4f_g%d.mat', sets.dau, sets.gamma),'u');
+end
 if (savefig), fprintf('saving as png.. ');
-    print(gcf,imgname,'-dpng','-r600');
+print(gcf,imgname,'-dpng','-r600');
 end
 
 elseif (strcmp(model, 'ground'))
