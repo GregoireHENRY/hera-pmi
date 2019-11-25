@@ -11,7 +11,7 @@ do_print   = 0;
 do_save    = 0;
 p          = 11.92*3600;
 day        = 86400;
-timesetup  = {'2027-FEB-25 08:18' '2027-MAR-28 08:15' 60};
+timesetup  = {'2027-APR-25 08:18' '2027-JUN-24 08:15' 60};
 path       = '../kernels/';
 
 %

@@ -43,7 +43,7 @@ Implementation Notes
 
    \begindata
 
-     PATH_VALUES       = ( '..' )
+     PATH_VALUES       = ( '/home/greg/hera/kernels' )
 
      PATH_SYMBOLS      = ( 'KERNELS' )
 

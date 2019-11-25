@@ -12,7 +12,7 @@ do_save    = 1;
 p          = 6*3600;
 day        = 86400;
 timesetup  = {'2027-FEB-28 08:15:00' '2027-MAR-04 08:15:00' 60};
-path       = 'D:/Projects/rob/hera/kernels/';
+path       = '/home/greg/hera/kernels/';
 
 %
 % HERA:      -999

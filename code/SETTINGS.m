@@ -37,8 +37,8 @@ function sets = SETTINGS(model)
 % delbo
 % -----
 % p: 6h
-% gamma: 10,   50, 100, 200
-% dt:    0.05, 1,  4,   30   (change dt in t settings according to gamma)
+% gamma:    10, 50, 100, >200
+% dt:     0.05,  1,   4,   30   (change dt in t settings according to gamma)
 % dau: 1.1
 % A: 0.1
 % obl: 0�
@@ -49,11 +49,11 @@ function sets = SETTINGS(model)
 
 % Settings
 p     = 11.92*3600;
-dt    = 0.05;
+dt    = 30;
 tf    = 20*p;
 t     = 0:dt:tf;
 dau   = 1.7557;
-gamma = 30;
+gamma = 500;
 rho   = 2147;
 cp    = 600;
 A     = 0.07;

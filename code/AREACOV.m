@@ -13,10 +13,10 @@ do_print   = 0;
 do_save    = 0;
 p          = 11.92*3600;
 day        = 86400;
-nt         = 3;
+nt         = 5;
 timedur    = 0.833;
 timeinit   = {'2027-JUN-05 02:40:00'};
-path       = 'D:/Projects/rob/hera/kernels/';
+path       = '../kernels/';
 
 %
 % HERA:      -999
@@ -114,7 +114,7 @@ xlabel('Longitude [deg]'); ylabel('Latitude [deg]');
 contourf(Lo,La,vw,level,'showtext','on','linestyle','none');
 colormap gray; colorbar; caxis([0 maxvw]);
 title(sprintf('DIDYMOON visible area wrt HERA on %s',timestr));
-movegui([1920 550]);
+%movegui([1920 550]);
 end; toc;
 
 % PRINT

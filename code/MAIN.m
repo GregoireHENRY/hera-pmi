@@ -1,7 +1,7 @@
 function MAIN()
 
 % Parameters
-model   = 'delbo';
+model   = 'contour';
 savefig = 0;
 
 % Simulation

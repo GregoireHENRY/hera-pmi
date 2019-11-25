@@ -11,7 +11,7 @@ do_print   = 0;
 do_save    = 0;
 p          = 11.92*3600;
 day        = 86400;
-timesetup  = {'2027-JUN-05 4:30'}; %JUN-05 02:30/35/40 03:
+timesetup  = {'2027-JUN-05 06:00'}; %JUN-05 02:30/35/40 03:
 path       = '/home/greg/hera/kernels/';
 
 %

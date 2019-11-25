@@ -146,8 +146,8 @@ FOV Definitions
          INS-999200_FOV_SHAPE          = 'RECTANGLE'
          INS-999200_FOV_CLASS_SPEC     = 'ANGLES'
          INS-999200_FOV_REF_VECTOR     = ( 1.0, 0.0, 0.0    )
-         INS-999200_FOV_REF_ANGLE      = ( 4.9              )
-         INS-999200_FOV_CROSS_ANGLE    = ( 3.7              )
+         INS-999200_FOV_REF_ANGLE      = ( 3.695            )
+         INS-999200_FOV_CROSS_ANGLE    = ( 2.67             )
          INS-999200_FOV_ANGLE_UNITS    = 'DEGREES'
 
       \begintext
