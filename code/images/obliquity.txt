@@ -1,0 +1,5 @@
+obliquity1.png: 10/02 00:00 ECP     20 km
+obliquity2.png: 18/02 12:30 ECP     30 km
+obliquity3.png: 12/03 00:00 DCP1    22 km
+obliquity4.png: 16/03 12:00 DCP1    10 km
+obliquity5.png: 05/06 05:00 DCP3CVF  1 km
