@@ -8,8 +8,8 @@ function x = NEWTON(x0, args, err)
 %                Q    - flux-in
 %                u_p1 - temperature value one point deeper in the ground
 %                u_p2 - temperature value two points deeper in the ground
-%                c2    - flux-out constant: emi*SfBoltz
-%                c3    - newton function constant: k/(2*dx)
+%                c3    - flux-out constant: emi*SfBoltz
+%                c4    - newton function constant: k/(2*dx)
 %     err  - next value error threshold
 %
 % Outputs

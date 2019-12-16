@@ -1,0 +1,6 @@
+function m = mrotv3(vec, ang)
+
+C = [      0 -vec(3)  vec(2); ...
+      vec(3)       0 -vec(1); ...
+     -vec(2)  vec(1)       0];
+m = eye(3) + C*sin(ang) + C^2*2*sin(ang/2)^2;

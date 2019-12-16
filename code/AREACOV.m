@@ -5,17 +5,17 @@ clear; cspice_kclear;
 % =========================================================================
 % 
 
-%JUN-05 02:30/35/40 03:00
-%FEB-05 03:00
 do_compute = 1;
 do_display = 1;
 do_print   = 0;
 do_save    = 0;
 p          = 11.92*3600;
 day        = 86400;
-nt         = 5;
-timedur    = 0.833;
-timeinit   = {'2027-JUN-05 02:40:00'};
+nt         = 1;
+timedur    = 4.33;
+timeinit   = { ...
+    '2027-JUN-05 2:50'...
+};
 path       = '../kernels/';
 
 %
@@ -39,60 +39,58 @@ end
 cspice_furnsh([path 'mk/' 'hera_study.tm'])
 et = setup_et('utc single', timeinit);
 
-SUN       = 'SUN';
-INSTR     = 'HERA_AFC-1';
+%SUN       = 'SUN';
+INSTR     = 'HERA_TIRA';
 SAT       = 'HERA';
-OBJ1      = 'DIDYMAIN';
+%OBJ1      = 'DIDYMAIN';
 OBJ2      = 'DIDYMOON';
-J2000     = 'J2000';
-FRAMESAT  = 'HERA_DIDYMAIN_NPO';
-FRAME1    = 'DIDYMAIN_FIXED';
+%J2000     = 'J2000';
+%FRAMESAT  = 'HERA_DIDYMAIN_NPO';
+%FRAME1    = 'DIDYMAIN_FIXED';
 FRAME2    = 'DIDYMOON_FIXED';
-SHAPE1    = 'POINT';
+%SHAPE1    = 'POINT';
 SHAPE2    = 'ELLIPSOID';
-METHOD    = 'NEAR POINT/ELLIPSOID';
+%METHOD    = 'NEAR POINT/ELLIPSOID';
 CORR      = 'NONE';
 
 % COMPUTE
-fprintf('Computing..\t\t'); tic;
+fprintf('Computing..\t'); tic;
 if (do_compute)
-timestr = timeinit{1}(1:11);
-timeint = 0:(timedur/(nt+1)):timedur;
-et = et + timeint(2:end-1)*3600;
-t = et-et(1);
-r2   = cspice_spkpos(SAT,et,FRAME2,CORR,OBJ2);  r2   = r2*1e3;
-rd   = cspice_spkpos(OBJ1,et,FRAME2,CORR,OBJ2); rd   = rd*1e3;
-r1   = cspice_spkpos(SAT,et,FRAME1,CORR,OBJ1);  r1   = r1*1e3;
-ang  = cspice_angvec2(SUN,SAT,et,FRAME2,CORR,OBJ2);
-fov  = cspice_fovtrg(INSTR,OBJ2,SHAPE1,FRAME2,CORR,SAT,et);
-shdw = cspice_occult(OBJ2,SHAPE1,FRAME2,OBJ1,SHAPE2,FRAME1,CORR,SAT,et);
-d1   = sqrt(sum(r1.^2));
-d2   = sqrt(sum(r2.^2));
+%timestr = timeinit{1}(1:11);
+%if (nt ~= 1)
+%    timeint = 0:(timedur/(nt+1)):timedur;
+%    et = et + timeint(2:end-1)*3600;
+%end
+%t = et-et(1);
+r2 = cspice_spkpos(SAT,et,FRAME2,CORR,OBJ2); r2 = r2 * 1e3;
+%shdw = cspice_occult(OBJ2,SHAPE1,FRAME2,OBJ1,SHAPE2,FRAME1,CORR,SAT,et);
+d2 = my_norm(r2);
 
-R    = 80;
-dnlo = 5;
+fac=1;
+radix = 80.456*fac;
+radiy = 63.18*fac;
+radiz = 63.18*fac;
+dnlo = 2;
 nlo  = ceil((359-0)/dnlo);
 lo   = linspace(0,359,nlo)*pi/180;
 la   = linspace(-90,90,nlo)*pi/180;
 np   = nlo^2;
 vw   = zeros(1,np);
-for ii = 1:nt
+%for ii = 1:nt
     for jj = 1:nlo
         for kk = 1:nlo
             hh=nlo*(jj-1)+kk;
-            [x,y,z]=sph2cart(lo(jj),la(kk),R);
-            pt=[x;y;z];
-            ptn=pt./R;
-            ray=pt-r2(:,ii);
-            rayd=sqrt(sum(ray.^2));
-            rayn=ray./rayd;
+            [x,y,z]=sph2cart(lo(jj),la(kk),1);
+            pt=[x*radix; y*radiy; z*radiz];
+            ptn=unit(pt);
+            rayn=unit(pt-r2);
             costh=sum(-rayn.*ptn);
-            if (costh>0  && shdw(ii)>=0)
-                vw(hh)=vw(hh)+cspice_fovray(INSTR,ray,FRAME2,CORR,SAT,et(ii));
+            if (costh>=0)% && shdw(ii)>=0)
+                vw(hh)=cspice_fovray(INSTR,rayn,FRAME2,CORR,SAT,et);
             end
         end
     end
-end
+%end
 
 lo=lo*180/pi;
 la=la*180/pi;
@@ -113,19 +111,19 @@ level = 0:1:maxvw;
 xlabel('Longitude [deg]'); ylabel('Latitude [deg]');
 contourf(Lo,La,vw,level,'showtext','on','linestyle','none');
 colormap gray; colorbar; caxis([0 maxvw]);
-title(sprintf('DIDYMOON visible area wrt HERA on %s',timestr));
+%title(sprintf('DIDYMOON visible area wrt HERA on %s',timestr));
 %movegui([1920 550]);
 end; toc;
 
 % PRINT
-fprintf('Printing..\t\t'); tic;
-if (do_print)
-imgname = sprintf('images/didymoon_visible_area_on%s_00%d.png',timestr,nt);
-print(gcf, imgname, '-dpng','-r600');
-end; toc;
+%fprintf('Printing..\t'); tic;
+%if (do_print)
+%imgname = sprintf('images/didymoon_visible_area_on%s_00%d.png',timestr,nt);
+%print(gcf, imgname, '-dpng','-r600');
+%end; toc;
 
 % SAVE
-fprintf('Saving..\t\t'); tic;
+fprintf('Saving..\t'); tic;
 save('et','et');
 if (do_save)
 varsave = { ...

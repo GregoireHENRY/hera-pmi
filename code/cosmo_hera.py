@@ -2,7 +2,7 @@ import cosmoscripting
 
 do_load = True
 catalog_dir = '/home/greg/hera/cosmo/'
-catalog_files = ['load_hera_001.json', 'sensor_HERA_AFC-1-DIDYMOS.json']
+catalog_files = ['load_hera_001.json', 'sensor_HERA_TIRA-DIDYMOON.json']
 far_view = [0, 0, 0.21]
 near_view = [0, 0, 16.5]
 time_rate = 60 * 60

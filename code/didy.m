@@ -123,4 +123,4 @@ xlabel('Longitude [deg]'); ylabel('Latitude [deg]');
 colormap jet; caxis([0 400]);
 clabel(C,h,'FontSize',8,'FontSmoothing','on');
 title(sprintf('\n1.7 AU - %s=500\n', '\Gamma'));
-if (1), print(gcf,imgname,'-dpng','-r600'); end
+if (0), print(gcf,imgname,'-dpng','-r600'); end
