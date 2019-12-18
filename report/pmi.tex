@@ -1,0 +1,27 @@
+\documentclass[twoside, twocolumn]{article}
+\usepackage{import}
+\usepackage{packages}
+
+\begin{document}
+
+\import{src/}{titlepage.tex}
+\twocolumn[
+    \begin{@twocolumnfalse}
+    \import{src/}{abstract.tex}
+    \vspace{1cm}
+    \end{@twocolumnfalse}
+]
+
+\import{src/}{intro.tex}
+\import{src/}{currentwork.tex}
+\import{src/}{objectives.tex}
+\import{src/}{objectif01.tex}
+\import{src/}{objectif02.tex}
+\import{src/}{objectif03.tex}
+\import{src/}{objectif04.tex}
+\import{src/}{objectif05.tex}
+\import{src/}{furtherworks.tex}
+
+\nocite{*}\printbibliography[heading=bibintoc, title={References}]
+
+\end{document}
