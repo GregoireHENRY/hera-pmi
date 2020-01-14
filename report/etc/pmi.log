@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  19 DEC 2019 14:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  10 JAN 2020 14:30
 entering extended mode
 **./pmi.tex
 (pmi.tex
@@ -414,6 +414,97 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 )
 (/home/greg/.miktex/texmfs/install/tex/latex/import/import.sty
 Package: import 2009/03/23  v 5.1
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2019/07/31 v1.22 mathematical typesetting tools
+
+(/home/greg/.miktex/texmfs/install/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count290
+\calc@Bcount=\count291
+\calc@Adimen=\dimen120
+\calc@Bdimen=\dimen121
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count292
+\calc@Cskip=\skip67
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2019/04/01 v2.17c AMS math features
+\@mathmargin=\skip68
+
+For additional information on amsmath, use the `?' option.
+(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen122
+))
+(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen123
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count293
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count294
+\leftroot@=\count295
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count296
+\DOTSCASE@=\count297
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen124
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count298
+\c@MaxMatrixCols=\count299
+\dotsspace@=\muskip15
+\c@parentequation=\count300
+\dspbrk@lvl=\count301
+\tag@help=\toks20
+\row@=\count302
+\column@=\count303
+\maxfields@=\count304
+\andhelp@=\toks21
+\eqnshift@=\dimen125
+\alignsep@=\dimen126
+\tagshift@=\dimen127
+\tagwidth@=\dimen128
+\totwidth@=\dimen129
+\lineht@=\dimen130
+\@envbody=\toks22
+\multlinegap=\skip69
+\multlinetaggap=\skip70
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count305
+\l_MT_multwidth_dim=\dimen131
+\origjot=\skip71
+\l_MT_shortvdotswithinadjustabove_dim=\dimen132
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen133
+\l_MT_above_intertext_sep=\dimen134
+\l_MT_below_intertext_sep=\dimen135
+\l_MT_above_shortintertext_sep=\dimen136
+\l_MT_below_shortintertext_sep=\dimen137
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
@@ -493,17 +584,17 @@ Package biblatex Info: Reference segment=0 on input line 4.
 
 (/home/greg/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen120
-\scratchbox=\box27
-\nofMPsegments=\count291
-\nofMParguments=\count292
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen121
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count306
+\scratchdimen=\dimen138
+\scratchbox=\box29
+\nofMPsegments=\count307
+\nofMParguments=\count308
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen139
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
+\everyMPtoPDFconversion=\toks25
 ) (/home/greg/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -571,8 +662,23 @@ Package pdftex.def Info: ../rsc/hera.png  used on input line 43.
 {/home/greg/.miktex/texmfs/data/pdftex/config/pdftex.map} </home/greg/hera/repo
 rt/rsc/ipsa.png> </home/greg/hera/report/rsc/rob.png> </home/greg/hera/report/r
 sc/hera.png>])
-(src/abstract.tex) (src/intro.tex) (src/currentwork.tex) (src/objectives.tex)
-(src/mutualheating.tex) (src/selfheating.tex
+(src/abstract.tex) (src/intro.tex) (src/currentwork.tex
+Underfull \hbox (badness 2050) in paragraph at lines 4--5
+\T1/lmr/m/it/10 Didymoon's surface thermal modeling\T1/lmr/m/n/10 . The former
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 4--5
+\T1/lmr/m/n/10 surface of an asteroid. It describes in details the
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 6.
+) (src/objectives.tex) (src/mutualheating.tex) (src/selfheating.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []\T1/lmr/bx/n/14.4 Advanced thermophysical
  []
@@ -610,30 +716,39 @@ Underfull \hbox (badness 3919) in paragraph at lines 24--24
 [2
 
 
+] [3
+
 ] (/home/greg/hera/report/etc/pmi.aux)
 Package logreq Info: Writing requests to 'pmi.run.xml'.
 \openout1 = `pmi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11014 strings out of 494414
- 197827 string characters out of 3174621
- 635350 words of memory out of 3000000
- 14964 multiletter control sequences out of 15000+200000
- 56310 words of font info for 38 fonts, out of 3000000 for 9000
+ 12208 strings out of 494414
+ 214931 string characters out of 3174621
+ 660956 words of memory out of 3000000
+ 16123 multiletter control sequences out of 15000+200000
+ 67096 words of font info for 47 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 47i,6n,46p,835b,1183s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/home/greg/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}</home/greg/.
-miktex/texmfs/install/fonts/type1/public/lm/lmbx12.pfb></home/greg/.miktex/texm
-fs/install/fonts/type1/public/lm/lmbx8.pfb></home/greg/.miktex/texmfs/install/f
-onts/type1/public/lm/lmbx9.pfb></home/greg/.miktex/texmfs/install/fonts/type1/p
-ublic/lm/lmcsc10.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/l
-mr10.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmr9.pfb></ho
-me/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmri10.pfb></home/greg/.mi
-ktex/texmfs/install/fonts/type1/public/lm/lmri12.pfb>
-Output written on pmi.pdf (2 pages, 510427 bytes).
+ 47i,9n,46p,835b,1187s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/home/greg/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-mathit.enc}{/home/gr
+eg/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc}{/home/greg/.miktex/
+texmfs/install/fonts/enc/dvips/lm/lm-rm.enc}{/home/greg/.miktex/texmfs/install/
+fonts/enc/dvips/lm/lm-mathex.enc}{/home/greg/.miktex/texmfs/install/fonts/enc/d
+vips/lm/lm-ec.enc}</home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmbx
+12.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmbx8.pfb></hom
+e/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmbx9.pfb></home/greg/.mikt
+ex/texmfs/install/fonts/type1/public/lm/lmcsc10.pfb></home/greg/.miktex/texmfs/
+install/fonts/type1/public/lm/lmex10.pfb></home/greg/.miktex/texmfs/install/fon
+ts/type1/public/lm/lmmi10.pfb></home/greg/.miktex/texmfs/install/fonts/type1/pu
+blic/lm/lmmi7.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmr1
+0.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmr9.pfb></home/
+greg/.miktex/texmfs/install/fonts/type1/public/lm/lmri10.pfb></home/greg/.mikte
+x/texmfs/install/fonts/type1/public/lm/lmri12.pfb></home/greg/.miktex/texmfs/in
+stall/fonts/type1/public/lm/lmsy10.pfb>
+Output written on pmi.pdf (3 pages, 533017 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

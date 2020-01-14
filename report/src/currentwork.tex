@@ -1,4 +1,15 @@
 \section{Current work}
 \label{currentwork}
 
-Here we present the work already done.
+This paper is following the work of a previous document \textit{Didymoon's surface thermal modeling}. The former presents a method to simulate the temperature at the surface of an asteroid. It describes in details the thermophysical model and the numerical method.
+
+
+
+\begin{equation}
+    \begin{dcases}
+        u(x,0)=f(x),                        & \forall x\in[0,l_s] \\
+        u_x(0,t)=\frac{Q_{out}-Q_{in}}{k}   & \forall t\geq0      \\
+        u_x(ls,t)=0,                        & \forall t\geq0
+    \end{dcases}
+    \label{eq 23}
+\end{equation}
