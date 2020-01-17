@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  10 JAN 2020 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  17 JAN 2020 15:12
 entering extended mode
 **./pmi.tex
 (pmi.tex
@@ -662,7 +662,22 @@ Package pdftex.def Info: ../rsc/hera.png  used on input line 43.
 {/home/greg/.miktex/texmfs/data/pdftex/config/pdftex.map} </home/greg/hera/repo
 rt/rsc/ipsa.png> </home/greg/hera/report/rsc/rob.png> </home/greg/hera/report/r
 sc/hera.png>])
-(src/abstract.tex) (src/intro.tex) (src/currentwork.tex
+(src/abstract.tex) (src/intro.tex
+Underfull \hbox (badness 1748) in paragraph at lines 4--5
+\T1/lmr/m/n/10 (Greek word for twin), after a smaller companion,
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 4--5
+\T1/lmr/m/n/10 Didymoon, was discovered orbiting it. Didymain
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 10--11
+[]\T1/lmr/m/n/10 The mission's main objectives are to deepen our
+ []
+
+) (src/currentwork.tex
 Underfull \hbox (badness 2050) in paragraph at lines 4--5
 \T1/lmr/m/it/10 Didymoon's surface thermal modeling\T1/lmr/m/n/10 . The former
  []
@@ -673,11 +688,11 @@ Underfull \hbox (badness 1253) in paragraph at lines 4--5
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 6.
+(Font)              <10> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 6.
+(Font)              <7> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 6.
+(Font)              <5> on input line 8.
 ) (src/objectives.tex) (src/mutualheating.tex) (src/selfheating.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []\T1/lmr/bx/n/14.4 Advanced thermophysical
@@ -698,7 +713,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []\T1/lmr/bx/n/14.4 Another planetary defense
  []
 
-) (src/objectif05.tex) (src/furtherworks.tex)
+) (src/objectif05.tex [2
+
+
+]) (src/furtherworks.tex)
 Underfull \hbox (badness 2261) in paragraph at lines 24--24
 []\T1/lmr/m/n/10 S. M. Clifford and C. J. Bartels.   The Mars
  []
@@ -713,12 +731,12 @@ Underfull \hbox (badness 3919) in paragraph at lines 24--24
 \T1/lmr/m/n/10 finite differences program designed for general
  []
 
-[2
-
-
-] [3
+[3
 
 ] (/home/greg/hera/report/etc/pmi.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'pmi.run.xml'.
 \openout1 = `pmi.run.xml'.
 
@@ -746,7 +764,7 @@ blic/lm/lmmi7.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmr1
 greg/.miktex/texmfs/install/fonts/type1/public/lm/lmri10.pfb></home/greg/.mikte
 x/texmfs/install/fonts/type1/public/lm/lmri12.pfb></home/greg/.miktex/texmfs/in
 stall/fonts/type1/public/lm/lmsy10.pfb>
-Output written on pmi.pdf (3 pages, 533017 bytes).
+Output written on pmi.pdf (3 pages, 535060 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
