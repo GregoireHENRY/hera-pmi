@@ -1,15 +1,39 @@
 \section{Current work}
 \label{currentwork}
 
-This paper is following the work of a previous document \textit{Didymoon's surface thermal modeling}. The former presents a method to simulate the temperature at the surface of an asteroid. It describes in details the thermophysical model and the numerical method.
-
-
-
+This paper is following the work of a previous document \textit{Didymoon's surface thermal modeling}. The former presents a method to simulate the temperature at the surface of an asteroid. It describes in details the following thermophysical model and the numerical method:
 \begin{equation}
     \begin{dcases}
-        u(x,0)=f(x),                        & \forall x\in[0,l_s] \\
-        u_x(0,t)=\frac{Q_{out}-Q_{in}}{k}   & \forall t\geq0      \\
-        u_x(ls,t)=0,                        & \forall t\geq0
+        u(x,0)=f(x),                                                  & \forall x\in[0,l_s] \\
+        \frac{\partial{u}}{\partial{x}}(0,t)=\frac{Q_{out}-Q_{Sun}}{k} & \forall t\geq0      \\
+        \frac{\partial{u}}{\partial{x}}(l_s,t)=0,                     & \forall t\geq0
     \end{dcases}
-    \label{eq 23}
+\end{equation}
+with $u$ the 1 dimensional temperature in space and time, $f$ a initial temperature repartition, $Q_{out}$ the flux emitted from the asteroid, $Q_{Sun}$ the flux received from the Sun, $k$ the conductivity and $l_s$ the annual thermal skin depth. The expression of $Q_{out}$ is:
+\begin{equation}
+    Q_{out}=\epsilon\sigma u^4
+\end{equation}
+with $\epsilon$ the emissivity of the asteroid and $\sigma$ the Stephan-Boltzman constant. $Q_{Sun}$ is stated as:
+\begin{equation}
+    Q_{Sun}=\frac{S_{\odot}\left(1-A\right)\cos{\varsigma}}{r^2}
+\end{equation}
+with $S_{\odot}$ the solar constant heat flux, $A$ the bond albedo of the asteroid, $\varsigma$ the incidence angle and $r$ the heliocentric distance in $AU$. The annual thermal skin depth is written as:
+\begin{equation}
+    l_s=\sqrt{\alpha\pi p}
+\end{equation}
+where $\alpha$ is the diffusivity and $p$ is the orbital period. The diffusivity is expressed as:
+\begin{equation}
+    \alpha=\frac{k}{\rho c}
+\end{equation}
+where $\rho$ is the density and $c$ the heat capacity. The second equation of this thermophysical model is the heat flux at the surface of the asteroid and the third is an adiabatic condition set at several annual thermal skin depth. This model is based on the heat transfer equation:
+\begin{equation}
+    \frac{\partial{u}}{\partial{t}}=\alpha\frac{\partial^2{u}}{\partial{x}^2}
+\end{equation}
+This ensures the conduction of the temperature inside the asteroid. To express the temperature from this equation, we used a second order finite-difference method and iterative techniques such as the Newton method. During the process, we defined the numerical stability parameter:
+\begin{equation}
+    S=\alpha\frac{\Delta t}{\Delta x^2}
+\end{equation}
+This parameter must remain lower than 0.25 for stability purposes. For the simulations, it is important to define the thermal inertia:
+\begin{equation}
+    \Gamma=\sqrt{k\rho c}
 \end{equation}

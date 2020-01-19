@@ -9,7 +9,7 @@ S0         = 1361.5;
 SfBoltz    = 5.670374419e-8;
 
 % SETTINGS
-p     = 11.92*60*60;
+p     = 20*60;
 gamma = 500;
 rho   = 2146;
 cp    = 600;
@@ -19,11 +19,11 @@ C     = 0.25;
 dt    = 30;
 t0    = 0;
 tf    = 10*day;
-tfr   = 7*3600 + 15*60;
+tfr   = 5*60;
 tf    = tf+tfr;
 
 % COMPUTE POSITION
-r = [0; 1.6749; 0]*au; 
+r = [0; 1; 0]*au; 
 dau = my_norm(r)/au;
 
 % ASTEROID GROUND PROPERTIES COMPUTED
@@ -37,11 +37,11 @@ c3    = emi*SfBoltz;
 nls   = 1;
 
 % ASTEROID SHAPE MODEL
-objpath='didy.obj';
+objpath='HO3.obj';
 %objpath = '../kernels/dsk/hera_didymoon_k001_v01.obj';
 obj = read_obj(objpath);
 tris = set_tris(obj);
-m = tris.m'; %*1e3;
+m = tris.m'*1e3;
 n = tris.n';
 sph = tris.sph;
 
@@ -54,7 +54,7 @@ n = n(:,condlo);
 np = length(n);
 
 % OBLIQUITY MODEL
-obl   = 162;
+obl   = 0;
 rotv0 = [1; 0; 0];
 rotv  = [0; -sind(obl); cosd(obl)];
 mrot  = mrotv3(rotv, dt*2*pi/p);
