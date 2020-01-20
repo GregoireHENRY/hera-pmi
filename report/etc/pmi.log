@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  19 JAN 2020 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  20 JAN 2020 18:00
 entering extended mode
 **./pmi.tex
 (pmi.tex
@@ -716,12 +716,23 @@ File: rsc/obliquity.png Graphic file (type png)
 <use rsc/obliquity.png>
 Package pdftex.def Info: rsc/obliquity.png  used on input line 6.
 (pdftex.def)             Requested size: 250.24178pt x 177.25476pt.
+<rsc/theo12h.png, id=31, 421.575pt x 316.18124pt>
+File: rsc/theo12h.png Graphic file (type png)
+<use rsc/theo12h.png>
+Package pdftex.def Info: rsc/theo12h.png  used on input line 11.
+(pdftex.def)             Requested size: 250.24178pt x 187.6839pt.
+<rsc/theo20mn.png, id=32, 429.16335pt x 309.43605pt>
+File: rsc/theo20mn.png Graphic file (type png)
+<use rsc/theo20mn.png>
+Package pdftex.def Info: rsc/theo20mn.png  used on input line 12.
+(pdftex.def)             Requested size: 250.24178pt x 180.43152pt.
 ) (src/HO3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []\T1/lmr/bx/n/14.4 Another planetary defense
  []
 
-) (src/furtherworks.tex)
+) (src/furtherworks.tex [3 <./rsc/obliquity.png> <./rsc/theo12h.png (PNG copy)>
+ <./rsc/theo20mn.png (PNG copy)>])
 Underfull \hbox (badness 2261) in paragraph at lines 23--23
 []\T1/lmr/m/n/10 S. M. Clifford and C. J. Bartels.   The Mars
  []
@@ -736,16 +747,21 @@ Underfull \hbox (badness 3919) in paragraph at lines 23--23
 \T1/lmr/m/n/10 finite differences program designed for general
  []
 
-[3 <./rsc/obliquity.png>] (/home/greg/hera/report/etc/pmi.aux)
+[4
+
+] (/home/greg/hera/report/etc/pmi.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'pmi.run.xml'.
 \openout1 = `pmi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12214 strings out of 494414
- 215039 string characters out of 3174621
+ 12228 strings out of 494414
+ 215294 string characters out of 3174621
  662940 words of memory out of 3000000
- 16130 multiletter control sequences out of 15000+200000
+ 16142 multiletter control sequences out of 15000+200000
  71359 words of font info for 48 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  47i,9n,48p,883b,1187s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -767,9 +783,9 @@ all/fonts/type1/public/lm/lmri12.pfb></home/greg/.miktex/texmfs/install/fonts/t
 ype1/public/lm/lmri9.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/
 lm/lmsy10.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmsy7.pf
 b>
-Output written on pmi.pdf (3 pages, 782921 bytes).
+Output written on pmi.pdf (4 pages, 2135952 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

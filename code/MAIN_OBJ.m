@@ -11,6 +11,7 @@ SfBoltz    = 5.670374419e-8;
 % SETTINGS
 objpath = 'HO3.obj';%'../kernels/dsk/hera_didymoon_k001_v01.obj';
 p       = 20*60;%11.92*60*60;
+porb    = 365.25*24*60*60;
 gamma   = 500;
 rho     = 2146;
 cp      = 600;
@@ -20,7 +21,7 @@ C       = 0.25;
 dt      = 30;
 t0      = 0;
 tf      = 10*day;
-tfr     = 5*60;%7*3600 + 15*60;
+tfr     = 3*60*60;%7*3600 + 15*60;
 tf      = tf+tfr;
 
 % COMPUTE POSITION
@@ -30,7 +31,7 @@ dau = my_norm(r)/au;
 % ASTEROID GROUND PROPERTIES COMPUTED
 k     = gamma^2/(rho*cp);
 alpha = k/(rho*cp);
-ls    = sqrt(alpha*pi*p);
+ls    = sqrt(alpha*pi*porb);
 V     = C*(rho*cp/gamma)^2;
 c1    = S0*A;
 c2    = S0*(1-A);
