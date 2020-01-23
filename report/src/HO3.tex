@@ -1,4 +1,45 @@
 \section{Another planetary defense mission: 2016 HO3}
 \label{HO3}
 
-Description of the mission. To explain we have been requested to work for them.
+In this part we will look at the Asteroid HO3. We had to establish the thermophysical model of that asteroid.We have used the code used explain before and we have modified the differences value to fit with that asteroid.\newline
+
+(469219) Kamo‘oalewa, provisionally designated 2016 HO3, is a quasi-satellite of the Earth3. It was discovered on April 27, 2016 by the Pan-STARRS program at the Haleakalā observatory on the Hawaiian island of Maui.\newline
+He has an excentricity e = 0,10414290 , a period of revolution of 20 minutes. We have take a \gamme = 500, A= 0.07, C= 0.25;and rho= 2146; .\newline
+
+The particularity of this asteroid is their speed, we has a speed of v = . Study that asteroid has permit to understand why the speed impact the temperature.
+
+To implement the map of this asteroid on Matlab we had to create a shapmodel of HO3, for that we have use SBMT and recreate the asteroid with the good dimension.\newline 
+\begin{center}
+    \captionsetup{type=figure}
+    \includegraphics[scale=0.4]{src/HO3_shapemodel.png}
+    \captionof{figure}{Shape model of HO3}
+\end{center}
+
+We have used a know asteroid already implement called Bennu and we have changed the size, Bennu had quite the same asperity than HO3 and gave us a better shape model for the temperature.
+
+We will now tried to see the impact of the speed.For that we will take three different speed , and look at the thermal map.\\[10pt]
+
+
+\begin{figure}[htb]
+    \centering % <-- added
+\begin{subfigure}{0.25\textwidth}
+  \includegraphics[width=\linewidth]{src/theo20mn.png}
+  \caption{image1}
+  \label{fig:1}
+\end{subfigure}\hfil % <-- added
+\begin{subfigure}{0.25\textwidth}
+  \includegraphics[width=\linewidth]{src/theo12h.png}
+  \caption{image2}
+  \label{fig:2}
+\end{subfigure}\hfil % <-- added
+\caption{The first three images represent the asteroid with an orbital period fixed as $p_{orbital}=20 $ \minutes and a $\gamma = 500 $ , on the second line the other three images show an orbital period fixed as $p_{orbital}= 12 $ \hours and a $\gamma = 500 $}
+\label{fig:images}
+\end{figure}
+
+
+We have seen how the speed has impact the values, the difference speed gives us an overview on how it works.
+More faster the asteroid his, higher are the temperature on a dedicate point. It's due that the rotation show to the sun more often their surfaces so they have higher temperature.
+When the asteroid is slower we see that only the obliquity axis have hight temperature. We have created our model as we have presented before. \\[10pt]
+To go through, we will look on why the thermal model map change.\\ [10pt]
+When the asteroid is faster the pole on the obliquity axis stay more often on the view of the sun, it make that the temperature is higher on that point and colder on the extreme point.\\ [10pt]
+When the asteroid is slower the temperature is distributed more uniformly over the whole of the asteroid, which means that we will find fairly hot temperatures on the skew axis but also cooler temperatures over the rest of the asteroid.\\[10pt]
