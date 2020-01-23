@@ -6,5 +6,23 @@ This section describes the implementation of the obliquity and the explanation o
     \includegraphics[width=\linewidth]{rsc/obliquity.png}
     \captionof{figure}{Representation of the obliquity with the orbital plane and the rotational axis}
 \end{center}
-The subsolar point is not anymore located on the equator. Depending on the position of the asteroid on its orbit, only one pole is not receiving direct heating from the Sun.
+From the obliquity results two observable events. First, the subsolar point is not anymore located on the equator but on a point tilted from the equator as the figure shows above. Secondly, depending on the position of the asteroid on its orbit - i.e. depending on the seasons, only one pole is not receiving direct heating from the Sun whereas without obliquity both poles are not receiving the heat.
 
+Before running the simulations presented in the previous sections, we implement the axial tilt on the shape model.
+\begin{center}
+    \includegraphics[width=\linewidth]{rsc/obldemo2.png}
+    \includegraphics[width=\linewidth]{rsc/obldemo4.png}
+    \captionof{figure}{Implementation of the obliquity for the daily surface temperature variation at longitude = 0 degrees on Didymos' secondary. The spin axis is given as 171 $\pm$ 9 degrees. Here, the extreme case of 162 degrees has been taken. Black dots are the 80x63x63 meters ellipsoidal shape, blue dots are the meridian at longitude = 0 degrees and red dot is the Sun direction. The first image is the ellipsoidal shape without obliquity and the second image is the meridian tilted.}
+\end{center}
+Simulations are executed at a fixed distance to the Sun with the asteroid rotating.
+\begin{center}
+    \includegraphics[width=\linewidth]{rsc/obldemo5.png}
+    \captionof{figure}{Implementation of the asteroid rotation. A full day represents 11.92 hours. On the figure is drawn the meridian during a full revolution at 10 different times.}
+\end{center}
+Demonstration of the effects of the obliquity are performed for the temperature evolution of Didymos' secondary along a full day assuming an ellipsoidal shape.
+\begin{center}
+    \includegraphics[width=\linewidth]{rsc/hourangle_obl0.png}
+    \includegraphics[width=\linewidth]{rsc/hourangle_obl162.png}
+    \captionof{figure}{Contour maps of the daily surface temperature variation at longitude = 0 degree on Didymos' secondary for a thermal inertia of $\Gamma=500$ \si{Jm^{-2} K^{-1} s^{-1/2}}, an heliocentric distance of 1.0748 AU  and 162 degrees of obliquity.}
+\end{center}
+As expected, temperature peaks shift in latitudes depending on the obliquity and the south pole only is in the cold zone.

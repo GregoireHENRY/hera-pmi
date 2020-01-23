@@ -9,9 +9,9 @@ S0         = 1361.5;
 SfBoltz    = 5.670374419e-8;
 
 % SETTINGS
-objpath = 'HO3.obj';%'../kernels/dsk/hera_didymoon_k001_v01.obj';
-p       = 20*60;%11.92*60*60;
-porb    = 365.25*24*60*60;
+objpath = '../kernels/dsk/hera_didymoon_k001_v01.obj';
+p       = 11.92*3600;
+porb    = 11.92*3600;
 gamma   = 500;
 rho     = 2146;
 cp      = 600;
@@ -21,11 +21,11 @@ C       = 0.25;
 dt      = 30;
 t0      = 0;
 tf      = 10*day;
-tfr     = 3*60*60;%7*3600 + 15*60;
+tfr     = 0.25*p;
 tf      = tf+tfr;
 
 % COMPUTE POSITION
-r = [0; 1; 0]*au; 
+r = -[0; 1; 0]*au; 
 dau = my_norm(r)/au;
 
 % ASTEROID GROUND PROPERTIES COMPUTED
@@ -41,7 +41,7 @@ nls   = 1;
 % ASTEROID SHAPE MODEL
 obj = read_obj(objpath);
 tris = set_tris(obj);
-m = tris.m'*1e3;
+m = tris.m';
 n = tris.n';
 sph = tris.sph;
 np = length(n);
@@ -50,10 +50,11 @@ np = length(n);
 obl   = 0;%162;
 rotv0 = [1; 0; 0];
 rotv  = [0; -sind(obl); cosd(obl)];
-mrot  = mrotv3(rotv, dt*2*pi/p);
-m     = mrotv3(rotv0, obl*pi/180)*m;
-n     = mrotv3(rotv0, obl*pi/180)*n;
-vert  = mrotv3(rotv0, obl*pi/180)*obj.v';
+mrot0 = mrotv3(rotv0, obl*pi/180);
+mrot  = mrotv3(rotv,  dt*2*pi/p);
+m     = mrot0*m;
+n     = mrot0*n;
+vert  = mrot0*obj.v';
 
 % NUMERICAL MODEL DISCRETIZATION
 et   = t0:dt:tf;
