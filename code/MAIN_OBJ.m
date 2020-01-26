@@ -20,8 +20,8 @@ emi     = 0.9;
 C       = 0.25;
 dt      = 30;
 t0      = 0;
-tf      = 10*day;
-tfr     = 0.25*p;
+tf      = 10*p;
+tfr     = 0.75*p;
 tf      = tf+tfr;
 
 % COMPUTE POSITION
@@ -126,3 +126,5 @@ cameratoolbar;
 imgname = sprintf('images/juventas_d%.1f_g%.0f.png', dau, gamma);
 % print(gcf,imgname,'-dpng','-r600');
 save(sprintf('u_d%.1f_g%.0f.mat', dau, gamma), 'u');
+
+fprintf('%f %f\n', max(u), min(u));

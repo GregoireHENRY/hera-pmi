@@ -29,3 +29,4 @@ end
 data.m = m;
 data.n = n;
 data.sph = [lo, la];
+data.S = S;
