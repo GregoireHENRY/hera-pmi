@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  23 JAN 2020 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  27 JAN 2020 18:59
 entering extended mode
 **./pmi.tex
 (pmi.tex
@@ -34,708 +34,746 @@ Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/home/greg/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
-Package: geometry 2018/04/16 v5.8 Page Geometry
+(/home/greg/.miktex/texmfs/install/tex/latex/heuristica/heuristica.sty
+Package: heuristica 2017/03/14 v1.09
 
-(/home/greg/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
-)
-(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-(/home/greg/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
-\Gm@bindingoffset=\dimen103
-\Gm@wd@mp=\dimen104
-\Gm@odd@mp=\dimen105
-\Gm@even@mp=\dimen106
-\Gm@layoutwidth=\dimen107
-\Gm@layoutheight=\dimen108
-\Gm@layouthoffset=\dimen109
-\Gm@layoutvoffset=\dimen110
-\Gm@dimlist=\toks17
+`heuristica' v1.09, 2017/03/14 Style file (m_sharpe) for Heuristica (a_panov, m
+_sharpe), an extension of Utopia.
+(/home/greg/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
-(/home/greg/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
-(/home/greg/.miktex/texmfs/install/tex/latex/caption/caption.sty
-Package: caption 2019/09/01 v3.3d Customizing captions (AR)
+(/home/greg/.miktex/texmfs/install/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+Now handling font encoding T2A ...
+... processing UTF-8 mapping file for font encoding T2A
 
-(/home/greg/.miktex/texmfs/install/tex/latex/caption/caption3.sty
-Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen111
-\captionmargin@=\dimen112
-\captionwidth=\dimen113
-\caption@tempdima=\dimen114
-\caption@indent=\dimen115
-\caption@parindent=\dimen116
-\caption@hangindent=\dimen117
-)
-\c@caption@flags=\count91
-\c@ContinuedFloat=\count92
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
-
-(/home/greg/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count93
-)
-\csq@reset=\count94
-\csq@gtype=\count95
-\csq@glevel=\count96
-\csq@qlevel=\count97
-\csq@maxlvl=\count98
-\csq@tshold=\count99
-\csq@ltx@everypar=\toks18
-
-(/home/greg/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2019/05/10 v5.2e csquotes generic definitions (JAW)
-)
-Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
-Package csquotes Info: ... configuration file loaded successfully.
-
-(/home/greg/.miktex/texmfs/install/tex/latex/csquotes/csquotes.cfg
-File: csquotes.cfg 
+(/home/greg/.miktex/texmfs/install/tex/latex/base/t2aenc.dfu
+File: t2aenc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0407 (decimal 1031)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0457 (decimal 1111)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0490 (decimal 1168)
+   defining Unicode char U+0491 (decimal 1169)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+0498 (decimal 1176)
+   defining Unicode char U+0499 (decimal 1177)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049C (decimal 1180)
+   defining Unicode char U+049D (decimal 1181)
+   defining Unicode char U+04A0 (decimal 1184)
+   defining Unicode char U+04A1 (decimal 1185)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AA (decimal 1194)
+   defining Unicode char U+04AB (decimal 1195)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B0 (decimal 1200)
+   defining Unicode char U+04B1 (decimal 1201)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04B8 (decimal 1208)
+   defining Unicode char U+04B9 (decimal 1209)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D4 (decimal 1236)
+   defining Unicode char U+04D5 (decimal 1237)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
 ))
-(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2019/08/31 v3.13a programmable bibliographies (PK/MW)
+(/home/greg/.miktex/texmfs/install/tex/latex/cyrillic/t2benc.def
+File: t2benc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+Now handling font encoding T2B ...
+... processing UTF-8 mapping file for font encoding T2B
 
-(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-)))
-(/home/greg/.miktex/texmfs/install/tex/latex/logreq/logreq.sty
-Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count100
-
-(/home/greg/.miktex/texmfs/install/tex/latex/logreq/logreq.def
-File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+(/home/greg/.miktex/texmfs/install/tex/latex/base/t2benc.dfu
+File: t2benc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0494 (decimal 1172)
+   defining Unicode char U+0495 (decimal 1173)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04C3 (decimal 1219)
+   defining Unicode char U+04C4 (decimal 1220)
+   defining Unicode char U+04C5 (decimal 1221)
+   defining Unicode char U+04C6 (decimal 1222)
+   defining Unicode char U+04C7 (decimal 1223)
+   defining Unicode char U+04C8 (decimal 1224)
+   defining Unicode char U+04CB (decimal 1227)
+   defining Unicode char U+04CC (decimal 1228)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E0 (decimal 1248)
+   defining Unicode char U+04E1 (decimal 1249)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F6 (decimal 1270)
+   defining Unicode char U+04F7 (decimal 1271)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+04FA (decimal 1274)
+   defining Unicode char U+04FB (decimal 1275)
+   defining Unicode char U+04FC (decimal 1276)
+   defining Unicode char U+04FD (decimal 1277)
+   defining Unicode char U+04FE (decimal 1278)
+   defining Unicode char U+04FF (decimal 1279)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
 ))
-(/home/greg/.miktex/texmfs/install/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-\c@tabx@nest=\count101
-\c@listtotal=\count102
-\c@listcount=\count103
-\c@liststart=\count104
-\c@liststop=\count105
-\c@citecount=\count106
-\c@citetotal=\count107
-\c@multicitecount=\count108
-\c@multicitetotal=\count109
-\c@instcount=\count110
-\c@maxnames=\count111
-\c@minnames=\count112
-\c@maxitems=\count113
-\c@minitems=\count114
-\c@citecounter=\count115
-\c@maxcitecounter=\count116
-\c@savedcitecounter=\count117
-\c@uniquelist=\count118
-\c@uniquename=\count119
-\c@refsection=\count120
-\c@refsegment=\count121
-\c@maxextratitle=\count122
-\c@maxextratitleyear=\count123
-\c@maxextraname=\count124
-\c@maxextradate=\count125
-\c@maxextraalpha=\count126
-\c@abbrvpenalty=\count127
-\c@highnamepenalty=\count128
-\c@lownamepenalty=\count129
-\c@maxparens=\count130
-\c@parenlevel=\count131
-\blx@tempcnta=\count132
-\blx@tempcntb=\count133
-\blx@tempcntc=\count134
-\blx@maxsection=\count135
-\blx@maxsegment@0=\count136
-\blx@notetype=\count137
-\blx@parenlevel@text=\count138
-\blx@parenlevel@foot=\count139
-\blx@sectionciteorder@0=\count140
-\blx@entrysetcounter=\count141
-\labelnumberwidth=\skip43
-\labelalphawidth=\skip44
-\biblabelsep=\skip45
-\bibitemsep=\skip46
-\bibnamesep=\skip47
-\bibinitsep=\skip48
-\bibparsep=\skip49
-\bibhang=\skip50
-\blx@bcfin=\read1
-\blx@bcfout=\write3
-\blx@langwohyphens=\language1
-\c@mincomprange=\count142
-\c@maxcomprange=\count143
-\c@mincompwidth=\count144
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
+(/home/greg/.miktex/texmfs/install/tex/latex/cyrillic/t2cenc.def
+File: t2cenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+Now handling font encoding T2C ...
+... processing UTF-8 mapping file for font encoding T2C
 
-(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2019/08/31 v3.13a biblatex localization (PK/MW)
-)
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count145
-\c@savedafterword=\count146
-\c@annotator=\count147
-\c@savedannotator=\count148
-\c@author=\count149
-\c@savedauthor=\count150
-\c@bookauthor=\count151
-\c@savedbookauthor=\count152
-\c@commentator=\count153
-\c@savedcommentator=\count154
-\c@editor=\count155
-\c@savededitor=\count156
-\c@editora=\count157
-\c@savededitora=\count158
-\c@editorb=\count159
-\c@savededitorb=\count160
-\c@editorc=\count161
-\c@savededitorc=\count162
-\c@foreword=\count163
-\c@savedforeword=\count164
-\c@holder=\count165
-\c@savedholder=\count166
-\c@introduction=\count167
-\c@savedintroduction=\count168
-\c@namea=\count169
-\c@savednamea=\count170
-\c@nameb=\count171
-\c@savednameb=\count172
-\c@namec=\count173
-\c@savednamec=\count174
-\c@translator=\count175
-\c@savedtranslator=\count176
-\c@shortauthor=\count177
-\c@savedshortauthor=\count178
-\c@shorteditor=\count179
-\c@savedshorteditor=\count180
-\c@labelname=\count181
-\c@savedlabelname=\count182
-\c@institution=\count183
-\c@savedinstitution=\count184
-\c@lista=\count185
-\c@savedlista=\count186
-\c@listb=\count187
-\c@savedlistb=\count188
-\c@listc=\count189
-\c@savedlistc=\count190
-\c@listd=\count191
-\c@savedlistd=\count192
-\c@liste=\count193
-\c@savedliste=\count194
-\c@listf=\count195
-\c@savedlistf=\count196
-\c@location=\count197
-\c@savedlocation=\count198
-\c@organization=\count199
-\c@savedorganization=\count266
-\c@origlocation=\count267
-\c@savedoriglocation=\count268
-\c@origpublisher=\count269
-\c@savedorigpublisher=\count270
-\c@publisher=\count271
-\c@savedpublisher=\count272
-\c@language=\count273
-\c@savedlanguage=\count274
-\c@origlanguage=\count275
-\c@savedoriglanguage=\count276
-\c@pageref=\count277
-\c@savedpageref=\count278
-\shorthandwidth=\skip51
-\shortjournalwidth=\skip52
-\shortserieswidth=\skip53
-\shorttitlewidth=\skip54
-\shortauthorwidth=\skip55
-\shorteditorwidth=\skip56
-\locallabelnumberwidth=\skip57
-\locallabelalphawidth=\skip58
-\localshorthandwidth=\skip59
-\localshortjournalwidth=\skip60
-\localshortserieswidth=\skip61
-\localshorttitlewidth=\skip62
-\localshortauthorwidth=\skip63
-\localshorteditorwidth=\skip64
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
-
-(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
-
-(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
-\c@textcitecount=\count279
-\c@textcitetotal=\count280
-\c@textcitemaxnames=\count281
-\c@biburlbigbreakpenalty=\count282
-\c@biburlbreakpenalty=\count283
-\c@biburlnumpenalty=\count284
-\c@biburlucpenalty=\count285
-\c@biburllcpenalty=\count286
-\biburlbigskip=\muskip11
-\biburlnumskip=\muskip12
-\biburlucskip=\muskip13
-\biburllcskip=\muskip14
-\c@smartand=\count287
-)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
-
-(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
-
-(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count288
-\c@bbx:relatedtotal=\count289
+(/home/greg/.miktex/texmfs/install/tex/latex/base/t2cenc.dfu
+File: t2cenc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+048C (decimal 1164)
+   defining Unicode char U+048D (decimal 1165)
+   defining Unicode char U+048E (decimal 1166)
+   defining Unicode char U+048F (decimal 1167)
+   defining Unicode char U+0494 (decimal 1172)
+   defining Unicode char U+0495 (decimal 1173)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049E (decimal 1182)
+   defining Unicode char U+049F (decimal 1183)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A6 (decimal 1190)
+   defining Unicode char U+04A7 (decimal 1191)
+   defining Unicode char U+04A8 (decimal 1192)
+   defining Unicode char U+04A9 (decimal 1193)
+   defining Unicode char U+04AC (decimal 1196)
+   defining Unicode char U+04AD (decimal 1197)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B4 (decimal 1204)
+   defining Unicode char U+04B5 (decimal 1205)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04BC (decimal 1212)
+   defining Unicode char U+04BD (decimal 1213)
+   defining Unicode char U+04BE (decimal 1214)
+   defining Unicode char U+04BF (decimal 1215)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04C5 (decimal 1221)
+   defining Unicode char U+04C6 (decimal 1222)
+   defining Unicode char U+04C7 (decimal 1223)
+   defining Unicode char U+04C8 (decimal 1224)
+   defining Unicode char U+04CD (decimal 1229)
+   defining Unicode char U+04CE (decimal 1230)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E0 (decimal 1248)
+   defining Unicode char U+04E1 (decimal 1249)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
 ))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
+(/home/greg/.miktex/texmfs/install/tex/latex/ly1/ly1enc.def
+File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
+Now handling font encoding LY1 ...
+... processing UTF-8 mapping file for font encoding LY1
 
-(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2019/08/31 v3.13a biblatex citation style (PK/MW)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/biblatex.cfg
-File: biblatex.cfg 
+(/home/greg/.miktex/texmfs/install/tex/latex/base/ly1enc.dfu
+File: ly1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
 ))
-(/home/greg/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/home/greg/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
-Package: graphics 2019/07/20 v1.3b Standard LaTeX Graphics (DPC,SPQR)
-
-(/home/greg/.miktex/texmfs/install/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(/home/greg/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen118
-\Gin@req@width=\dimen119
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/lm/lmodern.sty
-Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/import/import.sty
-Package: import 2009/03/23  v 5.1
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2019/07/31 v1.22 mathematical typesetting tools
-
-(/home/greg/.miktex/texmfs/install/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count290
-\calc@Bcount=\count291
-\calc@Adimen=\dimen120
-\calc@Bdimen=\dimen121
-\calc@Askip=\skip65
-\calc@Bskip=\skip66
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count292
-\calc@Cskip=\skip67
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2019/04/01 v2.17c AMS math features
-\@mathmargin=\skip68
-
-For additional information on amsmath, use the `?' option.
-(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
-
-(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
-\ex@=\dimen122
-))
-(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen123
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count293
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count294
-\leftroot@=\count295
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count296
-\DOTSCASE@=\count297
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
-\big@size=\dimen124
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count298
-\c@MaxMatrixCols=\count299
-\dotsspace@=\muskip15
-\c@parentequation=\count300
-\dspbrk@lvl=\count301
-\tag@help=\toks20
-\row@=\count302
-\column@=\count303
-\maxfields@=\count304
-\andhelp@=\toks21
-\eqnshift@=\dimen125
-\alignsep@=\dimen126
-\tagshift@=\dimen127
-\tagwidth@=\dimen128
-\totwidth@=\dimen129
-\lineht@=\dimen130
-\@envbody=\toks22
-\multlinegap=\skip69
-\multlinetaggap=\skip70
-\mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2855.
-LaTeX Info: Redefining \] on input line 2856.
-)
-LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count305
-\l_MT_multwidth_dim=\dimen131
-\origjot=\skip71
-\l_MT_shortvdotswithinadjustabove_dim=\dimen132
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen133
-\l_MT_above_intertext_sep=\dimen134
-\l_MT_below_intertext_sep=\dimen135
-\l_MT_above_shortintertext_sep=\dimen136
-\l_MT_below_shortintertext_sep=\dimen137
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/siunitx/siunitx.sty
-(/home/greg/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
-Package: expl3 2019-10-02 L3 programming layer (loader) 
-
-(/home/greg/.miktex/texmfs/install/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2019-10-02 L3 programming layer (code)
-\c_max_int=\count306
-\l_tmpa_int=\count307
-\l_tmpb_int=\count308
-\g_tmpa_int=\count309
-\g_tmpb_int=\count310
-\l__seq_internal_a_int=\count311
-\l__seq_internal_b_int=\count312
-\g__kernel_prg_map_int=\count313
-\c__ior_term_noprompt_ior=\count314
-\c_log_iow=\count315
-\l_iow_line_count_int=\count316
-\l__iow_line_target_int=\count317
-\l__iow_one_indent_int=\count318
-\l__iow_indent_int=\count319
-\c_zero_dim=\dimen138
-\c_max_dim=\dimen139
-\l_tmpa_dim=\dimen140
-\l_tmpb_dim=\dimen141
-\g_tmpa_dim=\dimen142
-\g_tmpb_dim=\dimen143
-\c_zero_skip=\skip72
-\c_max_skip=\skip73
-\l_tmpa_skip=\skip74
-\l_tmpb_skip=\skip75
-\g_tmpa_skip=\skip76
-\g_tmpb_skip=\skip77
-\c_zero_muskip=\muskip16
-\c_max_muskip=\muskip17
-\l_tmpa_muskip=\muskip18
-\l_tmpb_muskip=\muskip19
-\g_tmpa_muskip=\muskip20
-\g_tmpb_muskip=\muskip21
-\l_keys_choice_int=\count320
-\l__intarray_loop_int=\count321
-\c__intarray_sp_dim=\dimen144
-\g__intarray_font_int=\count322
-\c__fp_leading_shift_int=\count323
-\c__fp_middle_shift_int=\count324
-\c__fp_trailing_shift_int=\count325
-\c__fp_big_leading_shift_int=\count326
-\c__fp_big_middle_shift_int=\count327
-\c__fp_big_trailing_shift_int=\count328
-\c__fp_Bigg_leading_shift_int=\count329
-\c__fp_Bigg_middle_shift_int=\count330
-\c__fp_Bigg_trailing_shift_int=\count331
-\c__kernel_randint_max_int=\count332
-\g__fp_array_int=\count333
-\l__fp_array_loop_int=\count334
-\l__sort_length_int=\count335
-\l__sort_min_int=\count336
-\l__sort_top_int=\count337
-\l__sort_max_int=\count338
-\l__sort_true_max_int=\count339
-\l__sort_block_int=\count340
-\l__sort_begin_int=\count341
-\l__sort_end_int=\count342
-\l__sort_A_int=\count343
-\l__sort_B_int=\count344
-\l__sort_C_int=\count345
-\l__str_internal_int=\count346
-\c__str_replacement_char_int=\count347
-\l__tl_analysis_normal_int=\count348
-\l__tl_analysis_index_int=\count349
-\l__tl_analysis_nesting_int=\count350
-\l__tl_analysis_type_int=\count351
-\l__regex_internal_a_int=\count352
-\l__regex_internal_b_int=\count353
-\l__regex_internal_c_int=\count354
-\l__regex_balance_int=\count355
-\l__regex_group_level_int=\count356
-\l__regex_mode_int=\count357
-\c__regex_cs_in_class_mode_int=\count358
-\c__regex_cs_mode_int=\count359
-\l__regex_catcodes_int=\count360
-\l__regex_default_catcodes_int=\count361
-\c__regex_catcode_D_int=\count362
-\c__regex_catcode_S_int=\count363
-\c__regex_catcode_L_int=\count364
-\c__regex_catcode_O_int=\count365
-\c__regex_catcode_A_int=\count366
-\c__regex_all_catcodes_int=\count367
-\l__regex_show_lines_int=\count368
-\l__regex_min_state_int=\count369
-\l__regex_max_state_int=\count370
-\l__regex_left_state_int=\count371
-\l__regex_right_state_int=\count372
-\l__regex_capturing_group_int=\count373
-\l__regex_min_pos_int=\count374
-\l__regex_max_pos_int=\count375
-\l__regex_curr_pos_int=\count376
-\l__regex_start_pos_int=\count377
-\l__regex_success_pos_int=\count378
-\l__regex_curr_char_int=\count379
-\l__regex_curr_catcode_int=\count380
-\l__regex_last_char_int=\count381
-\l__regex_case_changed_char_int=\count382
-\l__regex_curr_state_int=\count383
-\l__regex_step_int=\count384
-\l__regex_min_active_int=\count385
-\l__regex_max_active_int=\count386
-\l__regex_replacement_csnames_int=\count387
-\l__regex_match_count_int=\count388
-\l__regex_min_submatch_int=\count389
-\l__regex_submatch_int=\count390
-\l__regex_zeroth_submatch_int=\count391
-\g__regex_trace_regex_int=\count392
-\c_empty_box=\box29
-\l_tmpa_box=\box30
-\l_tmpb_box=\box31
-\g_tmpa_box=\box32
-\g_tmpb_box=\box33
-\l__box_top_dim=\dimen145
-\l__box_bottom_dim=\dimen146
-\l__box_left_dim=\dimen147
-\l__box_right_dim=\dimen148
-\l__box_top_new_dim=\dimen149
-\l__box_bottom_new_dim=\dimen150
-\l__box_left_new_dim=\dimen151
-\l__box_right_new_dim=\dimen152
-\l__box_internal_box=\box34
-\l__coffin_internal_box=\box35
-\l__coffin_internal_dim=\dimen153
-\l__coffin_offset_x_dim=\dimen154
-\l__coffin_offset_y_dim=\dimen155
-\l__coffin_x_dim=\dimen156
-\l__coffin_y_dim=\dimen157
-\l__coffin_x_prime_dim=\dimen158
-\l__coffin_y_prime_dim=\dimen159
-\c_empty_coffin=\box36
-\l__coffin_aligned_coffin=\box37
-\l__coffin_aligned_internal_coffin=\box38
-\l_tmpa_coffin=\box39
-\l_tmpb_coffin=\box40
-\g_tmpa_coffin=\box41
-\g_tmpb_coffin=\box42
-\l__coffin_bounding_shift_dim=\dimen160
-\l__coffin_left_corner_dim=\dimen161
-\l__coffin_right_corner_dim=\dimen162
-\l__coffin_bottom_corner_dim=\dimen163
-\l__coffin_top_corner_dim=\dimen164
-\l__coffin_scaled_total_height_dim=\dimen165
-\l__coffin_scaled_width_dim=\dimen166
-\c__coffin_empty_coffin=\box43
-\l__coffin_display_coffin=\box44
-\l__coffin_display_coord_coffin=\box45
-\l__coffin_display_pole_coffin=\box46
-\l__coffin_display_offset_dim=\dimen167
-\l__coffin_display_x_dim=\dimen168
-\l__coffin_display_y_dim=\dimen169
-\g__char_data_ior=\read2
-
-(/home/greg/.miktex/texmfs/install/tex/latex/l3kernel/l3deprecation.def
-File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
-))
-(/home/greg/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2019-04-06 v L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count393
-\l__pdf_internal_box=\box47
-))
-(/home/greg/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2019-05-28 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count394
-\g__xparse_grabber_int=\count395
-\l__xparse_m_args_int=\count396
-\l__xparse_v_nesting_int=\count397
-)
-Package: siunitx 2019/10/10 v2.7t A comprehensive (SI) units package
-
-(/home/greg/.miktex/texmfs/install/tex/latex/tools/array.sty
-Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen170
-\ar@mcellbox=\box48
-\extrarowheight=\dimen171
-\NC@list=\toks24
-\extratabsurround=\skip78
-\backup@length=\skip79
-\ar@cellbox=\box49
-)
-(/home/greg/.miktex/texmfs/install/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2019-05-28 LaTeX2e option processing using LaTeX3 keys
-)
-\l__siunitx_tmp_box=\box50
-\l__siunitx_tmp_dim=\dimen172
-\l__siunitx_tmp_int=\count398
-\l__siunitx_number_mantissa_length_int=\count399
-\l__siunitx_number_uncert_length_int=\count400
-\l__siunitx_round_int=\count401
-\l__siunitx_process_decimal_int=\count402
-\l__siunitx_process_uncertainty_int=\count403
-\l__siunitx_process_fixed_int=\count404
-\l__siunitx_process_integer_min_int=\count405
-\l__siunitx_process_precision_int=\count406
-\l__siunitx_group_min_int=\count407
-\l__siunitx_angle_marker_box=\box51
-\l__siunitx_angle_unit_box=\box52
-\l__siunitx_angle_marker_dim=\dimen173
-\l__siunitx_angle_unit_dim=\dimen174
-\l__siunitx_unit_int=\count408
-\l__siunitx_unit_denominator_int=\count409
-\l__siunitx_unit_numerator_int=\count410
-\l__siunitx_unit_prefix_int=\count411
-\l__siunitx_unit_prefix_base_int=\count412
-\l__siunitx_unit_prefix_gram_int=\count413
-\l__siunitx_number_product_int=\count414
-\c__siunitx_one_fill_skip=\skip80
-\l__siunitx_table_unit_align_skip=\skip81
-\l__siunitx_table_exponent_dim=\dimen175
-\l__siunitx_table_integer_dim=\dimen176
-\l__siunitx_table_mantissa_dim=\dimen177
-\l__siunitx_table_marker_dim=\dimen178
-\l__siunitx_table_result_dim=\dimen179
-\l__siunitx_table_uncert_dim=\dimen180
-\l__siunitx_table_fill_pre_dim=\dimen181
-\l__siunitx_table_fill_post_dim=\dimen182
-\l__siunitx_table_fill_mid_dim=\dimen183
-\l__siunitx_table_pre_box=\box53
-\l__siunitx_table_post_box=\box54
-\l__siunitx_table_mantissa_box=\box55
-\l__siunitx_table_result_box=\box56
-\l__siunitx_table_number_align_skip=\skip82
-\l__siunitx_table_text_align_skip=\skip83
-
-(/home/greg/.miktex/texmfs/install/tex/latex/translator/translator.sty
-Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+(/home/greg/.miktex/texmfs/install/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/home/greg/.miktex/texmfs/install/tex/latex/base/textcomp.sty
 Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
@@ -895,7 +933,760 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/mweights/mweights.sty
+Package: mweights 2017/03/30 (Bob Tennent) Support package for multiple-weight 
+font packages. 
+LaTeX Info: Redefining \bfseries on input line 22.
+LaTeX Info: Redefining \mdseries on input line 30.
+LaTeX Info: Redefining \rmfamily on input line 38.
+LaTeX Info: Redefining \sffamily on input line 66.
+LaTeX Info: Redefining \ttfamily on input line 94.
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count88
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2014/03/23 v1.0d Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \scshape on input line 37.
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/home/greg/.miktex/texmfs/install/tex/generic/xkeyval/xkeyval.tex
+(/home/greg/.miktex/texmfs/install/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+
+(/home/greg/.miktex/texmfs/install/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count89
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)))
+(/home/greg/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/home/greg/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count90
+\Gm@cntv=\count91
+\c@Gm@tempcnt=\count92
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks18
+
+(/home/greg/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/greg/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2019/09/01 v3.3d Customizing captions (AR)
+
+(/home/greg/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen111
+\captionmargin@=\dimen112
+\captionwidth=\dimen113
+\caption@tempdima=\dimen114
+\caption@indent=\dimen115
+\caption@parindent=\dimen116
+\caption@hangindent=\dimen117
+)
+\c@caption@flags=\count93
+\c@ContinuedFloat=\count94
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
+\csq@reset=\count95
+\csq@gtype=\count96
+\csq@glevel=\count97
+\csq@qlevel=\count98
+\csq@maxlvl=\count99
+\csq@tshold=\count100
+\csq@ltx@everypar=\toks19
+
+(/home/greg/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2019/05/10 v5.2e csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
 ))
+(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2019/08/31 v3.13a programmable bibliographies (PK/MW)
+
+(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/home/greg/.miktex/texmfs/install/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+)))
+(/home/greg/.miktex/texmfs/install/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count101
+
+(/home/greg/.miktex/texmfs/install/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/home/greg/.miktex/texmfs/install/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count102
+\c@listtotal=\count103
+\c@listcount=\count104
+\c@liststart=\count105
+\c@liststop=\count106
+\c@citecount=\count107
+\c@citetotal=\count108
+\c@multicitecount=\count109
+\c@multicitetotal=\count110
+\c@instcount=\count111
+\c@maxnames=\count112
+\c@minnames=\count113
+\c@maxitems=\count114
+\c@minitems=\count115
+\c@citecounter=\count116
+\c@maxcitecounter=\count117
+\c@savedcitecounter=\count118
+\c@uniquelist=\count119
+\c@uniquename=\count120
+\c@refsection=\count121
+\c@refsegment=\count122
+\c@maxextratitle=\count123
+\c@maxextratitleyear=\count124
+\c@maxextraname=\count125
+\c@maxextradate=\count126
+\c@maxextraalpha=\count127
+\c@abbrvpenalty=\count128
+\c@highnamepenalty=\count129
+\c@lownamepenalty=\count130
+\c@maxparens=\count131
+\c@parenlevel=\count132
+\blx@tempcnta=\count133
+\blx@tempcntb=\count134
+\blx@tempcntc=\count135
+\blx@maxsection=\count136
+\blx@maxsegment@0=\count137
+\blx@notetype=\count138
+\blx@parenlevel@text=\count139
+\blx@parenlevel@foot=\count140
+\blx@sectionciteorder@0=\count141
+\blx@entrysetcounter=\count142
+\labelnumberwidth=\skip43
+\labelalphawidth=\skip44
+\biblabelsep=\skip45
+\bibitemsep=\skip46
+\bibnamesep=\skip47
+\bibinitsep=\skip48
+\bibparsep=\skip49
+\bibhang=\skip50
+\blx@bcfin=\read1
+\blx@bcfout=\write3
+\blx@langwohyphens=\language1
+\c@mincomprange=\count143
+\c@maxcomprange=\count144
+\c@mincompwidth=\count145
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2019/08/31 v3.13a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count146
+\c@savedafterword=\count147
+\c@annotator=\count148
+\c@savedannotator=\count149
+\c@author=\count150
+\c@savedauthor=\count151
+\c@bookauthor=\count152
+\c@savedbookauthor=\count153
+\c@commentator=\count154
+\c@savedcommentator=\count155
+\c@editor=\count156
+\c@savededitor=\count157
+\c@editora=\count158
+\c@savededitora=\count159
+\c@editorb=\count160
+\c@savededitorb=\count161
+\c@editorc=\count162
+\c@savededitorc=\count163
+\c@foreword=\count164
+\c@savedforeword=\count165
+\c@holder=\count166
+\c@savedholder=\count167
+\c@introduction=\count168
+\c@savedintroduction=\count169
+\c@namea=\count170
+\c@savednamea=\count171
+\c@nameb=\count172
+\c@savednameb=\count173
+\c@namec=\count174
+\c@savednamec=\count175
+\c@translator=\count176
+\c@savedtranslator=\count177
+\c@shortauthor=\count178
+\c@savedshortauthor=\count179
+\c@shorteditor=\count180
+\c@savedshorteditor=\count181
+\c@labelname=\count182
+\c@savedlabelname=\count183
+\c@institution=\count184
+\c@savedinstitution=\count185
+\c@lista=\count186
+\c@savedlista=\count187
+\c@listb=\count188
+\c@savedlistb=\count189
+\c@listc=\count190
+\c@savedlistc=\count191
+\c@listd=\count192
+\c@savedlistd=\count193
+\c@liste=\count194
+\c@savedliste=\count195
+\c@listf=\count196
+\c@savedlistf=\count197
+\c@location=\count198
+\c@savedlocation=\count199
+\c@organization=\count266
+\c@savedorganization=\count267
+\c@origlocation=\count268
+\c@savedoriglocation=\count269
+\c@origpublisher=\count270
+\c@savedorigpublisher=\count271
+\c@publisher=\count272
+\c@savedpublisher=\count273
+\c@language=\count274
+\c@savedlanguage=\count275
+\c@origlanguage=\count276
+\c@savedoriglanguage=\count277
+\c@pageref=\count278
+\c@savedpageref=\count279
+\shorthandwidth=\skip51
+\shortjournalwidth=\skip52
+\shortserieswidth=\skip53
+\shorttitlewidth=\skip54
+\shortauthorwidth=\skip55
+\shorteditorwidth=\skip56
+\locallabelnumberwidth=\skip57
+\locallabelalphawidth=\skip58
+\localshorthandwidth=\skip59
+\localshortjournalwidth=\skip60
+\localshortserieswidth=\skip61
+\localshorttitlewidth=\skip62
+\localshortauthorwidth=\skip63
+\localshorteditorwidth=\skip64
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
+\c@textcitecount=\count280
+\c@textcitetotal=\count281
+\c@textcitemaxnames=\count282
+\c@biburlbigbreakpenalty=\count283
+\c@biburlbreakpenalty=\count284
+\c@biburlnumpenalty=\count285
+\c@biburlucpenalty=\count286
+\c@biburllcpenalty=\count287
+\biburlbigskip=\muskip11
+\biburlnumskip=\muskip12
+\biburlucskip=\muskip13
+\biburllcskip=\muskip14
+\c@smartand=\count288
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count289
+\c@bbx:relatedtotal=\count290
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2019/08/31 v3.13a biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+(/home/greg/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/greg/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2019/07/20 v1.3b Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/greg/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen118
+\Gin@req@width=\dimen119
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/import/import.sty
+Package: import 2009/03/23  v 5.1
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2019/07/31 v1.22 mathematical typesetting tools
+
+(/home/greg/.miktex/texmfs/install/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count291
+\calc@Bcount=\count292
+\calc@Adimen=\dimen120
+\calc@Bdimen=\dimen121
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count293
+\calc@Cskip=\skip67
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2019/04/01 v2.17c AMS math features
+\@mathmargin=\skip68
+
+For additional information on amsmath, use the `?' option.
+(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen122
+))
+(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen123
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count294
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count295
+\leftroot@=\count296
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count297
+\DOTSCASE@=\count298
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen124
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count299
+\c@MaxMatrixCols=\count300
+\dotsspace@=\muskip15
+\c@parentequation=\count301
+\dspbrk@lvl=\count302
+\tag@help=\toks21
+\row@=\count303
+\column@=\count304
+\maxfields@=\count305
+\andhelp@=\toks22
+\eqnshift@=\dimen125
+\alignsep@=\dimen126
+\tagshift@=\dimen127
+\tagwidth@=\dimen128
+\totwidth@=\dimen129
+\lineht@=\dimen130
+\@envbody=\toks23
+\multlinegap=\skip69
+\multlinetaggap=\skip70
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count306
+\l_MT_multwidth_dim=\dimen131
+\origjot=\skip71
+\l_MT_shortvdotswithinadjustabove_dim=\dimen132
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen133
+\l_MT_above_intertext_sep=\dimen134
+\l_MT_below_intertext_sep=\dimen135
+\l_MT_above_shortintertext_sep=\dimen136
+\l_MT_below_shortintertext_sep=\dimen137
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/siunitx/siunitx.sty
+(/home/greg/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+Package: expl3 2019-10-02 L3 programming layer (loader) 
+
+(/home/greg/.miktex/texmfs/install/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2019-10-02 L3 programming layer (code)
+\c_max_int=\count307
+\l_tmpa_int=\count308
+\l_tmpb_int=\count309
+\g_tmpa_int=\count310
+\g_tmpb_int=\count311
+\l__seq_internal_a_int=\count312
+\l__seq_internal_b_int=\count313
+\g__kernel_prg_map_int=\count314
+\c__ior_term_noprompt_ior=\count315
+\c_log_iow=\count316
+\l_iow_line_count_int=\count317
+\l__iow_line_target_int=\count318
+\l__iow_one_indent_int=\count319
+\l__iow_indent_int=\count320
+\c_zero_dim=\dimen138
+\c_max_dim=\dimen139
+\l_tmpa_dim=\dimen140
+\l_tmpb_dim=\dimen141
+\g_tmpa_dim=\dimen142
+\g_tmpb_dim=\dimen143
+\c_zero_skip=\skip72
+\c_max_skip=\skip73
+\l_tmpa_skip=\skip74
+\l_tmpb_skip=\skip75
+\g_tmpa_skip=\skip76
+\g_tmpb_skip=\skip77
+\c_zero_muskip=\muskip16
+\c_max_muskip=\muskip17
+\l_tmpa_muskip=\muskip18
+\l_tmpb_muskip=\muskip19
+\g_tmpa_muskip=\muskip20
+\g_tmpb_muskip=\muskip21
+\l_keys_choice_int=\count321
+\l__intarray_loop_int=\count322
+\c__intarray_sp_dim=\dimen144
+\g__intarray_font_int=\count323
+\c__fp_leading_shift_int=\count324
+\c__fp_middle_shift_int=\count325
+\c__fp_trailing_shift_int=\count326
+\c__fp_big_leading_shift_int=\count327
+\c__fp_big_middle_shift_int=\count328
+\c__fp_big_trailing_shift_int=\count329
+\c__fp_Bigg_leading_shift_int=\count330
+\c__fp_Bigg_middle_shift_int=\count331
+\c__fp_Bigg_trailing_shift_int=\count332
+\c__kernel_randint_max_int=\count333
+\g__fp_array_int=\count334
+\l__fp_array_loop_int=\count335
+\l__sort_length_int=\count336
+\l__sort_min_int=\count337
+\l__sort_top_int=\count338
+\l__sort_max_int=\count339
+\l__sort_true_max_int=\count340
+\l__sort_block_int=\count341
+\l__sort_begin_int=\count342
+\l__sort_end_int=\count343
+\l__sort_A_int=\count344
+\l__sort_B_int=\count345
+\l__sort_C_int=\count346
+\l__str_internal_int=\count347
+\c__str_replacement_char_int=\count348
+\l__tl_analysis_normal_int=\count349
+\l__tl_analysis_index_int=\count350
+\l__tl_analysis_nesting_int=\count351
+\l__tl_analysis_type_int=\count352
+\l__regex_internal_a_int=\count353
+\l__regex_internal_b_int=\count354
+\l__regex_internal_c_int=\count355
+\l__regex_balance_int=\count356
+\l__regex_group_level_int=\count357
+\l__regex_mode_int=\count358
+\c__regex_cs_in_class_mode_int=\count359
+\c__regex_cs_mode_int=\count360
+\l__regex_catcodes_int=\count361
+\l__regex_default_catcodes_int=\count362
+\c__regex_catcode_D_int=\count363
+\c__regex_catcode_S_int=\count364
+\c__regex_catcode_L_int=\count365
+\c__regex_catcode_O_int=\count366
+\c__regex_catcode_A_int=\count367
+\c__regex_all_catcodes_int=\count368
+\l__regex_show_lines_int=\count369
+\l__regex_min_state_int=\count370
+\l__regex_max_state_int=\count371
+\l__regex_left_state_int=\count372
+\l__regex_right_state_int=\count373
+\l__regex_capturing_group_int=\count374
+\l__regex_min_pos_int=\count375
+\l__regex_max_pos_int=\count376
+\l__regex_curr_pos_int=\count377
+\l__regex_start_pos_int=\count378
+\l__regex_success_pos_int=\count379
+\l__regex_curr_char_int=\count380
+\l__regex_curr_catcode_int=\count381
+\l__regex_last_char_int=\count382
+\l__regex_case_changed_char_int=\count383
+\l__regex_curr_state_int=\count384
+\l__regex_step_int=\count385
+\l__regex_min_active_int=\count386
+\l__regex_max_active_int=\count387
+\l__regex_replacement_csnames_int=\count388
+\l__regex_match_count_int=\count389
+\l__regex_min_submatch_int=\count390
+\l__regex_submatch_int=\count391
+\l__regex_zeroth_submatch_int=\count392
+\g__regex_trace_regex_int=\count393
+\c_empty_box=\box29
+\l_tmpa_box=\box30
+\l_tmpb_box=\box31
+\g_tmpa_box=\box32
+\g_tmpb_box=\box33
+\l__box_top_dim=\dimen145
+\l__box_bottom_dim=\dimen146
+\l__box_left_dim=\dimen147
+\l__box_right_dim=\dimen148
+\l__box_top_new_dim=\dimen149
+\l__box_bottom_new_dim=\dimen150
+\l__box_left_new_dim=\dimen151
+\l__box_right_new_dim=\dimen152
+\l__box_internal_box=\box34
+\l__coffin_internal_box=\box35
+\l__coffin_internal_dim=\dimen153
+\l__coffin_offset_x_dim=\dimen154
+\l__coffin_offset_y_dim=\dimen155
+\l__coffin_x_dim=\dimen156
+\l__coffin_y_dim=\dimen157
+\l__coffin_x_prime_dim=\dimen158
+\l__coffin_y_prime_dim=\dimen159
+\c_empty_coffin=\box36
+\l__coffin_aligned_coffin=\box37
+\l__coffin_aligned_internal_coffin=\box38
+\l_tmpa_coffin=\box39
+\l_tmpb_coffin=\box40
+\g_tmpa_coffin=\box41
+\g_tmpb_coffin=\box42
+\l__coffin_bounding_shift_dim=\dimen160
+\l__coffin_left_corner_dim=\dimen161
+\l__coffin_right_corner_dim=\dimen162
+\l__coffin_bottom_corner_dim=\dimen163
+\l__coffin_top_corner_dim=\dimen164
+\l__coffin_scaled_total_height_dim=\dimen165
+\l__coffin_scaled_width_dim=\dimen166
+\c__coffin_empty_coffin=\box43
+\l__coffin_display_coffin=\box44
+\l__coffin_display_coord_coffin=\box45
+\l__coffin_display_pole_coffin=\box46
+\l__coffin_display_offset_dim=\dimen167
+\l__coffin_display_x_dim=\dimen168
+\l__coffin_display_y_dim=\dimen169
+\g__char_data_ior=\read2
+
+(/home/greg/.miktex/texmfs/install/tex/latex/l3kernel/l3deprecation.def
+File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
+))
+(/home/greg/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2019-04-06 v L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count394
+\l__pdf_internal_box=\box47
+))
+(/home/greg/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2019-05-28 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count395
+\g__xparse_grabber_int=\count396
+\l__xparse_m_args_int=\count397
+\l__xparse_v_nesting_int=\count398
+)
+Package: siunitx 2019/10/10 v2.7t A comprehensive (SI) units package
+
+(/home/greg/.miktex/texmfs/install/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen170
+\ar@mcellbox=\box48
+\extrarowheight=\dimen171
+\NC@list=\toks25
+\extratabsurround=\skip78
+\backup@length=\skip79
+\ar@cellbox=\box49
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2019-05-28 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box50
+\l__siunitx_tmp_dim=\dimen172
+\l__siunitx_tmp_int=\count399
+\l__siunitx_number_mantissa_length_int=\count400
+\l__siunitx_number_uncert_length_int=\count401
+\l__siunitx_round_int=\count402
+\l__siunitx_process_decimal_int=\count403
+\l__siunitx_process_uncertainty_int=\count404
+\l__siunitx_process_fixed_int=\count405
+\l__siunitx_process_integer_min_int=\count406
+\l__siunitx_process_precision_int=\count407
+\l__siunitx_group_min_int=\count408
+\l__siunitx_angle_marker_box=\box51
+\l__siunitx_angle_unit_box=\box52
+\l__siunitx_angle_marker_dim=\dimen173
+\l__siunitx_angle_unit_dim=\dimen174
+\l__siunitx_unit_int=\count409
+\l__siunitx_unit_denominator_int=\count410
+\l__siunitx_unit_numerator_int=\count411
+\l__siunitx_unit_prefix_int=\count412
+\l__siunitx_unit_prefix_base_int=\count413
+\l__siunitx_unit_prefix_gram_int=\count414
+\l__siunitx_number_product_int=\count415
+\c__siunitx_one_fill_skip=\skip80
+\l__siunitx_table_unit_align_skip=\skip81
+\l__siunitx_table_exponent_dim=\dimen175
+\l__siunitx_table_integer_dim=\dimen176
+\l__siunitx_table_mantissa_dim=\dimen177
+\l__siunitx_table_marker_dim=\dimen178
+\l__siunitx_table_result_dim=\dimen179
+\l__siunitx_table_uncert_dim=\dimen180
+\l__siunitx_table_fill_pre_dim=\dimen181
+\l__siunitx_table_fill_post_dim=\dimen182
+\l__siunitx_table_fill_mid_dim=\dimen183
+\l__siunitx_table_pre_box=\box53
+\l__siunitx_table_post_box=\box54
+\l__siunitx_table_mantissa_box=\box55
+\l__siunitx_table_result_box=\box56
+\l__siunitx_table_number_align_skip=\skip82
+\l__siunitx_table_text_align_skip=\skip83
+
+(/home/greg/.miktex/texmfs/install/tex/latex/translator/translator.sty
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+))
+(/home/greg/.miktex/texmfs/install/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box57
+\beforetitleunit=\skip84
+\aftertitleunit=\skip85
+\ttl@plus=\dimen184
+\ttl@minus=\dimen185
+\ttl@toksa=\toks26
+\titlewidth=\dimen186
+\titlewidthlast=\dimen187
+\titlewidthfirst=\dimen188
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+)
+(/home/greg/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+))
+LaTeX Font Info:    Trying to load font information for T1+Heuristica-TLF on in
+put line 4.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/heuristica/T1Heuristica-TLF.fd
+File: T1Heuristica-TLF.fd 2015/01/04 (autoinst) Font definitions for T1/Heurist
+ica-TLF.
+)
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 4.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 Package biblatex Info: Trying to load language 'english'...
@@ -919,6 +1710,38 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 4.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 4
+.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T2B/cmr/m/n on input line 4.
+LaTeX Font Info:    Trying to load font information for T2B+cmr on input line 4
+.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/cyrillic/t2bcmr.fd
+File: t2bcmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T2C/cmr/m/n on input line 4.
+LaTeX Font Info:    Trying to load font information for T2C+cmr on input line 4
+.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/cyrillic/t2ccmr.fd
+File: t2ccmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 4.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 4
+.
+
+(/home/greg/.miktex/texmfs/install/tex/latex/ly1/ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
 .
@@ -927,12 +1750,9 @@ LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 4.
+\c@mv@tabular=\count416
+\c@mv@boldtabular=\count417
 
-
-(/home/greg/.miktex/texmfs/install/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -982,17 +1802,17 @@ Package biblatex Info: Reference segment=0 on input line 4.
 
 (/home/greg/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count415
-\scratchdimen=\dimen184
-\scratchbox=\box57
-\nofMPsegments=\count416
-\nofMParguments=\count417
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count418
-\MPscratchDim=\dimen185
-\MPnumerator=\count419
-\makeMPintoPDFobject=\count420
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count418
+\scratchdimen=\dimen189
+\scratchbox=\box58
+\nofMPsegments=\count419
+\nofMParguments=\count420
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count421
+\MPscratchDim=\dimen190
+\MPnumerator=\count422
+\makeMPintoPDFobject=\count423
+\everyMPtoPDFconversion=\toks28
 ) (/home/greg/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1057,12 +1877,18 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 (/home/greg/.miktex/texmfs/install/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (src/titlepage.tex
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 6.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 6.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/sc' will be
+(Font)              scaled to size 8.0pt on input line 6.
 <../rsc/ipsa.png, id=1, 876.27374pt x 542.025pt>
 File: ../rsc/ipsa.png Graphic file (type png)
 <use ../rsc/ipsa.png>
@@ -1073,6 +1899,18 @@ File: ../rsc/rob.png Graphic file (type png)
 <use ../rsc/rob.png>
 Package pdftex.def Info: ../rsc/rob.png  used on input line 14.
 (pdftex.def)             Requested size: 130.81145pt x 98.10614pt.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 18.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 18.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 26.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 27.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 27.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 28.
 <../rsc/hera.png, id=3, 167.4255pt x 167.9073pt>
 File: ../rsc/hera.png Graphic file (type png)
 <use ../rsc/hera.png>
@@ -1084,97 +1922,392 @@ Package pdftex.def Info: ../rsc/hera.png  used on input line 43.
 
 {/home/greg/.miktex/texmfs/data/pdftex/config/pdftex.map} </home/greg/hera/repo
 rt/rsc/ipsa.png> </home/greg/hera/report/rsc/rob.png> </home/greg/hera/report/r
-sc/hera.png>]) (src/abstract.tex) (src/intro.tex
-Underfull \hbox (badness 3769) in paragraph at lines 9--10
-[]\T1/lmr/m/n/10 The mission's main objectives are to deepen our
+sc/hera.png>]) (src/abstract.tex
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 2.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 2.
+) (src/intro.tex
+Underfull \hbox (badness 3250) in paragraph at lines 3--4
+\T1/Heuristica-TLF/m/n/10 is an object first identified in 1996 as 1196G, by a
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 3--4
+\T1/Heuristica-TLF/m/n/10 later named Didymos (Greek word for twin), after a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+[]\T1/Heuristica-TLF/m/n/10 Hera is part of an international collaboration,
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 9--10
+[]\T1/Heuristica-TLF/m/n/10 The mission's main objectives are to deepen our
+ []
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 11--12
+[]\T1/Heuristica-TLF/m/n/10 Hera is set to launch in 2024, before traveling to
  []
 
 ) (src/currentwork.tex
-Underfull \hbox (badness 1389) in paragraph at lines 15--1
-[]\T1/lmr/m/n/10 In this paper, we describe our contribution to the
+Underfull \hbox (badness 10000) in paragraph at lines 15--1
+[]\T1/Heuristica-TLF/m/n/10 In this paper, we describe our contribution to
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 4--5
-\T1/lmr/m/it/10 Didymoon's surface thermal modeling\T1/lmr/m/n/10 . The former
+Underfull \hbox (badness 1314) in paragraph at lines 15--1
+\T1/Heuristica-TLF/m/n/10 the Hera Mission. Our work on the thermophysical
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 15--1
+\T1/Heuristica-TLF/m/n/10 model consists of taking into consideration the self
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 15--1
+\T1/Heuristica-TLF/m/n/10 phenomena. Geometric considerations were further
+ []
+
+
+Underfull \hbox (badness 7777) in paragraph at lines 15--1
+\T1/Heuristica-TLF/m/n/10 made to enrich the model such as true position,
+ []
+
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[]\T1/Heuristica-TLF/m/n/10 This paper is following the work of a previous
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 following thermophysical model and the numerical
+ []
+
+
+Underfull \hbox (badness 5175) in paragraph at lines 19--21
+\T1/Heuristica-TLF/m/n/10 with $\OML/lmm/m/it/10 S[]$ \T1/Heuristica-TLF/m/n/10
+ the solar constant heat flux, $\OML/lmm/m/it/10 A$ \T1/Heuristica-TLF/m/n/10 t
+he bond
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 31--33
+\T1/Heuristica-TLF/m/n/10 the asteroid. To express the temperature from this
+ []
+
+
+Underfull \hbox (badness 5217) in paragraph at lines 31--33
+\T1/Heuristica-TLF/m/n/10 equation, we used a second order finite-difference
  []
 
 [2
 
 
-]) (src/objectives.tex) (src/mutualheating.tex) (src/selfheating.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[]\T1/lmr/bx/n/14.4 Advanced thermophysical
+]) (src/objectives.tex) (src/mutualheating.tex
+Underfull \hbox (badness 1552) in paragraph at lines 4--1
+\T1/Heuristica-TLF/m/n/10 and especially for a binary system of asteroid. The
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-\T1/lmr/bx/n/14.4 model for rough surface
+|[]\T1/Heuristica-TLF/b/n/12 A thermophysical model for a binary
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 4--5
+[]\T1/Heuristica-TLF/m/n/10 In this section, we present the implementation of
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 the mutual heating. As Didymos is a binary system
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 of asteroid, the current thermophysical model is not
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 of the asteroid. The Hera mission focuses on the
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 secondary object in this binary system. Its surface
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 of the primary to the secondary, this phenomenon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+[]\T1/Heuristica-TLF/m/n/10 Didymos' secondary is modeled in a simplified
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+[]\T1/Heuristica-TLF/m/n/10 A complete thermophysical model including the
+ []
+
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 15.
+
+LaTeX Warning: Reference `eq 23' on page 3 undefined on input line 15.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
+
+ []
+
+
+LaTeX Warning: Citation 'Model' on page 3 undefined on input line 17.
+
+
+Underfull \hbox (badness 4556) in paragraph at lines 17--18
+\T1/Heuristica-TLF/m/n/10 from Didymain to Didymoon will be small due to
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 17--18
+\T1/Heuristica-TLF/m/n/10 the comparatively large distance of 1.18km [[]]
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 17--18
+\T1/Heuristica-TLF/m/n/10 albedo allow us to apply the single-scattering mode
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Underfull \hbox (badness 5652) in paragraph at lines 19--20
+[]\T1/Heuristica-TLF/m/n/10 Discretizing the two bodies into facets i for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+
+ []
+
+
+LaTeX Warning: Reference `Viewfac1' on page 3 undefined on input line 26.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+<rsc/viewfac1.png, id=26, 439.6425pt x 216.81pt>
+File: rsc/viewfac1.png Graphic file (type png)
+<use rsc/viewfac1.png>
+Package pdftex.def Info: rsc/viewfac1.png  used on input line 28.
+(pdftex.def)             Requested size: 100.09517pt x 49.35909pt.
+<rsc/viewfac2.png, id=27, 286.82156pt x 194.97844pt>
+File: rsc/viewfac2.png Graphic file (type png)
+<use rsc/viewfac2.png>
+Package pdftex.def Info: rsc/viewfac2.png  used on input line 29.
+(pdftex.def)             Requested size: 100.09517pt x 68.04115pt.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 30.
+
+Underfull \hbox (badness 1748) in paragraph at lines 39--40
+\T1/Heuristica-TLF/m/n/10 outward normal and the line between facet centers.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+[3 <./rsc/viewfac1.png> <./rsc/viewfac2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+[]\T1/Heuristica-TLF/m/n/10 Indeed, in addition to mutual heating
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 55--56
+\T1/Heuristica-TLF/m/n/10 implementation, we added the primary occultation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+[]\T1/Heuristica-TLF/m/n/10 Using spice and \T1/Heuristica-TLF/m/it/10 cspice_o
+ccult \T1/Heuristica-TLF/m/n/10 function, we can
+ []
+
+<rsc/occult.jpg, id=33, 396.7322pt x 431.36156pt>
+File: rsc/occult.jpg Graphic file (type jpg)
+<use rsc/occult.jpg>
+Package pdftex.def Info: rsc/occult.jpg  used on input line 60.
+(pdftex.def)             Requested size: 218.20337pt x 237.24959pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 68--69
+[]\T1/Heuristica-TLF/m/n/10 In order to check the result's consistency, several
+
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 68--69
+\T1/Heuristica-TLF/m/n/10 As the algorithm takes every single facets of both
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 70--71
+\T1/Heuristica-TLF/m/n/10 for a long time period, thus the temperature could
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+
+Underfull \hbox (badness 4156) in paragraph at lines 76--77
+[]\T1/Heuristica-TLF/m/n/10 Then, after a full integration and with the exact
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+) (src/selfheating.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+|[]\T1/Heuristica-TLF/b/n/12 Advanced thermophysical model for
  []
 
 ) (src/obliquity.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[]\T1/lmr/bx/n/14.4 Another important celestial
+Underfull \hbox (badness 1789) in paragraph at lines 4--1
+\T1/Heuristica-TLF/m/n/10 reflected rays might impact another location on the
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 4--5
-\T1/lmr/m/n/10 and the explanation of the impact on the surface
+Underfull \hbox (badness 4846) in paragraph at lines 1--1
+|[]\T1/Heuristica-TLF/b/n/12 Another important celestial parameter:
  []
 
-<rsc/obliquity.png, id=30, 323.7696pt x 229.3368pt>
+
+Underfull \hbox (badness 3396) in paragraph at lines 4--5
+[]\T1/Heuristica-TLF/m/n/10 This section describes the implementation of the
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 obliquity and the explanation of the impact on the
+ []
+
+<rsc/obliquity.png, id=34, 323.7696pt x 229.3368pt>
 File: rsc/obliquity.png Graphic file (type png)
 <use rsc/obliquity.png>
 Package pdftex.def Info: rsc/obliquity.png  used on input line 6.
 (pdftex.def)             Requested size: 250.24178pt x 177.25476pt.
-<rsc/obldemo2.png, id=31, 898.35625pt x 861.2175pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./rsc/occult.jpg>]
+Underfull \hbox (badness 1466) in paragraph at lines 9--10
+\T1/Heuristica-TLF/m/n/10 but on a point tilted from the equator as the figure
+ []
+
+
+Underfull \hbox (badness 5954) in paragraph at lines 11--12
+[]\T1/Heuristica-TLF/m/n/10 Before running the simulations presented in the
+ []
+
+<rsc/obldemo1.png, id=38, 629.9535pt x 627.5445pt>
+File: rsc/obldemo1.png Graphic file (type png)
+<use rsc/obldemo1.png>
+Package pdftex.def Info: rsc/obldemo1.png  used on input line 13.
+(pdftex.def)             Requested size: 250.24178pt x 249.28975pt.
+<rsc/obldemo2.png, id=39, 629.9535pt x 627.5445pt>
 File: rsc/obldemo2.png Graphic file (type png)
 <use rsc/obldemo2.png>
-Package pdftex.def Info: rsc/obldemo2.png  used on input line 13.
-(pdftex.def)             Requested size: 250.24178pt x 239.89085pt.
-<rsc/obldemo4.png, id=32, 983.675pt x 874.26625pt>
-File: rsc/obldemo4.png Graphic file (type png)
-<use rsc/obldemo4.png>
-Package pdftex.def Info: rsc/obldemo4.png  used on input line 14.
-(pdftex.def)             Requested size: 250.24178pt x 222.408pt.
+Package pdftex.def Info: rsc/obldemo2.png  used on input line 14.
+(pdftex.def)             Requested size: 250.24178pt x 249.28975pt.
+<rsc/obldemo3.png, id=40, 629.9535pt x 627.5445pt>
+File: rsc/obldemo3.png Graphic file (type png)
+<use rsc/obldemo3.png>
+Package pdftex.def Info: rsc/obldemo3.png  used on input line 15.
+(pdftex.def)             Requested size: 250.24178pt x 249.28975pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <./rsc/obliquity.png>]
-Underfull \hbox (badness 1097) in paragraph at lines 15--15
-\T1/lmr/m/n/8 temperature variation at longitude = 0 degrees on Didymos'
+
+Underfull \hbox (badness 3417) in paragraph at lines 16--16
+[]\T1/Heuristica-TLF/b/n/8 Figure 4: |\T1/Heuristica-TLF/m/n/8 Implementation o
+f the obliquity for the daily surface
  []
 
-<rsc/obldemo5.png, id=38, 753.81625pt x 885.3075pt>
-File: rsc/obldemo5.png Graphic file (type png)
-<use rsc/obldemo5.png>
-Package pdftex.def Info: rsc/obldemo5.png  used on input line 19.
-(pdftex.def)             Requested size: 250.24178pt x 293.88148pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\T1/Heuristica-TLF/m/n/10 Demonstration of the effects of the obliquity are
+ []
 
-<rsc/hourangle_obl0.png, id=39, 319.9152pt x 280.76895pt>
+
+Underfull \hbox (badness 4108) in paragraph at lines 18--19
+\T1/Heuristica-TLF/m/n/10 secondary along a full day assuming an ellipsoidal
+ []
+
+<rsc/hourangle_obl0.png, id=41, 319.9152pt x 280.76895pt>
 File: rsc/hourangle_obl0.png Graphic file (type png)
 <use rsc/hourangle_obl0.png>
-Package pdftex.def Info: rsc/hourangle_obl0.png  used on input line 24.
+Package pdftex.def Info: rsc/hourangle_obl0.png  used on input line 20.
 (pdftex.def)             Requested size: 250.24178pt x 219.62437pt.
-<rsc/hourangle_obl162.png, id=40, 319.9152pt x 280.76895pt>
+<rsc/hourangle_obl162.png, id=42, 319.9152pt x 280.76895pt>
 File: rsc/hourangle_obl162.png Graphic file (type png)
 <use rsc/hourangle_obl162.png>
-Package pdftex.def Info: rsc/hourangle_obl162.png  used on input line 25.
+Package pdftex.def Info: rsc/hourangle_obl162.png  used on input line 21.
 (pdftex.def)             Requested size: 250.24178pt x 219.62437pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./rsc/obldemo2.png> <./rsc/obldemo4.png> <./rsc/obldemo5.png> <./rsc/houra
-ngle_obl0.png (PNG copy)>]) (src/HO3.tex
-Underfull \hbox (badness 3514) in paragraph at lines 28--1
-\T1/lmr/m/n/10 As expected, temperature peaks shift in latitudes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[]\T1/lmr/bx/n/14.4 Another planetary defense
+ [5 <./rsc/obliquity.png> <./rsc/obldemo1.png> <./rsc/obldemo2.png> <./rsc/obld
+emo3.png>]
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 22.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 22.
+) (src/HO3.tex
+Underfull \hbox (badness 10000) in paragraph at lines 24--1
+\T1/Heuristica-TLF/m/n/10 As expected, temperature peaks shift in latitudes
  []
 
 
@@ -1183,13 +2316,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 6--8
-[]\T1/lmr/m/n/10 (469219) Kamo`oalewa, provisionally designated 2016
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--8
-
+Underfull \hbox (badness 1824) in paragraph at lines 6--8
+\T1/Heuristica-TLF/m/n/10 He has an excentricity e = 0,10414290 , a period of
  []
 
 
@@ -1197,82 +2325,153 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-<rsc/HO3_shapemodel.png, id=45, 501.875pt x 470.75874pt>
+<rsc/HO3_shapemodel.png, id=51, 501.875pt x 470.75874pt>
 File: rsc/HO3_shapemodel.png Graphic file (type png)
 <use rsc/HO3_shapemodel.png>
-Package pdftex.def Info: rsc/HO3_shapemodel.png  used on input line 14.
+Package pdftex.def Info: rsc/HO3_shapemodel.png  used on input line 15.
 (pdftex.def)             Requested size: 200.74643pt x 188.30016pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1661) in paragraph at lines 19--20
+[]\T1/Heuristica-TLF/m/n/10 We have used a know asteroid already implement
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<rsc/theo20mn.png, id=46, 429.16335pt x 309.43605pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+<rsc/theo20mn.png, id=52, 429.16335pt x 309.43605pt>
 File: rsc/theo20mn.png Graphic file (type png)
 <use rsc/theo20mn.png>
-Package pdftex.def Info: rsc/theo20mn.png  used on input line 24.
+Package pdftex.def Info: rsc/theo20mn.png  used on input line 28.
 (pdftex.def)             Requested size: 250.24178pt x 180.43152pt.
-<rsc/theo12h.png, id=47, 421.575pt x 316.18124pt>
+<rsc/theo12h.png, id=53, 421.575pt x 316.18124pt>
 File: rsc/theo12h.png Graphic file (type png)
 <use rsc/theo12h.png>
-Package pdftex.def Info: rsc/theo12h.png  used on input line 25.
+Package pdftex.def Info: rsc/theo12h.png  used on input line 29.
 (pdftex.def)             Requested size: 250.24178pt x 187.6839pt.
-[5 <./rsc/hourangle_obl162.png (PNG copy)> <./rsc/HO3_shapemodel.png> <./rsc/th
-eo20mn.png (PNG copy)> <./rsc/theo12h.png (PNG copy)>]) (src/furtherworks.tex
-Underfull \hbox (badness 10000) in paragraph at lines 30--1
+[6 <./rsc/hourangle_obl0.png (PNG copy)> <./rsc/hourangle_obl162.png (PNG copy)
+> <./rsc/HO3_shapemodel.png> <./rsc/theo20mn.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+[]\T1/Heuristica-TLF/m/n/10 The most differences between this figures are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+\T1/Heuristica-TLF/m/n/10 the mid day temperature is higher with a faster
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+\T1/Heuristica-TLF/m/n/10 rotation.Temperatures around mid day are much
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 35--36
+\T1/Heuristica-TLF/m/n/10 more stable on the axis of rotation with a delta of
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 35--36
+\T1/Heuristica-TLF/m/n/10 20 degrees variation while for a period of 12 hours
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+) (src/furtherworks.tex
+Underfull \hbox (badness 10000) in paragraph at lines 37--1
+[]\T1/Heuristica-TLF/m/n/10 More faster the asteroid his, higher are the
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 37--1
+\T1/Heuristica-TLF/m/n/10 temperature on a dedicate point. It's due that the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--1
+\T1/Heuristica-TLF/m/n/10 When the asteroid is slower the temperature is
+ []
+
+
+Underfull \hbox (badness 7451) in paragraph at lines 37--1
+\T1/Heuristica-TLF/m/n/10 distributed more uniformly over the whole of the
+ []
+
+
+Underfull \hbox (badness 5189) in paragraph at lines 37--1
+\T1/Heuristica-TLF/m/n/10 asteroid, which means that we will find fairly hot
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--1
+\T1/Heuristica-TLF/m/n/10 temperatures on the skew axis but also cooler
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--1
 
  []
 
 )
-Underfull \hbox (badness 2261) in paragraph at lines 23--23
-[]\T1/lmr/m/n/10 S. M. Clifford and C. J. Bartels.   The Mars
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]\T1/Heuristica-TLF/m/n/10 S. M. Clifford and C. J. Bartels.   The Mars
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 23--23
-\T1/lmr/m/n/10 Thermal Model `  Marstherm', a FORTRAN 77-
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/Heuristica-TLF/m/n/10 Thermal Model `   Marstherm' , a FORTRAN 77-
  []
 
 
-Underfull \hbox (badness 3919) in paragraph at lines 23--23
-\T1/lmr/m/n/10 finite differences program designed for general
+Underfull \hbox (badness 3815) in paragraph at lines 23--23
+\T1/Heuristica-TLF/m/n/10 finite differences program designed for general
  []
 
-[6
 
-] (/home/greg/hera/report/etc/pmi.aux)
+Underfull \hbox (badness 2134) in paragraph at lines 23--23
+\T1/Heuristica-TLF/m/n/10 distribution. In: \T1/Heuristica-TLF/m/it/10 Lunar P
+lanet. Sci. \T1/Heuristica-TLF/m/n/10 XVII (1986),
+ []
+
+[7 <./rsc/theo12h.png (PNG copy)>] (/home/greg/hera/report/etc/pmi.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please rerun LaTeX.
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                pmi
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'pmi.run.xml'.
 \openout1 = `pmi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25233 strings out of 494414
- 490532 string characters out of 3174621
- 883467 words of memory out of 3000000
- 29075 multiletter control sequences out of 15000+200000
- 622960 words of font info for 72 fonts, out of 3000000 for 9000
+ 28750 strings out of 494414
+ 555417 string characters out of 3174621
+ 925320 words of memory out of 3000000
+ 32512 multiletter control sequences out of 15000+200000
+ 612448 words of font info for 85 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 52i,12n,71p,883b,1188s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,12n,100p,883b,1523s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/greg/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-mathit.enc}{/home/gr
 eg/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rm.enc}{/home/greg/.miktex/texm
 fs/install/fonts/enc/dvips/lm/lm-mathsy.enc}{/home/greg/.miktex/texmfs/install/
-fonts/enc/dvips/lm/lm-ec.enc}{/home/greg/.miktex/texmfs/install/fonts/enc/dvips
-/lm/lm-mathex.enc}</home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmbx
-12.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmbx8.pfb></hom
-e/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmbx9.pfb></home/greg/.mikt
-ex/texmfs/install/fonts/type1/public/lm/lmcsc10.pfb></home/greg/.miktex/texmfs/
+fonts/enc/dvips/lm/lm-mathex.enc}{/home/greg/.miktex/texmfs/install/fonts/enc/d
+vips/heuristica/zut_geqeyh.enc}{/home/greg/.miktex/texmfs/install/fonts/enc/dvi
+ps/heuristica/zut_ysltpx.enc}</home/greg/.miktex/texmfs/install/fonts/type1/pub
+lic/heuristica/Heuristica-Bold.pfb></home/greg/.miktex/texmfs/install/fonts/typ
+e1/public/heuristica/Heuristica-Italic.pfb></home/greg/.miktex/texmfs/install/f
+onts/type1/public/heuristica/Heuristica-Regular.pfb></home/greg/.miktex/texmfs/
 install/fonts/type1/public/lm/lmex10.pfb></home/greg/.miktex/texmfs/install/fon
 ts/type1/public/lm/lmmi10.pfb></home/greg/.miktex/texmfs/install/fonts/type1/pu
 blic/lm/lmmi6.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmmi
@@ -1281,15 +2480,12 @@ blic/lm/lmmi6.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmmi
 x/texmfs/install/fonts/type1/public/lm/lmr6.pfb></home/greg/.miktex/texmfs/inst
 all/fonts/type1/public/lm/lmr7.pfb></home/greg/.miktex/texmfs/install/fonts/typ
 e1/public/lm/lmr8.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/
-lmr9.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmri10.pfb></
-home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmri12.pfb></home/greg/.
-miktex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb></home/greg/.miktex/texm
-fs/install/fonts/type1/public/lm/lmsy6.pfb></home/greg/.miktex/texmfs/install/f
-onts/type1/public/lm/lmsy7.pfb></home/greg/.miktex/texmfs/install/fonts/type1/p
-ublic/lm/lmsy8.pfb>
-Output written on pmi.pdf (6 pages, 3260826 bytes).
+lmsy10.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmsy6.pfb><
+/home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmsy7.pfb></home/greg/.
+miktex/texmfs/install/fonts/type1/public/lm/lmsy8.pfb>
+Output written on pmi.pdf (7 pages, 3881812 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 124 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
