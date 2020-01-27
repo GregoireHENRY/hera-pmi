@@ -1,11 +1,13 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: etc/pmi.aux
 The style file: abbrvnat.bst
 Database file #1: biblio.bib
-Warning--I didn't find a database entry for "Model"
+Warning--to sort, need author or key in model
 Name 1 in "Clifford, S. M., and C. J. Bartels" has a comma at the end for entry marstherm
 while executing---line 1347 of file abbrvnat.bst
 Name 1 in "Clifford, S. M., and C. J. Bartels" has a comma at the end for entry marstherm
 while executing---line 1347 of file abbrvnat.bst
+Warning--empty author in model
+Warning--empty journal in model
 Name 1 in "Clifford, S. M., and C. J. Bartels" has a comma at the end for entry marstherm
 while executing---line 1429 of file abbrvnat.bst
 Name 1 in "Clifford, S. M., and C. J. Bartels" has a comma at the end for entry marstherm

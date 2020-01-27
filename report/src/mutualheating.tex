@@ -1,7 +1,7 @@
 \section{A thermophysical model for a binary system of asteroids}
 \label{mutual}
 
-In this section, we present the implementation of the mutual heating. As Didymos is a binary system of asteroid, the current thermophysical model is not enough to fully describe the temperature at the surface of the asteroid. The Hera mission focuses on the secondary object in this binary system. Its surface temperature depends also on the primary object for two main reasons, firstly, the reflection of the Sun on the surface of the primary to the secondary, this phenomenon depends on the primary albedo and on its position with respect to the Sun and the secondary, and it is named the mutual direct heating, 2) the heat received from the primary itself, just as the Sun, considering it as a black body, it only depend on the distance and is called the mutual diffuse heating.
+In this section, we present the implementation of the mutual heating. As Didymos is a binary system of asteroid, the current thermophysical model is not enough to fully describe the temperature at the surface of the asteroid. The Hera mission focuses on the secondary object in this binary system. Its surface temperature depends also on the primary object for two main reasons, firstly, the reflection of the Sun on the surface of the primary to the secondary, this phenomenon depends on the primary albedo and on its position with respect to the Sun and the secondary, and it is named the mutual direct heating, and secondly, the heat received from the primary itself, just as the Sun, considering it as a black body, it only depend on the distance and is called the mutual diffuse heating.
 
 \subsection{Theory}
 
@@ -9,72 +9,56 @@ Didymos’ secondary is modeled in a simplified manner due to the many unknowns 
 
 A complete thermophysical model including the direct and diffuse mutual heating is \cite{pelivan}:
 \begin{equation}
-    Q_{Sun} + W_p + u_p + w_p = \epsilon \sigma u^4 + \kappa \frac{du}{dx},
-    \label{eq 41}
+    Q_\odot+W_p+Q_p+W_m=\epsilon\sigma u^4-k\frac{\partial{u}}{\partial{x}}\Big|_{x=0}
+    \label{eq:4.1}
 \end{equation}
-where the direct $Q_{Sun}$ compute from \autoref{eq:2.3}.
+where $W_p$ stands for the mutual heating from diffuse solar radiation from the primary, $Q_p$ corresponds to the direct thermal heating from the primary considered as a black body, $W_m$ is the diffuse thermal self heating and du/dx is the vertical temperature gradient with x positive upward.
 
-For the current simplified model, the mutual heating from Didymain to Didymoon will be small due to the comparatively large distance of 1.18km \cite{Model} between the two bodies and enter through terms $W_p$, $u_p$ and $w_p$. As defined in the reference model, the low albedo allow us to apply the single-scattering mode for which the diffuse thermal heating flux $w_p$ can be neglected. However, this flux will be discussed in the next part.\\
+For the current simplified model, the mutual heating from Didymain to Didymoon will be small due to the comparatively large distance of 1.18 km \citep{model} between the two bodies and enter through terms $W_p$ and $Q_p$. As defined in the reference model, the low albedo allows us to apply the single-scattering mode for which the diffuse thermal self heating flux $W_m$ can be neglected. However, this flux will be discussed in the next part.
 
-Discretizing the two bodies into facets i for the secondary and j for the primary, the mutual heating from diffuse solar radiation from the primary can be compute using :
+Discretizing the two bodies into facets $i$ for the secondary and $j$ for the primary, the mutual heating from diffuse solar radiation from the primary can be compute using:
 \begin{equation}
-    W_{p,j} = \sum_{i \neq j}^N V_{ij} \frac{S_{\odot} A cos \varsigma _j (t)}{r^2 (t)} v_{j,sun}.
-    \label{eq 42}
+    W_p=\sum_{i\neq j}^N V_{ij}\frac{S_{\odot}A\cos\varsigma_j}{r_H^2}
+    \label{eq:4.2}
 \end{equation}
-Where $N$ is the total number of facets, $v_{j,sun}$ is the facet view factor to the Sun, and $V_{ij}$ is the view factor.\\
-
-The view factor is the numerical value between 0 and 1 representing the visibility of one facet to another as shown in Figure (\ref{Viewfac1}). \\
+Where $N$ is the total number of facets and $V_{ij}$ is the view factor expressed as:
+\begin{equation}
+    V_{ij}=\frac{a_i\cos\theta_i\cos\theta_j}{\pi r^2}
+    \label{eq:4.3}
+\end{equation}
+where $a_i$ is the surface area of the seconday, $r$ is the distance between facets $i$ and $j$ and angles $\theta$ are the angles between the facet outward normal and the line between facet centers from primary and seconday. An angle of $\theta\geq90$ degrees represents two facets not facing each other. The following schemes explain the situation:
 \begin{center}
-    \includegraphics[width=.4\linewidth]{rsc/viewfac1.png} 
-    \includegraphics[width=.4\linewidth]{rsc/viewfac2.png}
-    \captionof{figure}{(a) View factor on Didymos system and (b) View factor schematic interpretation}
+    \includegraphics[width=\linewidth]{rsc/viewfac1.png} 
+    \includegraphics[width=\linewidth]{rsc/viewfac2.png}
+    \captionof{figure}{(1) View factor on Didymos system and (2) View factor schematic interpretation}
+    \label{fig:4.1}
 \end{center}
 
-Thus, this factor can be expressed as :
+Due to low aldbedo (both albedo of the primary and secondary are assumed identical) the direct thermal heating $Q_p$ is the largest flux from the primary:
 \begin{equation}
-    V_{ij}=\frac{a_i cos \theta _i cos \theta _j}{\pi r^2}.
-    \label{eq 43}
+    Q_p=\sum_{i\neq j}^N V_{ij}\epsilon\sigma u^4_{j}
+    \label{eq:4.4}
 \end{equation}
-
-$a_i$ is the surface area of element i (In our model, we consider $a_i=1$), $r$ is the distance between facets $i$ and $j$, and the angles $\theta$ are the angles between the facet outward normal and the line between facet centers. Using this factor, all facets with $\theta _i$ or $\theta _j$ $\geq 90 \deg $ are equals to 0 as they are not facing each other. \\
-
-Considering now the direct thermal heating $u_{p,j}$ which is the largest flux from the primary due to the low albedo, we can write it as follow :
-\begin{equation}
-    u_{p,j}=\sum_{i \neq j}^N V_{ij} \epsilon \sigma u^4_{s,j}.
-    \label{eq 44}
-\end{equation}
-
-Here, $T_{s,j}$ is the surface temperature of facet $j$.
-
-In order to reduce computing time, temperatures of the primary are not computed, all facet temperatures $u_{s,j}$ from Eq. (\ref{eq 44}) are set to the same high value based on midday temperatures of the moon.In applying Eqs. (\ref{eq 44}) and (\ref{eq 42}) therefore an upper limit is derived for the occurring fluxes $W_p$ and $u_p$. The temperature change due to heating from the primary is evaluated by applying Eq. (5) which for the night side and the eclipse periods of the moon reduces to :
-\begin{equation}
-    W_p + u_p = \epsilon \sigma u^4 + \kappa \frac{du}{dx},
-    \label{eq 45}
-\end{equation}
-
-Indeed, in addition to mutual heating implementation, we added the primary occultation on didymoon.
-
-Using spice and \textit{cspice\_occult} function, we can determine if the moon is fully or partially in the shade of the primary body. During those phases, the algorithm avoid any direct solar flux and only compute mutual heating from the primary as shown in Eq. (\ref{eq 45})
-
-\begin{center}
-    \includegraphics[scale=0.55]{rsc/occult.jpg}
-    \captionof{figure}{FOV, Phase angle and Occultation Considerations (Green means Didymoon is fully visible by HERA)}
-\end{center}
+where $u_{j}$ is the surface temperature of facet $j$. For computing time purposes, temperatures of the primary are not computed. All facets temperatures $u_{j}$ are set to the highest midday temperature of the moon. 
 
 \subsection{Integration}
-
-Using the Eq. (\ref{eq 41}), we implement the mutual heating to the current thermophysical model Eq. (1).\\
-
-In order to check the result's consistency, several test has been performed in all possible configurations. As the algorithm takes every single facets of both primary and secondary bodies, we compute only the temperature for a single position at the equator.\\
-
-The first test was performed using only the direct and indirect thermal from the primary, considering $Q_{Sun}=0$ for a long time period, thus the temperature could converge. This test doesn't have physical meanings as the direct flux from the Sun cannot be null for a such a time period but was performed to see the influence of the mutual heating and check if this one create a significant thermal flux.\\
-
-\textbf{[TEST RESULTS WITH AND W/O QSUN]}\\
-
-We also performed several tests taking positions all around the equator, in the shade and in the normal axis to the Sun and everything was consistent.\\
-
-Then, after a full integration and with the exact same parameters, we compute the difference between simulations including mutual heating and not including it.\\
-
-Thus, we have the following result :\\
-
-\textbf{[DIFFERENCE BETWEEN WITH AND W/O MUTUAL HEATING]}
+The \autoref{eq:4.1} can now be implemented to the current thermophysical model in \autoref{eq:2.1} to include the mutual heating from the primary body of the binary system of asteroid Didymos. Surface temperatures have been computed to each single node from the ESA shape models of the Didymos system asteroids.
+\begin{center}
+    \includegraphics[width=\linewidth]{rsc/mutual_model.png}
+    \captionof{figure}{The binary system of asteroids Didymos with the Sun direction. Latest shape models of the ESA have been used in this simulation. The primary has a radius of 500 meters and the secondary 80 meters.}
+    \label{fig:4.2}
+\end{center}
+After implementation of the revolution of Didymoon, the following results are obtained for the surface temperatures of the secondary including the mutual heating from the primary:
+\begin{center}
+    \includegraphics[width=\linewidth]{rsc/mutual.png}
+    \captionof{figure}{Thermal map of the secondary of the binary system of asteroids Didymos including the mutual heating from the primary using ESA shape models.}
+    \label{fig:4.2}
+\end{center}
+The computation were realized without the implementation of the obliquity, which is discussed in next parts. To compare with the previous implementation in \autoref{eq:2.1}, this graphs shows the benefits of including the mutual heating:
+\begin{center}
+    \includegraphics[width=\linewidth]{rsc/mutual_W.png}
+    \includegraphics[width=\linewidth]{rsc/mutual_Wu.png}
+    \captionof{figure}{The two graphs shows the impact of including the mutual heating on the surface temperatures of Didymoon. The first figure shows the difference between the surface temperatures with the secondary diffuse mutual heating only (\autoref{eq:4.2}) and without it. The second image is the difference of temperature including the two equation of the mutual heating (\autoref{eq:4.2} \& \autoref{eq:4.4}) and without it.} 
+    \label{fig:4.2}
+\end{center}
+The assumptions which consisted of considering the direct mutual heating as the largest flux of the mutual is confirmed with this graph. Furthermore, the \autoref{eq:4.2} costs much more computational time rather than the \autoref{eq:4.4}, thus, and due to the present albedo, it might be more clever to not implement it. The first case suggests an increase of $0.05$ \si{\kelvin} where the second case represents an increase of more than $2$ \si{\kelvin} depending on the regions.

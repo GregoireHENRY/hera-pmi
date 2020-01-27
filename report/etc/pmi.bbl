@@ -1,9 +1,14 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[mod(2015)]{model}
+Asteroid impact mission: Didymos reference model.
+\newblock 2015.
+\newblock ESA reference document, v3.1.
 
 \bibitem[Clifford and Bartels(1986)]{marstherm}
 S.~M. Clifford and C.~J. Bartels.
