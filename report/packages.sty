@@ -6,7 +6,10 @@
 \usepackage[margin=1.6cm, columnsep=0.8cm]{geometry}
 \usepackage[font=footnotesize, labelfont=bf, up]{caption}
 \usepackage{csquotes}
-\usepackage[backend=biber]{biblatex}
+%\usepackage[backend=biber, citestyle=authoryear]{biblatex}
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear,open={(},close={)}}
 \usepackage{graphicx}
 \usepackage{lmodern}
 \usepackage{import}
@@ -14,10 +17,10 @@
 \usepackage{siunitx}
 \usepackage{textcomp}
 \usepackage{titlesec}
-\usepackage{cleveref}
 \usepackage{indentfirst}
+\usepackage{hyperref}
 
-\addbibresource{biblio.bib}
+%\addbibresource{biblio.bib}
 
 %\setlength\parindent{0pt}
 
@@ -25,3 +28,25 @@
 
 \titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
 \titleformat{\subsection}{\large\itshape}{\thesubsection.}{0.5em}{}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    urlcolor=cyan,
+    filecolor=cyan,
+    citecolor=cyan
+}
+\let\orgautoref\autoref
+\providecommand{\Autoref}[1]{%
+\def\equationautorefname{Equation}%
+\def\figureautorefname{Figure}%
+\def\subfigureautorefname{Figure}%
+\orgautoref{#1}%
+}
+\renewcommand{\autoref}[1]{%
+\def\equationautorefname{Eq.}%
+\def\figureautorefname{Fig.}%
+\def\subfigureautorefname{Fig.}%
+\def\tableautorefname{Tab.}%
+\orgautoref{#1}%
+}

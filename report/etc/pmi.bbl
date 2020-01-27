@@ -1,135 +1,27 @@
-% $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
-% Do not modify the above lines!
-%
-% This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
-%
-\begingroup
-\makeatletter
-\@ifundefined{ver@biblatex.sty}
-  {\@latex@error
-     {Missing 'biblatex' package}
-     {The bibliography requires the 'biblatex' package.}
-      \aftergroup\endinput}
-  {}
-\endgroup
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Clifford and Bartels(1986)]{marstherm}
+S.~M. Clifford and C.~J. Bartels.
+\newblock The mars thermal model \enquote{Marstherm}, a fortran 77-finite
+  differences program designed for general distribution.
+\newblock \emph{Lunar Planet. Sci.}, XVII:\penalty0 142--143, 1986.
 
-\refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{marstherm}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4ee79ea5c685550ee1cc6ca6ee428353}{%
-           family={Clifford},
-           familyi={C\bibinitperiod},
-           given={S.\bibnamedelimi M.},
-           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=6c51c3083ab7baa5394df642cfc760c5}{%
-           family={Bartels},
-           familyi={B\bibinitperiod},
-           given={C.\bibnamedelimi J.},
-           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{9703b2cdd5cfac959b6e0e16a7f12287}
-      \strng{fullhash}{9703b2cdd5cfac959b6e0e16a7f12287}
-      \strng{bibnamehash}{9703b2cdd5cfac959b6e0e16a7f12287}
-      \strng{authorbibnamehash}{9703b2cdd5cfac959b6e0e16a7f12287}
-      \strng{authornamehash}{9703b2cdd5cfac959b6e0e16a7f12287}
-      \strng{authorfullhash}{9703b2cdd5cfac959b6e0e16a7f12287}
-      \field{sortinit}{C}
-      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Lunar Planet. Sci.}
-      \field{title}{The Mars Thermal Model \enquote{Marstherm}, a FORTRAN 77-finite differences program designed for general distribution}
-      \field{volume}{XVII}
-      \field{year}{1986}
-      \true{nocite}
-      \field{pages}{142\bibrangedash 143}
-      \range{pages}{2}
-    \endentry
-    \entry{williams1997}{article}{}
-      \name{author}{1}{}{%
-        {{hash=6e17c257341ca46ba2059f8a6a0055c3}{%
-           family={Kasting},
-           familyi={K\bibinitperiod},
-           given={Darren\bibnamedelimb M.\bibnamedelimi Williams\bibnamedelimb \& James\bibnamedelima F.},
-           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim \~J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \strng{namehash}{6e17c257341ca46ba2059f8a6a0055c3}
-      \strng{fullhash}{6e17c257341ca46ba2059f8a6a0055c3}
-      \strng{bibnamehash}{6e17c257341ca46ba2059f8a6a0055c3}
-      \strng{authorbibnamehash}{6e17c257341ca46ba2059f8a6a0055c3}
-      \strng{authornamehash}{6e17c257341ca46ba2059f8a6a0055c3}
-      \strng{authorfullhash}{6e17c257341ca46ba2059f8a6a0055c3}
-      \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Habitable Planets with Hight Obliquities}
-      \field{year}{1997}
-      \true{nocite}
-    \endentry
-    \entry{pelivan}{article}{}
-      \name{author}{8}{}{%
-        {{hash=6a0b0daa0f966d28ef8126d3ff8c5711}{%
-           family={Pelivan},
-           familyi={P\bibinitperiod},
-           given={Ivanka},
-           giveni={I\bibinitperiod}}}%
-        {{hash=d6bfe2604c2fff08a49a733751e6101d}{%
-           family={Drube},
-           familyi={D\bibinitperiod},
-           given={Line},
-           giveni={L\bibinitperiod}}}%
-        {{hash=1f65ef17ef801a0248dcf520795af817}{%
-           family={Kührt},
-           familyi={K\bibinitperiod},
-           given={Ekkehard},
-           giveni={E\bibinitperiod}}}%
-        {{hash=a93c13db346fc0051bdac140ecd87c98}{%
-           family={Helbert},
-           familyi={H\bibinitperiod},
-           given={Jörn},
-           giveni={J\bibinitperiod}}}%
-        {{hash=a53fff2c4de67508a3210cf1f5793124}{%
-           family={Biele},
-           familyi={B\bibinitperiod},
-           given={Jens},
-           giveni={J\bibinitperiod}}}%
-        {{hash=20c71bc0d34085f1e09fab56f900f7b3}{%
-           family={Maibaum},
-           familyi={M\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=f981904cc530cb2b64ffdd3017fa5761}{%
-           family={Cozzoni},
-           familyi={C\bibinitperiod},
-           given={Barbara},
-           giveni={B\bibinitperiod}}}%
-        {{hash=0818767257f150ff40b3e43499287984}{%
-           family={Lommatsch},
-           familyi={L\bibinitperiod},
-           given={Valentina},
-           giveni={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{b78e82a29cbca72b80016f093456a270}
-      \strng{fullhash}{d1283614e5814a168a99e96b135eb5ef}
-      \strng{bibnamehash}{b78e82a29cbca72b80016f093456a270}
-      \strng{authorbibnamehash}{b78e82a29cbca72b80016f093456a270}
-      \strng{authornamehash}{b78e82a29cbca72b80016f093456a270}
-      \strng{authorfullhash}{d1283614e5814a168a99e96b135eb5ef}
-      \field{sortinit}{P}
-      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Thermophysical modeling of Didymos' moon for the Asteroid Impact Mission}
-      \field{year}{2017}
-      \true{nocite}
-    \endentry
-  \enddatalist
-\endrefsection
-\endinput
+\bibitem[Kasting(1997)]{williams1997}
+D.~M. W. . J.~F. Kasting.
+\newblock Habitable planets with hight obliquities.
+\newblock 1997.
 
+\bibitem[Pelivan et~al.(2017)Pelivan, Drube, Kührt, Helbert, Biele, Maibaum,
+  Cozzoni, and Lommatsch]{pelivan}
+I.~Pelivan, L.~Drube, E.~Kührt, J.~Helbert, J.~Biele, M.~Maibaum, B.~Cozzoni,
+  and V.~Lommatsch.
+\newblock Thermophysical modeling of didymos' moon for the asteroid impact
+  mission.
+\newblock 2017.
+
+\end{thebibliography}

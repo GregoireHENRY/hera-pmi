@@ -1,7 +1,7 @@
 \section{A thermophysical model for a binary system of asteroids}
 \label{mutual}
 
-In this section, we present the implementation of the mutual heating. As Didymos is a binary system of asteroid, the current thermophysical model is not enough to fully describe the temperature at the surface of the asteroid. The Hera mission focuses on the secondary object in this binary system. Its surface temperature depends also on the primary object for two main reasons. 1) the reflection of the Sun on the surface of the primary to the secondary, this phenomenon depends on the primary albedo and on its position with respect to the Sun and the secondary, and it is named the mutual direct heating, 2) the heat received from the primary itself, just as the Sun, considering it as a black body, it only depend on the distance and is called the mutual diffuse heating.
+In this section, we present the implementation of the mutual heating. As Didymos is a binary system of asteroid, the current thermophysical model is not enough to fully describe the temperature at the surface of the asteroid. The Hera mission focuses on the secondary object in this binary system. Its surface temperature depends also on the primary object for two main reasons, firstly, the reflection of the Sun on the surface of the primary to the secondary, this phenomenon depends on the primary albedo and on its position with respect to the Sun and the secondary, and it is named the mutual direct heating, 2) the heat received from the primary itself, just as the Sun, considering it as a black body, it only depend on the distance and is called the mutual diffuse heating.
 
 \subsection{Theory}
 
@@ -12,7 +12,7 @@ A complete thermophysical model including the direct and diffuse mutual heating 
     Q_{Sun} + W_p + u_p + w_p = \epsilon \sigma u^4 + \kappa \frac{du}{dx},
     \label{eq 41}
 \end{equation}
-where the direct $Q_{Sun}$ compute from Eq. (\ref{eq 23})\\
+where the direct $Q_{Sun}$ compute from \autoref{eq:2.3}.
 
 For the current simplified model, the mutual heating from Didymain to Didymoon will be small due to the comparatively large distance of 1.18km \cite{Model} between the two bodies and enter through terms $W_p$, $u_p$ and $w_p$. As defined in the reference model, the low albedo allow us to apply the single-scattering mode for which the diffuse thermal heating flux $w_p$ can be neglected. However, this flux will be discussed in the next part.\\
 

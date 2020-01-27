@@ -1,3 +1,4 @@
 rm -f pmi.pdf
 pdflatex pmi.tex -aux-directory=etc
+#bibtex etc/pmi.aux
 #biber pmi --output-directory=etc

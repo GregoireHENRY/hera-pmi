@@ -1,20 +1,15 @@
-[0] Config.pm:304> INFO - This is Biber 2.13
-[0] Config.pm:307> INFO - Logfile is 'etc/pmi.blg'
-[26] biber:315> INFO - === mer. déc. 18, 2019, 19:55:09
-[44] Biber.pm:375> INFO - Reading 'etc/pmi.bcf'
-[118] Biber.pm:902> INFO - Using all citekeys in bib section 0
-[133] Biber.pm:4196> INFO - Processing section 0
-[134] Utils.pm:75> INFO - Globbing data source 'biblio.bib'
-[135] Utils.pm:91> INFO - Globbed data source 'biblio.bib' to biblio.bib
-[144] Biber.pm:4373> INFO - Looking for bibtex format file 'biblio.bib' for section 0
-[145] bibtex.pm:1462> INFO - LaTeX decoding ...
-[150] bibtex.pm:1281> INFO - Found BibTeX data source 'biblio.bib'
-[174] Utils.pm:300> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[175] Utils.pm:300> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
-[187] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[187] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[187] Biber.pm:4024> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[187] Biber.pm:4030> INFO - No sort tailoring available for locale 'en-US'
-[192] bbl.pm:648> INFO - Writing 'etc/pmi.bbl' with encoding 'UTF-8'
-[195] bbl.pm:751> INFO - Output to etc/pmi.bbl
-[195] Biber.pm:110> INFO - WARNINGS: 2
+This is BibTeX, Version 0.99dThe top-level auxiliary file: etc/pmi.aux
+The style file: abbrvnat.bst
+Database file #1: biblio.bib
+Warning--I didn't find a database entry for "Model"
+Name 1 in "Clifford, S. M., and C. J. Bartels" has a comma at the end for entry marstherm
+while executing---line 1347 of file abbrvnat.bst
+Name 1 in "Clifford, S. M., and C. J. Bartels" has a comma at the end for entry marstherm
+while executing---line 1347 of file abbrvnat.bst
+Name 1 in "Clifford, S. M., and C. J. Bartels" has a comma at the end for entry marstherm
+while executing---line 1429 of file abbrvnat.bst
+Name 1 in "Clifford, S. M., and C. J. Bartels" has a comma at the end for entry marstherm
+while executing---line 1429 of file abbrvnat.bst
+Warning--empty journal in williams1997
+Warning--empty journal in pelivan
+(There were 4 error messages)
