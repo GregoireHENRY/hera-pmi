@@ -1,0 +1,12 @@
+\section{Surface covering}
+\label{sec:8}
+
+In order to get a more visual grasp on HERA's vision on Didymoon, we wanted to make use of the NASA/NAIF Spice database, coupled with Cosmographia.
+
+Spice is an observation geometry information system designed by NASA's Navigation and Ancillary Information Facility (NAIF) to assist scientists in planning and interpreting scientific observations from space-based instruments aboard planetary spacecraft. 
+
+Cosmographia is an interactive tool used to produce 3D visualizations of planet, spacecraft and other objects in the solar system, while taking into account trajectories positions and orientations.
+
+By combining known positions of Didymoon, Didymain, expected positions of HERA and the characteristics of the on-board AFC (Asteroid Framing Camera), we could recreate a visual representation of the visibility HERA will have on Didymoon during the various mission phases. 
+
+We relied on the FOV condition API set of functions (fovray) provided in the NAIF Spice toolkit which verifies if a ray is withing the boundaries of a specified instrument. By using this API, we are theoretically capable of determining which parts of Didymoon are visible at any moment in time. 

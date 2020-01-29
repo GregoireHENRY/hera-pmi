@@ -1,5 +1,5 @@
 \section{A thermophysical model for a binary system of asteroids}
-\label{mutual}
+\label{sec:4}
 
 In this section, we present the implementation of the mutual heating. As Didymos is a binary system of asteroid, the current thermophysical model is not enough to fully describe the temperature at the surface of the asteroid. The Hera mission focuses on the secondary object in this binary system. Its surface temperature depends also on the primary object for two main reasons, firstly, the reflection of the Sun on the surface of the primary to the secondary, this phenomenon depends on the primary albedo and on its position with respect to the Sun and the secondary, and it is named the mutual direct heating, and secondly, the heat received from the primary itself, just as the Sun, considering it as a black body, it only depend on the distance and is called the mutual diffuse heating.
 
@@ -7,14 +7,14 @@ In this section, we present the implementation of the mutual heating. As Didymos
 
 Didymos’ secondary is modeled in a simplified manner due to the many unknowns and assumptions adopted in this study. This section deals with neglected effects thought to alter surface temperatures in certain cases.
 
-A complete thermophysical model including the direct and diffuse mutual heating is \cite{pelivan}:
+A complete thermophysical model including the direct and diffuse mutual heating is \citep{pelivan}:
 \begin{equation}
-    Q_\odot+W_p+Q_p+W_m=\epsilon\sigma u^4-k\frac{\partial{u}}{\partial{x}}\Big|_{x=0}
+    Q_\odot+W_p+Q_p+W_m+Q_m=\epsilon\sigma u^4-k\frac{\partial{u}}{\partial{x}}\Big|_{x=0}
     \label{eq:4.1}
 \end{equation}
-where $W_p$ stands for the mutual heating from diffuse solar radiation from the primary, $Q_p$ corresponds to the direct thermal heating from the primary considered as a black body, $W_m$ is the diffuse thermal self heating and du/dx is the vertical temperature gradient with x positive upward.
+where $W_p$ stands for the mutual heating from diffuse solar radiation from the primary, $Q_p$ corresponds to the direct thermal heating from the primary considered as a black body, $W_m$ is the diffuse thermal self heating, $Q_m$ is the direct thermal self heating and du/dx is the vertical temperature gradient with x positive upward.
 
-For the current simplified model, the mutual heating from Didymain to Didymoon will be small due to the comparatively large distance of 1.18 km \citep{model} between the two bodies and enter through terms $W_p$ and $Q_p$. As defined in the reference model, the low albedo allows us to apply the single-scattering mode for which the diffuse thermal self heating flux $W_m$ can be neglected. However, this flux will be discussed in the next part.
+For the current simplified model, the mutual heating from Didymain to Didymoon will be small due to the comparatively large distance of 1.18 km \citep{model} between the two bodies and enter through terms $W_p$ and $Q_p$. As defined in the reference model, the low albedo allows us to apply the single-scattering mode for which the diffuse thermal self heating flux $W_m$ can be neglected. Furthermore, considering the current shape of Didymoon, which is a simple ellipsoid, it is not necessary to include the term $Q_m$ neither. However, these two flux will be discussed in the next part.
 
 Discretizing the two bodies into facets $i$ for the secondary and $j$ for the primary, the mutual heating from diffuse solar radiation from the primary can be compute using:
 \begin{equation}
@@ -27,12 +27,12 @@ Where $N$ is the total number of facets and $V_{ij}$ is the view factor expresse
     \label{eq:4.3}
 \end{equation}
 where $a_i$ is the surface area of the seconday, $r$ is the distance between facets $i$ and $j$ and angles $\theta$ are the angles between the facet outward normal and the line between facet centers from primary and seconday. An angle of $\theta\geq90$ degrees represents two facets not facing each other. The following schemes explain the situation:
-\begin{center}
-    \includegraphics[width=\linewidth]{rsc/viewfac1.png} 
-    \includegraphics[width=\linewidth]{rsc/viewfac2.png}
+\begin{figure*}[t]
+    \includegraphics[width=0.6\linewidth]{rsc/viewfac1.png} 
+    \includegraphics[width=0.6\linewidth]{rsc/viewfac2.png}
     \captionof{figure}{(1) View factor on Didymos system and (2) View factor schematic interpretation}
     \label{fig:4.1}
-\end{center}
+\end{figure*}
 
 Due to low aldbedo (both albedo of the primary and secondary are assumed identical) the direct thermal heating $Q_p$ is the largest flux from the primary:
 \begin{equation}

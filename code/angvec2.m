@@ -22,3 +22,4 @@ end
 
 % return in radians
 ang = ang * 180/pi;
+ang(isnan(ang))=0;
