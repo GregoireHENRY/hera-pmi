@@ -1,6 +1,14 @@
 \section{A thermophysical model for a binary system of asteroids}
 \label{sec:4}
 
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.4\linewidth]{rsc/viewfac1.png} 
+    \includegraphics[width=0.4\linewidth]{rsc/viewfac2.png}
+    \captionof{figure}{(1) View factor on Didymos system and (2) View factor schematic interpretation}
+    \label{fig:4.1}
+\end{figure*}
+
 In this section, we present the implementation of the mutual heating. As Didymos is a binary system of asteroid, the current thermophysical model is not enough to fully describe the temperature at the surface of the asteroid. The Hera mission focuses on the secondary object in this binary system. Its surface temperature depends also on the primary object for two main reasons, firstly, the reflection of the Sun on the surface of the primary to the secondary, this phenomenon depends on the primary albedo and on its position with respect to the Sun and the secondary, and it is named the mutual direct heating, and secondly, the heat received from the primary itself, just as the Sun, considering it as a black body, it only depend on the distance and is called the mutual diffuse heating.
 
 \subsection{Theory}
@@ -26,13 +34,7 @@ Where $N$ is the total number of facets and $V_{ij}$ is the view factor expresse
     V_{ij}=\frac{a_i\cos\theta_i\cos\theta_j}{\pi r^2}
     \label{eq:4.3}
 \end{equation}
-where $a_i$ is the surface area of the seconday, $r$ is the distance between facets $i$ and $j$ and angles $\theta$ are the angles between the facet outward normal and the line between facet centers from primary and seconday. An angle of $\theta\geq90$ degrees represents two facets not facing each other. The following schemes explain the situation:
-\begin{figure*}[t]
-    \includegraphics[width=0.6\linewidth]{rsc/viewfac1.png} 
-    \includegraphics[width=0.6\linewidth]{rsc/viewfac2.png}
-    \captionof{figure}{(1) View factor on Didymos system and (2) View factor schematic interpretation}
-    \label{fig:4.1}
-\end{figure*}
+where $a_i$ is the surface area of the seconday, $r$ is the distance between facets $i$ and $j$ and angles $\theta$ are the angles between the facet outward normal and the line between facet centers from primary and seconday. An angle of $\theta\geq90$ degrees represents two facets not facing each other. Schemes in \autoref{fig:4.1} explain the situation.
 
 Due to low aldbedo (both albedo of the primary and secondary are assumed identical) the direct thermal heating $Q_p$ is the largest flux from the primary:
 \begin{equation}

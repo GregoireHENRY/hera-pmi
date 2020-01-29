@@ -7,7 +7,7 @@ In this section we present the implement of the self heating. A normal at the su
 
 The implementation of the thermophysical model beaming into Didymoon, described above, had mutual-heating occurring between the two bodies of the Didymos system. However, this implementation neglected global self heating that can occur within large-scale concavities of an irregularly shaped asteroid.
 
-Global self-heating provides a mechanism for heat to be transferred laterally across an asteroid surface. Fig. ??? demonstrates how global self heating can affect the thermophysical model and temperatures predictions for an asteroid with a large-scale concavity and an irregular shape. The large-scale concavity results in heat transfers that occur at certain geometries, where a facet is facing another one. In the absence of global self heating, those facets would receive only direct flux and mutual heating flux. However, if the facet receives reflected solar flux and emitted thermal radiation from the opposite side of the concavity that is illuminated, the temperature would be higher than expected. The aim of this section is to implement this phenomenon.
+Global self-heating provides a mechanism for heat to be transferred laterally across an asteroid surface. \autoref{fig:5.5} demonstrates how global self heating can affect the thermophysical model and temperatures predictions for an asteroid with a large-scale concavity and an irregular shape. The large-scale concavity results in heat transfers that occur at certain geometries, where a facet is facing another one. In the absence of global self heating, those facets would receive only direct flux and mutual heating flux. However, if the facet receives reflected solar flux and emitted thermal radiation from the opposite side of the concavity that is illuminated, the temperature would be higher than expected. The aim of this section is to implement this phenomenon.
 
 \begin{center}
     \includegraphics[width=0.5\linewidth]{rsc/self.jpg}
@@ -34,6 +34,14 @@ The two terms relative to the self heating in \autoref{eq:4.1} are now considere
 These two equations complete the model seen in \autoref{eq:4.1}. They very look like equations of the mutual, the only difference is the indices of the facets. Each surface node temperature is computed with respect to every other nodes on the asteroid excepting the current one. $i_1$ and $i_2$ belong to the asteroid. $V_{i_1i_2}$ is computed as seen in \autoref{eq:4.3}. Same assumptions are taken for $u_{i_2}$ as in the \autoref{sec:4}.
 
 \subsection{Integration}
+\begin{figure*}[b]
+    \centering
+    \includegraphics[width=0.33\linewidth]{rsc/self_3D_1.png}
+    \includegraphics[width=0.33\linewidth]{rsc/self_3D_2.png}
+    \includegraphics[width=0.33\linewidth]{rsc/self_3D_3.png}
+    \caption{Self heating contribution displayed on the 3D shape model of the asteroid Mathilde.}
+    \label{fig:5.5}
+\end{figure*}
 To investigate in general on how global self heating within large concavities of asteroids influences thermophysical model, it is needed to first check the result's consistency, such as the surface temperature expected to be higher in a cratere. The implementation of the self heating on the shape model of the asteroid Mathilde results in the following thermal map:
 \begin{center}
     \includegraphics[width=\linewidth]{rsc/self_2D.png}
@@ -42,16 +50,10 @@ To investigate in general on how global self heating within large concavities of
     \label{fig:5.3}
 \end{center}
 The contribution of the self heating may appear to be in some place higher than 5 Kelvins, as shown in the figure bellow, but this color axis has been chosen for reading purposes.
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=\linewidth]{rsc/self_contribution.png}
-    \captionof{figure}{Self heating contribution for each facet. Most values are located between 0 and 5 Kelvin.}
+    \caption{Distribution of the self heating contribution for each facet. Most values are located between 0 and 5 Kelvin.}
     \label{fig:5.4}
-\end{center}
-The results appears to be consistent as the following figures prove it, the self heating contribution is most essencially located in crateres.
-\begin{center}
-    \includegraphics[width=\linewidth]{rsc/self_3D_1.png}
-    \includegraphics[width=\linewidth]{rsc/self_3D_2.png}
-    \includegraphics[width=\linewidth]{rsc/self_3D_3.png}
-    \captionof{figure}{Self heating contribution displayed on the 3D shape model of the asteroid Mathilde.}
-    \label{fig:5.5}
-\end{center}
+\end{figure}
+The results in \autoref{fig:5.5} appear to be consistent. The self heating distribution of the contribution is most essencially located in crateres.
