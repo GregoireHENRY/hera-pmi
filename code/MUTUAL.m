@@ -51,7 +51,7 @@ np = length(n);
 % ASTEROID SHAPE MODEL 2
 obj2 = read_obj(objpath2);
 tris2 = set_tris(obj2);
-m2 = tris2.m'*500;
+m2 = tris2.m'*1e3;
 n2 = tris2.n';
 sph2 = tris2.sph;
 area2 = tris2.S';
@@ -69,11 +69,6 @@ mrot  = mrotv3(rotv,  dt*2*pi/p);
 % n     = mrot0*n;
 % vert  = mrot0*obj.v';
 
-% Vij
-% np = 1;
-% ind = 440; %9 171
-% m = m(:,ind);
-% n = n(:,ind);
 dobj = my_norm(r2);
 for ii=1:length(m)
     dirobj=m(:,ii)-(m2+r2);
@@ -131,7 +126,7 @@ args = struct( ...
 
 % TEMPERATURE SUBROUTINE
 fprintf('Computing.. '); tic;
-u = TEMP3(args); toc;
+u = TEMP_MUTUAL(args); toc;
 
 % DISPLAY
 close all;
@@ -172,9 +167,9 @@ title(sprintf('%.1f AU', dau));
 m2r = m2+r2;
 figure;
 hold on; grid on; axis equal;
-scatter3(m(1,:), m(2,:), m(3,:), 'b', 'filled', 'sizedata', 3, 'markeredgecolor', 'k');
+scatter3(m(1,:), m(2,:), m(3,:), 'b', 'filled', 'sizedata', 4, 'markeredgecolor', 'k');
 scatter3(m2r(1,:), m2r(2,:), m2r(3,:), 'b', 'filled', 'sizedata', 3, 'markeredgecolor', 'k');
 ru = r/my_norm(r)*1500;
-scatter3(ru(1,:), ru(2,:), ru(3,:), 'r', 'filled', 'sizedata', 1000, 'markeredgecolor', 'k');
+scatter3(ru(1,:), ru(2,:), ru(3,:), 'r', 'filled', 'sizedata', 200, 'markeredgecolor', 'k');
 % imgname    = sprintf('images/mutual_model.png');
 % print(gcf,imgname,'-dpng','-r600');
