@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  29 JAN 2020 02:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  29 JAN 2020 23:36
 entering extended mode
 **./pmi.tex
 (pmi.tex
@@ -1568,14 +1568,7 @@ LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 
-(/home/greg/hera/report/etc/pmi.aux
-
-LaTeX Warning: Label `fig:4.2' multiply defined.
-
-
-LaTeX Warning: Label `fig:4.2' multiply defined.
-
-)
+(/home/greg/hera/report/etc/pmi.aux)
 \openout1 = `pmi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -1593,7 +1586,8 @@ LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 4.
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 4
 .
- (/home/greg/.miktex/texmfs/install/tex/latex/cyrillic/t2acmr.fd
+
+(/home/greg/.miktex/texmfs/install/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 4.
@@ -1786,12 +1780,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 6.
 LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/sc' will be
 (Font)              scaled to size 8.0pt on input line 6.
-<../rsc/ipsa.png, id=55, 876.27374pt x 542.025pt>
+<../rsc/ipsa.png, id=63, 876.27374pt x 542.025pt>
 File: ../rsc/ipsa.png Graphic file (type png)
 <use ../rsc/ipsa.png>
 Package pdftex.def Info: ../rsc/ipsa.png  used on input line 12.
 (pdftex.def)             Requested size: 141.27861pt x 87.38742pt.
-<../rsc/rob.png, id=56, 722.7pt x 542.025pt>
+<../rsc/rob.png, id=64, 722.7pt x 542.025pt>
 File: ../rsc/rob.png Graphic file (type png)
 <use ../rsc/rob.png>
 Package pdftex.def Info: ../rsc/rob.png  used on input line 14.
@@ -1808,7 +1802,7 @@ LaTeX Font Info:    Font shape `T1/Heuristica-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 27.
 LaTeX Font Info:    Font shape `T1/Heuristica-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 28.
-<../rsc/hera.png, id=57, 167.4255pt x 167.9073pt>
+<../rsc/hera.png, id=65, 167.4255pt x 167.9073pt>
 File: ../rsc/hera.png Graphic file (type png)
 <use ../rsc/hera.png>
 Package pdftex.def Info: ../rsc/hera.png  used on input line 43.
@@ -1825,7 +1819,7 @@ LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/Heuristica-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 2.
 ) (src/intro.tex
-<rsc/hera_didymos.png, id=71, 1445.4pt x 751.30687pt>
+<rsc/hera_didymos.png, id=79, 1445.4pt x 751.30687pt>
 File: rsc/hera_didymos.png Graphic file (type png)
 <use rsc/hera_didymos.png>
 Package pdftex.def Info: rsc/hera_didymos.png  used on input line 6.
@@ -1882,7 +1876,7 @@ Underfull \hbox (badness 7777) in paragraph at lines 22--23
 \T1/Heuristica-TLF/m/n/10 made to enrich the model such as true position,
  []
 
-<rsc/didy.png, id=72, 1894.07625pt x 976.64874pt>
+<rsc/didy.png, id=80, 1894.07625pt x 976.64874pt>
 File: rsc/didy.png Graphic file (type png)
 <use rsc/didy.png>
 Package pdftex.def Info: rsc/didy.png  used on input line 26.
@@ -1930,16 +1924,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 |[]\T1/Heuristica-TLF/b/n/12 A thermophysical model for a binary
  []
 
-<rsc/viewfac1.png, id=90, 439.6425pt x 216.81pt>
+<rsc/viewfac1.png, id=98, 439.6425pt x 216.81pt>
 File: rsc/viewfac1.png Graphic file (type png)
 <use rsc/viewfac1.png>
 Package pdftex.def Info: rsc/viewfac1.png  used on input line 6.
-(pdftex.def)             Requested size: 209.29514pt x 103.21408pt.
-<rsc/viewfac2.png, id=91, 286.82156pt x 194.97844pt>
+(pdftex.def)             Requested size: 183.13922pt x 90.31522pt.
+<rsc/viewfac2.png, id=99, 286.82156pt x 194.97844pt>
 File: rsc/viewfac2.png Graphic file (type png)
 <use rsc/viewfac2.png>
 Package pdftex.def Info: rsc/viewfac2.png  used on input line 7.
-(pdftex.def)             Requested size: 209.29514pt x 142.27951pt.
+(pdftex.def)             Requested size: 183.13922pt x 124.49718pt.
 
 Underfull \hbox (badness 1694) in paragraph at lines 12--13
 []\T1/Heuristica-TLF/m/n/10 In this section, we present the implementation of
@@ -1994,14 +1988,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 25--26
-\T1/Heuristica-TLF/m/n/10 comparatively large distance of 1.18 km ([][]mod[][],
- [][]2015[][])
+Underfull \hbox (badness 4556) in paragraph at lines 25--26
+\T1/Heuristica-TLF/m/n/10 from Didymain to Didymoon will be small due to
  []
 
 
-Underfull \hbox (badness 1616) in paragraph at lines 25--26
-\T1/Heuristica-TLF/m/n/10 be neglected. Furthermore, considering the current
+Underfull \hbox (badness 1769) in paragraph at lines 25--26
+\T1/Heuristica-TLF/m/n/10 reference model[][]) between the two bodies and enter
+
+ []
+
+
+Underfull \hbox (badness 4954) in paragraph at lines 25--26
+\T1/Heuristica-TLF/m/n/10 scattering mode for which the diffuse thermal self
+ []
+
+
+Underfull \hbox (badness 6658) in paragraph at lines 25--26
+\T1/Heuristica-TLF/m/n/10 heating flux $\OML/lmm/m/it/10 W[]$ \T1/Heuristica-TL
+F/m/n/10 can be neglected. Furthermore,
  []
 
 
@@ -2032,11 +2037,11 @@ Underfull \hbox (badness 2608) in paragraph at lines 47--48
 \T1/Heuristica-TLF/m/n/10 computed to each single node from the ESA shape
  []
 
-<rsc/mutual_model.png, id=108, 529.98pt x 387.72855pt>
+<rsc/mutual_model.png, id=115, 2197.008pt x 1996.8201pt>
 File: rsc/mutual_model.png Graphic file (type png)
 <use rsc/mutual_model.png>
 Package pdftex.def Info: rsc/mutual_model.png  used on input line 49.
-(pdftex.def)             Requested size: 250.24178pt x 183.07254pt.
+(pdftex.def)             Requested size: 225.21606pt x 204.69061pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 50.
@@ -2058,9 +2063,8 @@ Underfull \hbox (badness 1558) in paragraph at lines 53--54
 \T1/Heuristica-TLF/m/n/10 temperatures of the secondary including the mutual
  []
 
-[4 <./rsc/viewfac1.png> <./rsc/viewfac2.png> <./rsc/mutual_model.png (PNG copy)
->]
-<rsc/mutual.png, id=123, 2290.959pt x 1141.1433pt>
+[4 <./rsc/viewfac1.png> <./rsc/viewfac2.png> <./rsc/mutual_model.png>]
+<rsc/mutual.png, id=132, 2290.959pt x 1141.1433pt>
 File: rsc/mutual.png Graphic file (type png)
 <use rsc/mutual.png>
 Package pdftex.def Info: rsc/mutual.png  used on input line 55.
@@ -2092,12 +2096,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 \T1/Heuristica-TLF/m/n/10 in next parts. To compare with the previous
  []
 
-<rsc/mutual_W.png, id=125, 2355.2793pt x 1152.7065pt>
+<rsc/mutual_W.png, id=134, 2355.2793pt x 1152.7065pt>
 File: rsc/mutual_W.png Graphic file (type png)
 <use rsc/mutual_W.png>
 Package pdftex.def Info: rsc/mutual_W.png  used on input line 61.
 (pdftex.def)             Requested size: 250.24178pt x 122.47124pt.
-<rsc/mutual_Wu.png, id=126, 2306.1357pt x 1155.5973pt>
+<rsc/mutual_Wu.png, id=135, 2306.1357pt x 1155.5973pt>
 File: rsc/mutual_Wu.png Graphic file (type png)
 <use rsc/mutual_Wu.png>
 Package pdftex.def Info: rsc/mutual_Wu.png  used on input line 62.
@@ -2119,9 +2123,32 @@ Underfull \hbox (badness 2088) in paragraph at lines 63--63
 g the two
  []
 
-) (src/selfheating.tex
-Underfull \hbox (badness 1122) in paragraph at lines 66--1
+
+Underfull \hbox (badness 1122) in paragraph at lines 66--67
 \T1/Heuristica-TLF/m/n/10 The assumptions which consisted of considering the
+ []
+
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 82.
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 82.
+LaTeX Font Info:    Trying to load font information for TS1+Heuristica-TLF on i
+nput line 87.
+(/home/greg/.miktex/texmfs/install/tex/latex/heuristica/TS1Heuristica-TLF.fd
+File: TS1Heuristica-TLF.fd 2015/01/04 (autoinst) Font definitions for TS1/Heuri
+stica-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/Heuristica-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 87.
+
+Overfull \hbox (3.75822pt too wide) in paragraph at lines 74--90
+[][] 
+ []
+
+) (src/selfheating.tex
+Underfull \hbox (badness 1097) in paragraph at lines 70--1
+\T1/Heuristica-TLF/m/n/10 identical as in [][]Didymos reference model[][] and [
+][]Michel
  []
 
 
@@ -2134,122 +2161,109 @@ Underfull \hbox (badness 1789) in paragraph at lines 4--5
 \T1/Heuristica-TLF/m/n/10 reflected rays might impact another location on the
  []
 
+<rsc/self_3D_1.png, id=147, 2095.83pt x 1589.94pt>
+File: rsc/self_3D_1.png Graphic file (type png)
+<use rsc/self_3D_1.png>
+Package pdftex.def Info: rsc/self_3D_1.png  used on input line 10.
+(pdftex.def)             Requested size: 172.67207pt x 130.98244pt.
+<rsc/self_3D_2.png, id=148, 2230.2522pt x 1671.6051pt>
+File: rsc/self_3D_2.png Graphic file (type png)
+<use rsc/self_3D_2.png>
+Package pdftex.def Info: rsc/self_3D_2.png  used on input line 11.
+(pdftex.def)             Requested size: 172.67207pt x 129.42052pt.
+<rsc/self_3D_3.png, id=149, 2101.6116pt x 1673.0505pt>
+File: rsc/self_3D_3.png Graphic file (type png)
+<use rsc/self_3D_3.png>
+Package pdftex.def Info: rsc/self_3D_3.png  used on input line 12.
+(pdftex.def)             Requested size: 172.67207pt x 137.4463pt.
 
-Underfull \hbox (badness 2285) in paragraph at lines 8--9
+Underfull \hbox (badness 2285) in paragraph at lines 17--18
 []\T1/Heuristica-TLF/m/n/10 The implementation of the thermophysical model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-\T1/Heuristica-TLF/m/n/10 heating occurring between the two bodies of the
+Underfull \hbox (badness 1082) in paragraph at lines 17--18
+\T1/Heuristica-TLF/m/n/10 the Didymos system. However, this implementation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-\T1/Heuristica-TLF/m/n/10 Didymos system. However, this implementation
- []
-
-
-Underfull \hbox (badness 3724) in paragraph at lines 8--9
-\T1/Heuristica-TLF/m/n/10 neglected global self heating that can occur within
- []
-
-
-Underfull \hbox (badness 1097) in paragraph at lines 10--11
+Underfull \hbox (badness 1097) in paragraph at lines 19--20
 []\T1/Heuristica-TLF/m/n/10 Global self-heating provides a mechanism for heat
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 10--11
+Underfull \hbox (badness 1194) in paragraph at lines 19--20
 \T1/Heuristica-TLF/m/n/10 to be transferred laterally across an asteroid surfac
 e.
  []
 
-<rsc/self.jpg, id=136, 247.67531pt x 231.11343pt>
+<rsc/self.jpg, id=152, 247.67531pt x 231.11343pt>
 File: rsc/self.jpg Graphic file (type jpg)
 <use rsc/self.jpg>
-Package pdftex.def Info: rsc/self.jpg  used on input line 13.
+Package pdftex.def Info: rsc/self.jpg  used on input line 22.
 (pdftex.def)             Requested size: 125.12088pt x 116.75543pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 14.
+(caption)                particular \caption on input line 23.
 See the caption package documentation for explanation.
 
-<rsc/mathilde.png, id=137, 421.575pt x 316.18124pt>
+
+Underfull \vbox (badness 2119) has occurred while \output is active []
+
+ [5 <./rsc/mutual.png> <./rsc/mutual_W.png> <./rsc/mutual_Wu.png>]
+<rsc/mathilde.png, id=173, 421.575pt x 316.18124pt>
 File: rsc/mathilde.png Graphic file (type png)
 <use rsc/mathilde.png>
-Package pdftex.def Info: rsc/mathilde.png  used on input line 20.
-(pdftex.def)             Requested size: 250.24178pt x 187.6839pt.
+Package pdftex.def Info: rsc/mathilde.png  used on input line 29.
+(pdftex.def)             Requested size: 175.16847pt x 131.3768pt.
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 21.
+(caption)                particular \caption on input line 30.
 See the caption package documentation for explanation.
 
 
-Underfull \vbox (badness 1742) has occurred while \output is active []
-
- [5 <./rsc/mutual.png> <./rsc/mutual_W.png> <./rsc/mutual_Wu.png> <./rsc/self.j
-pg>]
-<rsc/self_3D_1.png, id=153, 2095.83pt x 1589.94pt>
-File: rsc/self_3D_1.png Graphic file (type png)
-<use rsc/self_3D_1.png>
-Package pdftex.def Info: rsc/self_3D_1.png  used on input line 39.
-(pdftex.def)             Requested size: 172.67207pt x 130.98244pt.
-<rsc/self_3D_2.png, id=154, 2230.2522pt x 1671.6051pt>
-File: rsc/self_3D_2.png Graphic file (type png)
-<use rsc/self_3D_2.png>
-Package pdftex.def Info: rsc/self_3D_2.png  used on input line 40.
-(pdftex.def)             Requested size: 172.67207pt x 129.42052pt.
-<rsc/self_3D_3.png, id=155, 2101.6116pt x 1673.0505pt>
-File: rsc/self_3D_3.png Graphic file (type png)
-<use rsc/self_3D_3.png>
-Package pdftex.def Info: rsc/self_3D_3.png  used on input line 41.
-(pdftex.def)             Requested size: 172.67207pt x 137.4463pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 \T1/Heuristica-TLF/m/n/10 within large concavities of asteroids influences
  []
 
 
-Underfull \hbox (badness 7504) in paragraph at lines 45--46
+Underfull \hbox (badness 7504) in paragraph at lines 46--47
 \T1/Heuristica-TLF/m/n/10 thermophysical model, it is needed to first check
  []
 
-<rsc/self_2D.png, id=156, 2262.051pt x 1158.4881pt>
+<rsc/self_2D.png, id=179, 2262.051pt x 1158.4881pt>
 File: rsc/self_2D.png Graphic file (type png)
 <use rsc/self_2D.png>
-Package pdftex.def Info: rsc/self_2D.png  used on input line 47.
+Package pdftex.def Info: rsc/self_2D.png  used on input line 48.
 (pdftex.def)             Requested size: 250.24178pt x 128.15884pt.
-<rsc/self_2D_diff.png, id=157, 2201.3442pt x 1175.8329pt>
+<rsc/self_2D_diff.png, id=180, 2201.3442pt x 1175.8329pt>
 File: rsc/self_2D_diff.png Graphic file (type png)
 <use rsc/self_2D_diff.png>
-Package pdftex.def Info: rsc/self_2D_diff.png  used on input line 48.
+Package pdftex.def Info: rsc/self_2D_diff.png  used on input line 49.
 (pdftex.def)             Requested size: 250.24178pt x 133.64803pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 49.
+(caption)                particular \caption on input line 50.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 5832) in paragraph at lines 49--49
+Underfull \hbox (badness 5832) in paragraph at lines 50--50
 []\T1/Heuristica-TLF/b/n/8 Figure 10: |[]\T1/Heuristica-TLF/m/n/8 The first fig
 ure is the thermal map of the surface
  []
 
-<rsc/self_contribution.png, id=160, 429.16335pt x 309.43605pt>
+<rsc/self_contribution.png, id=183, 429.16335pt x 309.43605pt>
 File: rsc/self_contribution.png Graphic file (type png)
 <use rsc/self_contribution.png>
-Package pdftex.def Info: rsc/self_contribution.png  used on input line 55.
+Package pdftex.def Info: rsc/self_contribution.png  used on input line 57.
 (pdftex.def)             Requested size: 250.24178pt x 180.43152pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./rsc/mathilde.png (PNG copy)> <./rsc/self_2D.png> <./rsc/self_2D_diff.png
-> <./rsc/self_3D_1.png> <./rsc/self_3D_2.png> <./rsc/self_3D_3.png>]) (src/obli
-quity.tex
-Underfull \hbox (badness 2173) in paragraph at lines 59--1
-\T1/Heuristica-TLF/m/n/10 self heating distribution of the contribution is most
-
+[6 <./rsc/self.jpg> <./rsc/mathilde.png (PNG copy)> <./rsc/self_2D.png> <./rsc/
+self_2D_diff.png> <./rsc/self_3D_1.png> <./rsc/self_3D_2.png> <./rsc/self_3D_3.
+png>]) (src/obliquity.tex
+Underfull \hbox (badness 5832) in paragraph at lines 62--1
+[]\T1/Heuristica-TLF/m/n/10 Results in [][]Fig. 7[][][] appear to be consistent
+. The
  []
 
 
@@ -2257,81 +2271,82 @@ Underfull \hbox (badness 4846) in paragraph at lines 1--1
 |[]\T1/Heuristica-TLF/b/n/12 Another important celestial parameter:
  []
 
-<rsc/obldemo1.png, id=176, 629.9535pt x 627.5445pt>
+<rsc/obldemo1.png, id=200, 629.9535pt x 627.5445pt>
 File: rsc/obldemo1.png Graphic file (type png)
 <use rsc/obldemo1.png>
 Package pdftex.def Info: rsc/obldemo1.png  used on input line 5.
 (pdftex.def)             Requested size: 172.67207pt x 172.01509pt.
-<rsc/obldemo2.png, id=177, 629.9535pt x 627.5445pt>
+<rsc/obldemo2.png, id=201, 629.9535pt x 627.5445pt>
 File: rsc/obldemo2.png Graphic file (type png)
 <use rsc/obldemo2.png>
 Package pdftex.def Info: rsc/obldemo2.png  used on input line 6.
 (pdftex.def)             Requested size: 172.67207pt x 172.01509pt.
-<rsc/obldemo3.png, id=178, 629.9535pt x 627.5445pt>
+<rsc/obldemo3.png, id=202, 629.9535pt x 627.5445pt>
 File: rsc/obldemo3.png Graphic file (type png)
 <use rsc/obldemo3.png>
 Package pdftex.def Info: rsc/obldemo3.png  used on input line 7.
 (pdftex.def)             Requested size: 172.67207pt x 172.01509pt.
 
-Underfull \hbox (badness 3396) in paragraph at lines 11--12
+Underfull \hbox (badness 3396) in paragraph at lines 12--13
 []\T1/Heuristica-TLF/m/n/10 This section describes the implementation of the
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 11--12
+Underfull \hbox (badness 2469) in paragraph at lines 12--13
 \T1/Heuristica-TLF/m/n/10 obliquity and the explanation of the impact on the
  []
 
-<rsc/obliquity.png, id=179, 323.7696pt x 229.3368pt>
+<rsc/obliquity.png, id=203, 323.7696pt x 229.3368pt>
 File: rsc/obliquity.png Graphic file (type png)
 <use rsc/obliquity.png>
-Package pdftex.def Info: rsc/obliquity.png  used on input line 13.
+Package pdftex.def Info: rsc/obliquity.png  used on input line 14.
 (pdftex.def)             Requested size: 250.24178pt x 177.25476pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 14.
+(caption)                particular \caption on input line 15.
 See the caption package documentation for explanation.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4819) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 16--17
+Underfull \hbox (badness 1466) in paragraph at lines 18--19
 \T1/Heuristica-TLF/m/n/10 but on a point tilted from the equator as the figure
  []
 
 
-Underfull \hbox (badness 5954) in paragraph at lines 18--19
+Underfull \hbox (badness 5954) in paragraph at lines 20--21
 []\T1/Heuristica-TLF/m/n/10 Before running the simulations presented in the
  []
 
-<rsc/hourangle_obl0.png, id=180, 319.9152pt x 280.76895pt>
+<rsc/hourangle_obl0.png, id=204, 319.9152pt x 280.76895pt>
 File: rsc/hourangle_obl0.png Graphic file (type png)
 <use rsc/hourangle_obl0.png>
-Package pdftex.def Info: rsc/hourangle_obl0.png  used on input line 23.
-(pdftex.def)             Requested size: 235.45901pt x 206.65187pt.
-<rsc/hourangle_obl162.png, id=181, 319.9152pt x 280.76895pt>
+Package pdftex.def Info: rsc/hourangle_obl0.png  used on input line 25.
+(pdftex.def)             Requested size: 209.29514pt x 183.68864pt.
+<rsc/hourangle_obl162.png, id=205, 319.9152pt x 280.76895pt>
 File: rsc/hourangle_obl162.png Graphic file (type png)
 <use rsc/hourangle_obl162.png>
-Package pdftex.def Info: rsc/hourangle_obl162.png  used on input line 24.
-(pdftex.def)             Requested size: 235.45901pt x 206.65187pt.
-LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 25.
-LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 25.
-) (src/HO3.tex
-Underfull \hbox (badness 3758) in paragraph at lines 20--1
+Package pdftex.def Info: rsc/hourangle_obl162.png  used on input line 26.
+(pdftex.def)             Requested size: 209.29514pt x 183.68864pt.
+
+Underfull \hbox (badness 3758) in paragraph at lines 22--30
 []\T1/Heuristica-TLF/m/n/10 Demonstration of the effects of the obliquity are
  []
 
 
-Underfull \hbox (badness 4108) in paragraph at lines 20--1
+Underfull \hbox (badness 4108) in paragraph at lines 22--30
 \T1/Heuristica-TLF/m/n/10 secondary along a full day assuming an ellipsoidal
  []
 
+) (src/HO3.tex
+Underfull \hbox (badness 4036) in paragraph at lines 31--1
+[]\T1/Heuristica-TLF/m/n/10 As expected, temperature peaks shift in latitudes
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
+Underfull \hbox (badness 3977) in paragraph at lines 4--5
+[]\T1/Heuristica-TLF/m/n/10 This section introduce another scientific mission,
  []
 
 
@@ -2339,152 +2354,183 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7 <./rsc/self_contribution.png (PNG copy)> <./rsc/obliquity.png> <./rsc/oblde
 mo1.png> <./rsc/obldemo2.png> <./rsc/obldemo3.png>]
-Underfull \hbox (badness 1824) in paragraph at lines 6--8
-\T1/Heuristica-TLF/m/n/10 He has an excentricity e = 0,10414290 , a period of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-<rsc/HO3_shapemodel.png, id=195, 501.875pt x 470.75874pt>
+<rsc/HO3_shapemodel.png, id=218, 505.89pt x 474.0912pt>
 File: rsc/HO3_shapemodel.png Graphic file (type png)
 <use rsc/HO3_shapemodel.png>
-Package pdftex.def Info: rsc/HO3_shapemodel.png  used on input line 15.
-(pdftex.def)             Requested size: 200.74643pt x 188.30016pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package pdftex.def Info: rsc/HO3_shapemodel.png  used on input line 7.
+(pdftex.def)             Requested size: 125.12088pt x 117.25655pt.
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 19--20
-[]\T1/Heuristica-TLF/m/n/10 We have used a know asteroid already implement
- []
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 8.
+See the caption package documentation for explanation.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
- []
-
-<rsc/theo20mn.png, id=196, 429.16335pt x 309.43605pt>
+<rsc/theo20mn.png, id=219, 2261.3283pt x 1331.9361pt>
 File: rsc/theo20mn.png Graphic file (type png)
 <use rsc/theo20mn.png>
-Package pdftex.def Info: rsc/theo20mn.png  used on input line 28.
-(pdftex.def)             Requested size: 250.24178pt x 180.43152pt.
-<rsc/theo12h.png, id=197, 421.575pt x 316.18124pt>
+Package pdftex.def Info: rsc/theo20mn.png  used on input line 15.
+(pdftex.def)             Requested size: 250.24178pt x 147.38733pt.
+<rsc/theo12h.png, id=220, 2227.3614pt x 1326.1545pt>
 File: rsc/theo12h.png Graphic file (type png)
 <use rsc/theo12h.png>
-Package pdftex.def Info: rsc/theo12h.png  used on input line 29.
-(pdftex.def)             Requested size: 250.24178pt x 187.6839pt.
+Package pdftex.def Info: rsc/theo12h.png  used on input line 16.
+(pdftex.def)             Requested size: 250.24178pt x 148.97346pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 30.
+(caption)                particular \caption on input line 17.
 See the caption package documentation for explanation.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./rsc/hourangle_obl0.png (PNG copy)> <./rsc/hourangle_obl162.png (PNG copy
-)> <./rsc/HO3_shapemodel.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-[]\T1/Heuristica-TLF/m/n/10 The most differences between this figures are
+
+Underfull \hbox (badness 1796) in paragraph at lines 17--17
+[]\T1/Heuristica-TLF/b/n/8 Figure 16: |[]\T1/Heuristica-TLF/m/n/8 Impact of the
+ revolution period of an asteroid on its
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-\T1/Heuristica-TLF/m/n/10 the mid day temperature is higher with a faster
+Underfull \hbox (badness 1910) in paragraph at lines 17--17
+\T1/Heuristica-TLF/m/n/8 temperature surface. Every other parameters has been s
+et as in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-\T1/Heuristica-TLF/m/n/10 rotation.Temperatures around mid day are much
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+[]\T1/Heuristica-TLF/m/n/10 The difference between the two graphs are the
  []
 
-
-Underfull \hbox (badness 2781) in paragraph at lines 35--36
-\T1/Heuristica-TLF/m/n/10 more stable on the axis of rotation with a delta of
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 35--36
-\T1/Heuristica-TLF/m/n/10 20 degrees variation while for a period of 12 hours
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--42
-[]\T1/Heuristica-TLF/m/n/10 More faster the asteroid his, higher are the
- []
-
-
-Underfull \hbox (badness 2538) in paragraph at lines 37--42
-\T1/Heuristica-TLF/m/n/10 temperature on a dedicate point. It's due that the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--42
-\T1/Heuristica-TLF/m/n/10 When the asteroid is slower the temperature is
- []
-
-
-Underfull \hbox (badness 7451) in paragraph at lines 37--42
-\T1/Heuristica-TLF/m/n/10 distributed more uniformly over the whole of the
- []
-
-
-Underfull \hbox (badness 5189) in paragraph at lines 37--42
-\T1/Heuristica-TLF/m/n/10 asteroid, which means that we will find fairly hot
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--42
-\T1/Heuristica-TLF/m/n/10 temperatures on the skew axis but also cooler
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--42
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-<rsc/HO3_3D_normalspeed.png, id=209, 994.71625pt x 779.91376pt>
+<rsc/HO3_3D_normalspeed.png, id=225, 994.71625pt x 779.91376pt>
 File: rsc/HO3_3D_normalspeed.png Graphic file (type png)
 <use rsc/HO3_3D_normalspeed.png>
-Package pdftex.def Info: rsc/HO3_3D_normalspeed.png  used on input line 46.
-(pdftex.def)             Requested size: 250.24178pt x 196.2037pt.
-<rsc/HO3_Xaxis_normalspeed.png, id=210, 994.71625pt x 779.91376pt>
+Package pdftex.def Info: rsc/HO3_3D_normalspeed.png  used on input line 25.
+(pdftex.def)             Requested size: 156.97534pt x 123.07507pt.
+<rsc/HO3_Xaxis_normalspeed.png, id=226, 994.71625pt x 779.91376pt>
 File: rsc/HO3_Xaxis_normalspeed.png Graphic file (type png)
 <use rsc/HO3_Xaxis_normalspeed.png>
-Package pdftex.def Info: rsc/HO3_Xaxis_normalspeed.png  used on input line 47.
-(pdftex.def)             Requested size: 250.24178pt x 196.2037pt.
-<rsc/HO3_Yaxis_normalspeed.png, id=211, 994.71625pt x 779.91376pt>
+Package pdftex.def Info: rsc/HO3_Xaxis_normalspeed.png  used on input line 26.
+(pdftex.def)             Requested size: 156.97534pt x 123.07507pt.
+<rsc/HO3_Yaxis_normalspeed.png, id=227, 994.71625pt x 779.91376pt>
 File: rsc/HO3_Yaxis_normalspeed.png Graphic file (type png)
 <use rsc/HO3_Yaxis_normalspeed.png>
-Package pdftex.def Info: rsc/HO3_Yaxis_normalspeed.png  used on input line 48.
-(pdftex.def)             Requested size: 250.24178pt x 196.2037pt.
+Package pdftex.def Info: rsc/HO3_Yaxis_normalspeed.png  used on input line 27.
+(pdftex.def)             Requested size: 156.97534pt x 123.07507pt.
+[8 <./rsc/hourangle_obl0.png (PNG copy)> <./rsc/hourangle_obl162.png (PNG copy)
+> <./rsc/HO3_shapemodel.png> <./rsc/theo20mn.png> <./rsc/theo12h.png>])
+(src/influence.tex
+LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 4.
+
+Underfull \hbox (badness 1383) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 revolution periods. It might be essential to observe
+ []
+
+
+Underfull \hbox (badness 5607) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 in thermal inertia. Studying the evolution of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 temperature with different heliocentric distance is
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 important as the position of asteroids change and
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 it has the mission to land on Didymoon to analyse
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 The range of landing is around 1.7 AU and 1.9 AU,
+ []
+
+<rsc/juventas_d1,7_g50.png, id=241, 2312.64pt x 1228.59pt>
+File: rsc/juventas_d1,7_g50.png Graphic file (type png)
+<use rsc/juventas_d1,7_g50.png>
+Package pdftex.def Info: rsc/juventas_d1,7_g50.png  used on input line 8.
+(pdftex.def)             Requested size: 156.97534pt x 83.38554pt.
+<rsc/juventas_d1,7_g250.png, id=242, 2312.64pt x 1228.59pt>
+File: rsc/juventas_d1,7_g250.png Graphic file (type png)
+<use rsc/juventas_d1,7_g250.png>
+Package pdftex.def Info: rsc/juventas_d1,7_g250.png  used on input line 9.
+(pdftex.def)             Requested size: 156.97534pt x 83.38554pt.
+<rsc/juventas_d1,7_g500.png, id=243, 2312.64pt x 1228.59pt>
+File: rsc/juventas_d1,7_g500.png Graphic file (type png)
+<use rsc/juventas_d1,7_g500.png>
+Package pdftex.def Info: rsc/juventas_d1,7_g500.png  used on input line 10.
+(pdftex.def)             Requested size: 156.97534pt x 83.38554pt.
+<rsc/juventas_d1,9_g50.png, id=244, 2312.64pt x 1228.59pt>
+File: rsc/juventas_d1,9_g50.png Graphic file (type png)
+<use rsc/juventas_d1,9_g50.png>
+Package pdftex.def Info: rsc/juventas_d1,9_g50.png  used on input line 11.
+(pdftex.def)             Requested size: 156.97534pt x 83.38554pt.
+<rsc/juventas_d1,9_g250.png, id=245, 2312.64pt x 1228.59pt>
+File: rsc/juventas_d1,9_g250.png Graphic file (type png)
+<use rsc/juventas_d1,9_g250.png>
+Package pdftex.def Info: rsc/juventas_d1,9_g250.png  used on input line 12.
+(pdftex.def)             Requested size: 156.97534pt x 83.38554pt.
+<rsc/juventas_d1,9_g500.png, id=246, 2312.64pt x 1228.59pt>
+File: rsc/juventas_d1,9_g500.png Graphic file (type png)
+<use rsc/juventas_d1,9_g500.png>
+Package pdftex.def Info: rsc/juventas_d1,9_g500.png  used on input line 13.
+(pdftex.def)             Requested size: 156.97534pt x 83.38554pt.
+
+Underfull \hbox (badness 1028) in paragraph at lines 18--19
+\T1/Heuristica-TLF/m/n/10 inertia influe on the heat sensibility (pretty much a
+s
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 20--21
+[]\T1/Heuristica-TLF/m/n/10 Further works in the study of the influence of the
+ []
+
+<rsc/temp_r1,0501_gammas.png, id=250, 2335.0437pt x 1746.7659pt>
+File: rsc/temp_r1,0501_gammas.png Graphic file (type png)
+<use rsc/temp_r1,0501_gammas.png>
+Package pdftex.def Info: rsc/temp_r1,0501_gammas.png  used on input line 22.
+(pdftex.def)             Requested size: 250.24178pt x 187.1873pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 49.
+(caption)                particular \caption on input line 23.
 See the caption package documentation for explanation.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1755) in paragraph at lines 23--23
+[]\T1/Heuristica-TLF/b/n/8 Figure 19: |[]\T1/Heuristica-TLF/m/n/8 Influence of 
+the thermal intertia on the daily surface
+ []
 
- [9 <./rsc/theo20mn.png (PNG copy)> <./rsc/theo12h.png (PNG copy)> <./rsc/HO3_3
-D_normalspeed.png> <./rsc/HO3_Xaxis_normalspeed.png>]) (src/areacov.tex
+<rsc/temp_r1,0501_gammas_max.png, id=252, 2384.1873pt x 1767.0015pt>
+File: rsc/temp_r1,0501_gammas_max.png Graphic file (type png)
+<use rsc/temp_r1,0501_gammas_max.png>
+Package pdftex.def Info: rsc/temp_r1,0501_gammas_max.png  used on input line 30
+.
+(pdftex.def)             Requested size: 256.39333pt x 190.00288pt.
+<rsc/temp_gammas_delta.png, id=253, 2330.7075pt x 1784.3463pt>
+File: rsc/temp_gammas_delta.png Graphic file (type png)
+<use rsc/temp_gammas_delta.png>
+Package pdftex.def Info: rsc/temp_gammas_delta.png  used on input line 31.
+(pdftex.def)             Requested size: 256.39333pt x 196.2787pt.
+) (src/areacov.tex
+Underfull \hbox (badness 10000) in paragraph at lines 27--1
+[]\T1/Heuristica-TLF/m/n/10 When the thermal inertia varies, the maximum
+ []
+
+
+Underfull \vbox (badness 1406) has occurred while \output is active []
+
+ [9 <./rsc/HO3_3D_normalspeed.png> <./rsc/HO3_Xaxis_normalspeed.png> <./rsc/HO3
+_Yaxis_normalspeed.png> <./rsc/temp_r1,0501_gammas.png> <./rsc/juventas_d1,7_g5
+0.png> <./rsc/juventas_d1,7_g250.png> <./rsc/juventas_d1,7_g500.png> <./rsc/juv
+entas_d1,9_g50.png> <./rsc/juventas_d1,9_g250.png> <./rsc/juventas_d1,9_g500.pn
+g>]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 []\T1/Heuristica-TLF/m/n/10 Spice is an observation geometry information
  []
@@ -2509,83 +2555,134 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 \T1/Heuristica-TLF/m/n/10 Didymain, expected positions of HERA and the
  []
 
-) (src/furtherworks.tex
-Underfull \hbox (badness 7944) in paragraph at lines 12--1
+
+Underfull \hbox (badness 7944) in paragraph at lines 12--13
 \T1/Heuristica-TLF/m/n/10 (fovray) provided in the NAIF Spice toolkit which
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 12--1
+Underfull \hbox (badness 2293) in paragraph at lines 12--13
 \T1/Heuristica-TLF/m/n/10 instrument. By using this API, we are theoretically
  []
 
-) (src/aknowledgements.tex) (/home/greg/hera/report/etc/pmi.bbl
-Underfull \hbox (badness 1742) in paragraph at lines 9--12
-[]\T1/Heuristica-TLF/m/n/10 Asteroid impact mission: Didymos reference model.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+\T1/Heuristica-TLF/m/n/10 ways. Firstly, by linking NAIF Spice data with
  []
 
 
-Underfull \hbox (badness 4886) in paragraph at lines 26--31
+Underfull \hbox (badness 2781) in paragraph at lines 14--15
+\T1/Heuristica-TLF/m/n/10 Cosmographia and using its "point at" and field of
+ []
+
+) (src/furtherworks.tex
+Underfull \hbox (badness 10000) in paragraph at lines 16--1
+[]\T1/Heuristica-TLF/m/n/10 IMG: Screenshot of blue FOV in cosmographia
+ []
+
+) (src/aknowledgements.tex)
+Underfull \hbox (badness 7944) in paragraph at lines 4--25
+\T1/Heuristica-TLF/m/n/10 Özgür Karatekin and Elodie Gloesener, as well as
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 4--25
+\T1/Heuristica-TLF/m/n/10 Rubino from IPSA. Thank you for accompanying us
+ []
+
+(/home/greg/hera/report/etc/pmi.bbl
+Underfull \hbox (badness 1221) in paragraph at lines 34--42
+[]\T1/Heuristica-TLF/m/n/10 P. Michel, A. Cheng, M. Küppers, P. Pravec, J. Blum
+,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--42
+\T1/Heuristica-TLF/m/n/10 M. Delbo, S. Green, P. Rosenblatt, K. Tsiganis,
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 34--42
+\T1/Heuristica-TLF/m/n/10 A. Thirouin, S. Schwartz, A. C. Bagatin, and Y. Yu.
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 34--42
+\T1/Heuristica-TLF/m/n/10 A component of the asteroid impact & deflection
+ []
+
+
+Underfull \hbox (badness 6927) in paragraph at lines 34--42
+\T1/Heuristica-TLF/m/n/10 assessment (aida) mission.  \T1/Heuristica-TLF/m/it/1
+0 Advances in Space
+ []
+
+[10 <./rsc/temp_r1,0501_gammas_max.png> <./rsc/temp_gammas_delta.png>]
+Underfull \hbox (badness 4886) in paragraph at lines 45--50
 []\T1/Heuristica-TLF/m/n/10 I. Pelivan, L. Drube, E. Kührt, J. Helbert, J. Biel
 e,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--31
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
 \T1/Heuristica-TLF/m/n/10 M. Maibaum, B. Cozzoni, and V. Lommatsch.
  []
 
 
-Underfull \hbox (badness 7433) in paragraph at lines 26--31
+Underfull \hbox (badness 7433) in paragraph at lines 45--50
 \T1/Heuristica-TLF/m/n/10 Thermophysical modeling of didymos' moon for
  []
 
+
+Underfull \hbox (badness 2486) in paragraph at lines 45--50
+\T1/Heuristica-TLF/m/n/10 the asteroid impact mission.  \T1/Heuristica-TLF/m/it
+/10 Advances in Space
+ []
+
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
- [10 <./rsc/HO3_Yaxis_normalspeed.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+ [11
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
  (/home/greg/hera/report/etc/pmi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `pmi.out' has not changed.
-(rerunfilecheck)             Checksum: 5A1E006957B3E5C511507587BA21AB33;831.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: AD7D925768DB783D8A3BBE0BEC4AF28D;957.
  ) 
 Here is how much of TeX's memory you used:
- 24651 strings out of 494414
- 450135 string characters out of 3174621
- 506164 words of memory out of 3000000
- 28348 multiletter control sequences out of 15000+200000
- 609934 words of font info for 83 fonts, out of 3000000 for 9000
+ 24778 strings out of 494414
+ 453188 string characters out of 3174621
+ 510050 words of memory out of 3000000
+ 28447 multiletter control sequences out of 15000+200000
+ 612813 words of font info for 86 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 63i,15n,100p,883b,1005s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/home/greg/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-mathit.enc}{/home/gr
-eg/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rm.enc}{/home/greg/.miktex/texm
-fs/install/fonts/enc/dvips/lm/lm-mathsy.enc}{/home/greg/.miktex/texmfs/install/
-fonts/enc/dvips/lm/lm-mathex.enc}{/home/greg/.miktex/texmfs/install/fonts/enc/d
-vips/heuristica/zut_geqeyh.enc}{/home/greg/.miktex/texmfs/install/fonts/enc/dvi
-ps/heuristica/zut_ysltpx.enc}</home/greg/.miktex/texmfs/install/fonts/type1/pub
-lic/heuristica/Heuristica-Bold.pfb></home/greg/.miktex/texmfs/install/fonts/typ
-e1/public/heuristica/Heuristica-Italic.pfb></home/greg/.miktex/texmfs/install/f
-onts/type1/public/heuristica/Heuristica-Regular.pfb></home/greg/.miktex/texmfs/
-install/fonts/type1/public/lm/lmex10.pfb></home/greg/.miktex/texmfs/install/fon
-ts/type1/public/lm/lmmi10.pfb></home/greg/.miktex/texmfs/install/fonts/type1/pu
-blic/lm/lmmi6.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmmi
-7.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmmi8.pfb></home
-/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmr10.pfb></home/greg/.mikte
-x/texmfs/install/fonts/type1/public/lm/lmr5.pfb></home/greg/.miktex/texmfs/inst
-all/fonts/type1/public/lm/lmr6.pfb></home/greg/.miktex/texmfs/install/fonts/typ
-e1/public/lm/lmr7.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/
-lmr8.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb></
-home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmsy6.pfb></home/greg/.m
-iktex/texmfs/install/fonts/type1/public/lm/lmsy7.pfb></home/greg/.miktex/texmfs
-/install/fonts/type1/public/lm/lmsy8.pfb>
-Output written on pmi.pdf (10 pages, 9559291 bytes).
+ 63i,21n,100p,1090b,939s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/home/greg/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rm.enc}{/home/greg/.
+miktex/texmfs/install/fonts/enc/dvips/heuristica/zut_5b7xz5.enc}{/home/greg/.mi
+ktex/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc}{/home/greg/.miktex/texmfs
+/install/fonts/enc/dvips/lm/lm-mathit.enc}{/home/greg/.miktex/texmfs/install/fo
+nts/enc/dvips/lm/lm-mathex.enc}{/home/greg/.miktex/texmfs/install/fonts/enc/dvi
+ps/heuristica/zut_geqeyh.enc}{/home/greg/.miktex/texmfs/install/fonts/enc/dvips
+/heuristica/zut_ysltpx.enc}</home/greg/.miktex/texmfs/install/fonts/type1/publi
+c/heuristica/Heuristica-Bold.pfb></home/greg/.miktex/texmfs/install/fonts/type1
+/public/heuristica/Heuristica-Italic.pfb></home/greg/.miktex/texmfs/install/fon
+ts/type1/public/heuristica/Heuristica-Regular.pfb></home/greg/.miktex/texmfs/in
+stall/fonts/type1/public/lm/lmex10.pfb></home/greg/.miktex/texmfs/install/fonts
+/type1/public/lm/lmmi10.pfb></home/greg/.miktex/texmfs/install/fonts/type1/publ
+ic/lm/lmmi6.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmmi7.
+pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmr10.pfb></home/g
+reg/.miktex/texmfs/install/fonts/type1/public/lm/lmr5.pfb></home/greg/.miktex/t
+exmfs/install/fonts/type1/public/lm/lmr6.pfb></home/greg/.miktex/texmfs/install
+/fonts/type1/public/lm/lmr7.pfb></home/greg/.miktex/texmfs/install/fonts/type1/
+public/lm/lmr8.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lms
+y10.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmsy6.pfb></ho
+me/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmsy7.pfb></home/greg/.mik
+tex/texmfs/install/fonts/type1/public/lm/lmsy8.pfb>
+Output written on pmi.pdf (11 pages, 12137156 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
- 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 321 words of extra memory for PDF output out of 10000 (max. 10000000)
 

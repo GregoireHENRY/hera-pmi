@@ -1,25 +1,44 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[mod(2015)]{model}
-Asteroid impact mission: Didymos reference model.
-\newblock 2015.
-\newblock ESA reference document, v3.1.
-
-\bibitem[Clifford and Bartels(1986)]{marstherm}
-S.~M. Clifford and C.~J. Bartels.
+\bibitem[Clifford et~al.(1986)Clifford, M., and Bartels]{marstherm}
+Clifford, S.~M., and C.~J. Bartels.
 \newblock The mars thermal model \enquote{Marstherm}, a fortran 77-finite
   differences program designed for general distribution.
 \newblock \emph{Lunar Planet. Sci.}, XVII:\penalty0 142--143, 1986.
 
-\bibitem[Kasting(1997)]{williams1997}
-D.~M. W. . J.~F. Kasting.
-\newblock Habitable planets with hight obliquities.
-\newblock 1997.
+\bibitem[Delbo et~al.(2015)Delbo, Mueller, Emery, Rozitis, and Capria]{delbo}
+M.~Delbo, M.~Mueller, J.~P. Emery, B.~Rozitis, and M.~T. Capria.
+\newblock Asteroid thermophysical modeling.
+\newblock \emph{arXiv}, 2015.
+
+\bibitem[Didymos reference model()]{model}
+Didymos reference model.
+\newblock Asteroid impact mission: Didymos reference model.
+\newblock reference document v3.1, ESA, 2015.
+
+\bibitem[Goldberg et~al.(2019)Goldberg, Prioroc, and team]{Juventas}
+H.~Goldberg, C.~Prioroc, and G.-R.~G. team.
+\newblock Juventas mission analysis report (mar).
+\newblock Analysis report v1.0, GomSpace, 2019.
+\newblock JUV-GS-MAR-001.
+
+\bibitem[Michel et~al.(2016)Michel, Cheng, Küppers, Pravec, Blum, Delbo,
+  Green, Rosenblatt, Tsiganis, Vincent, Biele, Ciarletti, Hérique, Ulamec,
+  Carnelli, Galvez, Benner, Naidu, Barnouin, Richardson, Rivkin, Scheirich,
+  Moskovitz, Thirouin, Schwartz, Bagatin, and Yu]{Michel2016}
+P.~Michel, A.~Cheng, M.~Küppers, P.~Pravec, J.~Blum, M.~Delbo, S.~Green,
+  P.~Rosenblatt, K.~Tsiganis, J.~Vincent, J.~Biele, V.~Ciarletti, A.~Hérique,
+  S.~Ulamec, I.~Carnelli, A.~Galvez, L.~Benner, S.~Naidu, O.~Barnouin,
+  D.~Richardson, A.~Rivkin, P.~Scheirich, N.~Moskovitz, A.~Thirouin,
+  S.~Schwartz, A.~C. Bagatin, and Y.~Yu.
+\newblock Science case for the asteroid impact mission (aim): A component of
+  the asteroid impact \& deflection assessment (aida) mission.
+\newblock \emph{Advances in Space Research}, 2016.
 
 \bibitem[Pelivan et~al.(2017)Pelivan, Drube, Kührt, Helbert, Biele, Maibaum,
   Cozzoni, and Lommatsch]{pelivan}
@@ -27,6 +46,11 @@ I.~Pelivan, L.~Drube, E.~Kührt, J.~Helbert, J.~Biele, M.~Maibaum, B.~Cozzoni,
   and V.~Lommatsch.
 \newblock Thermophysical modeling of didymos' moon for the asteroid impact
   mission.
-\newblock 2017.
+\newblock \emph{Advances in Space Research}, 2017.
+
+\bibitem[Williams and Kasting(1997)]{williams1997}
+D.~M. Williams and J.~F. Kasting.
+\newblock Habitable planets with hight obliquities.
+\newblock \emph{Icarus}, 1997.
 
 \end{thebibliography}

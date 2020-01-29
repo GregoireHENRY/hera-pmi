@@ -3,8 +3,8 @@
 
 \begin{figure*}[t]
     \centering
-    \includegraphics[width=0.4\linewidth]{rsc/viewfac1.png} 
-    \includegraphics[width=0.4\linewidth]{rsc/viewfac2.png}
+    \includegraphics[width=0.35\linewidth]{rsc/viewfac1.png} 
+    \includegraphics[width=0.35\linewidth]{rsc/viewfac2.png}
     \captionof{figure}{(1) View factor on Didymos system and (2) View factor schematic interpretation}
     \label{fig:4.1}
 \end{figure*}
@@ -46,7 +46,7 @@ where $u_{j}$ is the surface temperature of facet $j$. For computing time purpos
 \subsection{Integration}
 The \autoref{eq:4.1} can now be implemented to the current thermophysical model in \autoref{eq:2.1} to include the mutual heating from the primary body of the binary system of asteroid Didymos. Surface temperatures have been computed to each single node from the ESA shape models of the Didymos system asteroids.
 \begin{center}
-    \includegraphics[width=\linewidth]{rsc/mutual_model.png}
+    \includegraphics[width=0.9\linewidth]{rsc/mutual_model.png}
     \captionof{figure}{The binary system of asteroids Didymos with the Sun direction. Latest shape models of the ESA have been used in this simulation. The primary has a radius of 500 meters and the secondary 80 meters.}
     \label{fig:4.2}
 \end{center}
@@ -54,13 +54,37 @@ After implementation of the revolution of Didymoon, the following results are ob
 \begin{center}
     \includegraphics[width=\linewidth]{rsc/mutual.png}
     \captionof{figure}{Thermal map of the secondary of the binary system of asteroids Didymos including the mutual heating from the primary using ESA shape models.}
-    \label{fig:4.2}
+    \label{fig:4.3}
 \end{center}
 The computation were realized without the implementation of the obliquity, which is discussed in next parts. To compare with the previous implementation in \autoref{eq:2.1}, this graphs shows the benefits of including the mutual heating:
 \begin{center}
     \includegraphics[width=\linewidth]{rsc/mutual_W.png}
     \includegraphics[width=\linewidth]{rsc/mutual_Wu.png}
     \captionof{figure}{The two graphs shows the impact of including the mutual heating on the surface temperatures of Didymoon. The first figure shows the difference between the surface temperatures with the secondary diffuse mutual heating only (\autoref{eq:4.2}) and without it. The second image is the difference of temperature including the two equation of the mutual heating (\autoref{eq:4.2} \& \autoref{eq:4.4}) and without it.} 
-    \label{fig:4.2}
+    \label{fig:4.4}
 \end{center}
 The assumptions which consisted of considering the direct mutual heating as the largest flux of the mutual is confirmed with this graph. Furthermore, the \autoref{eq:4.2} costs much more computational time rather than the \autoref{eq:4.4}, thus, and due to the present albedo, it might be more clever to not implement it. The first case suggests an increase of $0.05$ \si{\kelvin} where the second case represents an increase of more than $2$ \si{\kelvin} depending on the regions.
+
+\subsection{Parameters}
+\label{sec:4.3}
+Orbital parameters and asteroid properties are taken identical as in \cite{model} and \cite{Michel2016}.
+\begin{table}[h]
+    \footnotesize
+    %\renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{m{150pt} m{80pt}}
+        Table 1\\
+        Asteroid parameters\\[0.1em]
+        \hline\\[-1em]
+        Parameter & Value\\[0.1em]
+        \hline\\[-1em]
+        Orbital period & 11.92 \si{h}\\
+        Revolution period & 11.92 \si{h}\\
+        Thermal inertia & 500 \si{J.K^{-1}.m^{-2}.s^{1/2}}\\
+        Density & 2146 \si{kg.m^{-3}}\\
+        Heat capacity & 600 \si{J.K^{-1}}\\
+        Bond albedo & 0.07\\
+        Emissivity & 0.9\\
+        Obliquity & 171$\pm$9 \textdegree\\[0.1em]
+        \hline\\
+    \end{tabular}
+\end{table}
