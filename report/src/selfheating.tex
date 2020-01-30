@@ -1,7 +1,7 @@
-\section{Advanced thermophysical model for rough surface including cratere}
+\section{Advanced thermophysical model for rough surface including craters}
 \label{sec:5}
 
-In this section we present the implementation of the self heating. A normal at the surface of an asteroid may appear to be hidden from the direct solar flux even if it is situated in the day side, for instance inside a cratere. In this scenario, it is important to take in consideration what is called the self heating of the asteroid. Due to its albedo, the surface of the asteroid relfects sunlight rays and thus, if the asteroid is not pure smooth, some reflected rays might impact another location on the asteroid resulting in heating it up.
+This section shows the implementation of the self heating. A normal at the surface of an asteroid may appear to be hidden from the direct solar flux even if it is situated in the day side, for instance inside a crater. In this scenario, it is important to take into consideration what is called the self heating of the asteroid. Due to its albedo, the surface of the asteroid relfects sunlight rays and thus, if the asteroid is not purely smooth, some reflected rays might impact another location on the asteroid resulting in heating it up.
 
 \subsection{Theory}
 
@@ -40,18 +40,18 @@ The two terms relative to the self heating in \autoref{eq:4.1} are now considere
     Q_m=\sum_{i_1\neq i_2}^N V_{i_1i_2}\epsilon\sigma u_{i_2}^4
     \label{eq:5.2}
 \end{equation}
-These two equations complete the model seen in \autoref{eq:4.1}. They very look like equations of the mutual, the only difference is the indices of the facets. Each surface node temperature is computed with respect to every other nodes on the asteroid excepting the current one. $i_1$ and $i_2$ belong to the asteroid. $V_{i_1i_2}$ is computed as seen in \autoref{eq:4.3}. Same assumptions are taken for $u_{i_2}$ as in the \autoref{sec:4}.
+These two equations complete the model seen in \autoref{eq:4.1}. They are very similar to the mutual heating. The only difference is the indices of the facets. Each surface node temperature is computed with respect to every other node on the asteroid except the current one. $i_1$ and $i_2$ belong to the asteroid. $V_{i_1i_2}$ is computed as seen in \autoref{eq:4.3}. Same assumptions are made for $u_{i_2}$ as in the \autoref{sec:4}.
 
 \subsection{Integration}
-To investigate in general on how global self heating within large concavities of asteroids influences thermophysical model, it is needed to first check the result's consistency, such as the surface temperature expected to be higher in a cratere. The implementation of the self heating on the shape model of the asteroid Mathilde results in the thermal map in \autoref{fig:5.3}.
+To investigate in general how global self heating within large concavities of asteroids influences thermophysical model, it is needed to first check the result's consistency, such as the surface temperature expected to be higher in a crater. The implementation of the self heating on the shape model of the asteroid Mathilde results in the thermal map in \autoref{fig:5.3}.
 \begin{center}
     \includegraphics[width=\linewidth]{rsc/self_2D.png}
     \includegraphics[width=\linewidth]{rsc/self_2D_diff.png}
-    \captionof{figure}{The first figure is the thermal map of the surface temperature of the asteroid Mathilde including its self heating. The second figure is the contribution of the self heating on thermal map. Orbital parameters and asteroid properties are taken as in \autoref{sec:4}.}
+    \captionof{figure}{The first figure is the thermal map of the surface of the asteroid Mathilde including its self heating. The second figure is the contribution of the self heating on thermal map. Orbital parameters and asteroid properties are taken as in \autoref{sec:4}.}
     \label{fig:5.3}
 \end{center}
 
-The contribution of the self heating may appear to be in some place higher than 5 Kelvins, as shown in the figure bellow, but this color axis has been chosen for reading purposes.
+The contribution of the self heating may appear to be in some places higher than 5 Kelvins, as shown in \autoref{fig:5.4}, but this color axis has been chosen for reading purposes.
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{rsc/self_contribution.png}
@@ -59,4 +59,4 @@ The contribution of the self heating may appear to be in some place higher than 
     \label{fig:5.4}
 \end{figure}
 
-Results in \autoref{fig:5.5} appear to be consistent. The self heating distribution of the contribution is mostly located in crateres. The roughness of the asteroid also contributes in the creation of self heating.
+Results in \autoref{fig:5.5} appear to be consistent. The self heating distribution of the contribution is mostly located in craters. The roughness of the asteroid also contributes in the creation of self heating.

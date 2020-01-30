@@ -9,7 +9,7 @@
     \label{fig:4.1}
 \end{figure*}
 
-In this section, we present the implementation of the mutual heating. As Didymos is a binary system of asteroid, the current thermophysical model is not enough to fully describe the temperature at the surface of the asteroid. The Hera mission focuses on the secondary object in this binary system. Its surface temperature depends also on the primary object for two main reasons, firstly, the reflection of the Sun on the surface of the primary to the secondary, this phenomenon depends on the primary albedo and on its position with respect to the Sun and the secondary, and it is named the mutual direct heating, and secondly, the heat received from the primary itself, just as the Sun, considering it as a black body, it only depend on the distance and is called the mutual diffuse heating.
+In this section, we present the implementation of the mutual heating. As Didymos is a binary system of asteroids, the current thermophysical model is not enough to fully describe the temperature at the surface of the asteroid. The Hera mission focuses on the secondary object in this binary system. Its surface temperature also depends on the primary object for two main reasons. Firstly, the reflection of the Sun on the surface of the primary to the secondary, this phenomenon relies on the primary body's albedo and on its position with respect to the Sun and to the secondary, and this is referred to mutual direct heating. Secondly, the heat received from the primary itself, just as the Sun, considering it as a black body, it only depends on the distance and is refered to mutual diffuse heating.
 
 \subsection{Theory}
 
@@ -20,11 +20,11 @@ A complete thermophysical model including the direct and diffuse mutual heating 
     Q_\odot+W_p+Q_p+W_m+Q_m=\epsilon\sigma u^4-k\frac{\partial{u}}{\partial{x}}\Big|_{x=0}
     \label{eq:4.1}
 \end{equation}
-where $W_p$ stands for the mutual heating from diffuse solar radiation from the primary, $Q_p$ corresponds to the direct thermal heating from the primary considered as a black body, $W_m$ is the diffuse thermal self heating, $Q_m$ is the direct thermal self heating and du/dx is the vertical temperature gradient with x positive upward.
+where $W_p$ stands for the mutual heating from diffuse solar radiation from the primary, $Q_p$ corresponds to the direct thermal heating from the primary considered as a black body, $W_m$ is the diffuse thermal self heating, $Q_m$ is the direct thermal self heating and $\partial{u}/\partial{x}$ is the vertical temperature gradient with x positive upward.
 
-For the current simplified model, the mutual heating from Didymain to Didymoon will be small due to the comparatively large distance of 1.18 km \citep{model} between the two bodies and enter through terms $W_p$ and $Q_p$. As defined in the reference model, the low albedo allows us to apply the single-scattering mode for which the diffuse thermal self heating flux $W_m$ can be neglected. Furthermore, considering the current shape of Didymoon, which is a simple ellipsoid, it is not necessary to include the term $Q_m$ neither. However, these two flux will be discussed in the next part.
+For the current simplified model, the mutual heating from Didymain to Didymoon will be small due to the comparatively large distance of 1.18 km \citep{model} between the two bodies. As defined in the reference model, the low albedo allows us to apply the single-scattering mode for which the diffuse thermal self heating flux $W_m$ can be neglected. Furthermore, considering the current shape of Didymoon, which is a simple ellipsoid, it is not necessary to include the term $Q_m$ neither. However, these two flux will be discussed in the next part.
 
-Discretizing the two bodies into facets $i$ for the secondary and $j$ for the primary, the mutual heating from diffuse solar radiation from the primary can be compute using:
+Discretizing the two bodies into facets $i$ for the secondary and $j$ for the primary, the mutual heating from diffuse solar radiation from the primary can be computed using:
 \begin{equation}
     W_p=\sum_{i\neq j}^N V_{ij}\frac{S_{\odot}A\cos\varsigma_j}{r_H^2}
     \label{eq:4.2}
@@ -36,7 +36,7 @@ Where $N$ is the total number of facets and $V_{ij}$ is the view factor expresse
 \end{equation}
 where $a_i$ is the surface area of the seconday, $r$ is the distance between facets $i$ and $j$ and angles $\theta$ are the angles between the facet outward normal and the line between facet centers from primary and seconday. An angle of $\theta\geq90$ degrees represents two facets not facing each other. Schemes in \autoref{fig:4.1} explain the situation.
 
-Due to low aldbedo (both albedo of the primary and secondary are assumed identical) the direct thermal heating $Q_p$ is the largest flux from the primary:
+Due to low aldbedo (both albedos of the primary and secondary are assumed identical) the direct thermal heating $Q_p$ is the largest flux from the primary:
 \begin{equation}
     Q_p=\sum_{i\neq j}^N V_{ij}\epsilon\sigma u^4_{j}
     \label{eq:4.4}
@@ -44,30 +44,30 @@ Due to low aldbedo (both albedo of the primary and secondary are assumed identic
 where $u_{j}$ is the surface temperature of facet $j$. For computing time purposes, temperatures of the primary are not computed. All facets temperatures $u_{j}$ are set to the highest midday temperature of the moon. 
 
 \subsection{Integration}
-The \autoref{eq:4.1} can now be implemented to the current thermophysical model in \autoref{eq:2.1} to include the mutual heating from the primary body of the binary system of asteroid Didymos. Surface temperatures have been computed to each single node from the ESA shape models of the Didymos system asteroids.
+The \autoref{eq:4.1} can now be implemented to the current thermophysical model in \autoref{eq:2.1} to include the mutual heating from the primary body of the binary system of asteroids Didymos. Surface temperatures have been computed to each single node from the ESA shape models of the Didymos system asteroids.
 \begin{center}
     \includegraphics[width=0.9\linewidth]{rsc/mutual_model.png}
     \captionof{figure}{The binary system of asteroids Didymos with the Sun direction. Latest shape models of the ESA have been used in this simulation. The primary has a radius of 500 meters and the secondary 80 meters.}
     \label{fig:4.2}
 \end{center}
-After implementation of the revolution of Didymoon, the following results are obtained for the surface temperatures of the secondary including the mutual heating from the primary:
+After implementation Didymoon's revolution, the following results are obtained for the surface temperatures of the secondary including the mutual heating from the primary:
 \begin{center}
     \includegraphics[width=\linewidth]{rsc/mutual.png}
     \captionof{figure}{Thermal map of the secondary of the binary system of asteroids Didymos including the mutual heating from the primary using ESA shape models.}
     \label{fig:4.3}
 \end{center}
-The computation were realized without the implementation of the obliquity, which is discussed in next parts. To compare with the previous implementation in \autoref{eq:2.1}, this graphs shows the benefits of including the mutual heating:
+The computations were realized without the implementation of the obliquity, which is discussed in further sectionsnext parts. To compare with the previous implementation in \autoref{eq:2.1}, this graphs shows the benefits of including the mutual heating:
 \begin{center}
     \includegraphics[width=\linewidth]{rsc/mutual_W.png}
     \includegraphics[width=\linewidth]{rsc/mutual_Wu.png}
-    \captionof{figure}{The two graphs shows the impact of including the mutual heating on the surface temperatures of Didymoon. The first figure shows the difference between the surface temperatures with the secondary diffuse mutual heating only (\autoref{eq:4.2}) and without it. The second image is the difference of temperature including the two equation of the mutual heating (\autoref{eq:4.2} \& \autoref{eq:4.4}) and without it.} 
+    \captionof{figure}{The two graphs show the impact of including the mutual heating on the surface temperatures of Didymoon. The first figure shows the difference between the surface temperatures with the secondary diffuse mutual heating only (\autoref{eq:4.2}) and without it. The second image is the difference of temperature including the two equation of the mutual heating (\autoref{eq:4.2} \& \autoref{eq:4.4}) and without it.} 
     \label{fig:4.4}
 \end{center}
-The assumptions which consisted of considering the direct mutual heating as the largest flux of the mutual is confirmed with this graph. Furthermore, the \autoref{eq:4.2} costs much more computational time rather than the \autoref{eq:4.4}, thus, and due to the present albedo, it might be more clever to not implement it. The first case suggests an increase of $0.05$ \si{\kelvin} where the second case represents an increase of more than $2$ \si{\kelvin} depending on the regions.
+The assumptions which consisted of considering the direct mutual heating as the largest flux of the mutual is confirmed with this graph. Furthermore, the \autoref{eq:4.2} costs much more computational time than the \autoref{eq:4.4}, thus, and due to the present albedo, it might be more clever to not implement it. The first case suggests an increase of $0.05$ \si{\kelvin} where the second case represents an increase of more than $2$ \si{\kelvin} depending on the region.
 
 \subsection{Parameters}
 \label{sec:4.3}
-Orbital parameters and asteroid properties are taken identical as in \cite{model} and \cite{Michel2016}.
+Orbital parameters and asteroid properties are considered identical to the \cite{model} and \cite{Michel2016}.
 \begin{table}[h]
     \footnotesize
     %\renewcommand{\arraystretch}{1.5}

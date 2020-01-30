@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  29 JAN 2020 23:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250) (preloaded format=pdflatex 2019.11.4)  31 JAN 2020 00:46
 entering extended mode
 **./pmi.tex
 (pmi.tex
@@ -1915,11 +1915,6 @@ Underfull \hbox (badness 5217) in paragraph at lines 37--39
  []
 
 ) (src/objectives.tex) (src/mutualheating.tex
-Underfull \hbox (badness 1552) in paragraph at lines 4--1
-\T1/Heuristica-TLF/m/n/10 and especially for a binary system of asteroid. The
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 |[]\T1/Heuristica-TLF/b/n/12 A thermophysical model for a binary
  []
@@ -1945,11 +1940,6 @@ Underfull \hbox (badness 1092) in paragraph at lines 12--13
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 12--13
-\T1/Heuristica-TLF/m/n/10 of asteroid, the current thermophysical model is not
- []
-
-
 Underfull \hbox (badness 3525) in paragraph at lines 12--13
 \T1/Heuristica-TLF/m/n/10 of the asteroid. The Hera mission focuses on the
  []
@@ -1961,12 +1951,12 @@ Underfull \hbox (badness 2229) in paragraph at lines 12--13
 
 
 Underfull \hbox (badness 1436) in paragraph at lines 12--13
-\T1/Heuristica-TLF/m/n/10 temperature depends also on the primary object for
+\T1/Heuristica-TLF/m/n/10 temperature also depends on the primary object for
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 12--13
-\T1/Heuristica-TLF/m/n/10 two main reasons, firstly, the reflection of the Sun
+Underfull \hbox (badness 1448) in paragraph at lines 12--13
+\T1/Heuristica-TLF/m/n/10 two main reasons. Firstly, the reflection of the Sun
  []
 
 
@@ -1990,23 +1980,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
 Underfull \hbox (badness 4556) in paragraph at lines 25--26
 \T1/Heuristica-TLF/m/n/10 from Didymain to Didymoon will be small due to
- []
-
-
-Underfull \hbox (badness 1769) in paragraph at lines 25--26
-\T1/Heuristica-TLF/m/n/10 reference model[][]) between the two bodies and enter
-
- []
-
-
-Underfull \hbox (badness 4954) in paragraph at lines 25--26
-\T1/Heuristica-TLF/m/n/10 scattering mode for which the diffuse thermal self
- []
-
-
-Underfull \hbox (badness 6658) in paragraph at lines 25--26
-\T1/Heuristica-TLF/m/n/10 heating flux $\OML/lmm/m/it/10 W[]$ \T1/Heuristica-TL
-F/m/n/10 can be neglected. Furthermore,
  []
 
 
@@ -2055,6 +2028,11 @@ tem of asteroids Didymos with the Sun
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
+\T1/Heuristica-TLF/m/n/10 After implementation Didymoon's revolution,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 \T1/Heuristica-TLF/m/n/10 the following results are obtained for the surface
  []
 
@@ -2083,7 +2061,7 @@ Underfull \hbox (badness 1057) in paragraph at lines 56--56
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
-\T1/Heuristica-TLF/m/n/10 The computation were realized without the
+\T1/Heuristica-TLF/m/n/10 The computations were realized without the
  []
 
 
@@ -2092,8 +2070,8 @@ Underfull \hbox (badness 2229) in paragraph at lines 59--60
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
-\T1/Heuristica-TLF/m/n/10 in next parts. To compare with the previous
+Underfull \hbox (badness 2073) in paragraph at lines 59--60
+\T1/Heuristica-TLF/m/n/10 in further sectionsnext parts. To compare with the
  []
 
 <rsc/mutual_W.png, id=134, 2355.2793pt x 1152.7065pt>
@@ -2146,14 +2124,18 @@ Overfull \hbox (3.75822pt too wide) in paragraph at lines 74--90
  []
 
 ) (src/selfheating.tex
-Underfull \hbox (badness 1097) in paragraph at lines 70--1
-\T1/Heuristica-TLF/m/n/10 identical as in [][]Didymos reference model[][] and [
-][]Michel
+Underfull \hbox (badness 10000) in paragraph at lines 70--1
+[]\T1/Heuristica-TLF/m/n/10 Orbital parameters and asteroid properties are
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 |[]\T1/Heuristica-TLF/b/n/12 Advanced thermophysical model for
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 4--5
+[]\T1/Heuristica-TLF/m/n/10 This section shows the implementation of the self
  []
 
 
@@ -2211,7 +2193,7 @@ See the caption package documentation for explanation.
 Underfull \vbox (badness 2119) has occurred while \output is active []
 
  [5 <./rsc/mutual.png> <./rsc/mutual_W.png> <./rsc/mutual_Wu.png>]
-<rsc/mathilde.png, id=173, 421.575pt x 316.18124pt>
+<rsc/mathilde.png, id=172, 421.575pt x 316.18124pt>
 File: rsc/mathilde.png Graphic file (type png)
 <use rsc/mathilde.png>
 Package pdftex.def Info: rsc/mathilde.png  used on input line 29.
@@ -2222,22 +2204,12 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 30.
 See the caption package documentation for explanation.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-\T1/Heuristica-TLF/m/n/10 within large concavities of asteroids influences
- []
-
-
-Underfull \hbox (badness 7504) in paragraph at lines 46--47
-\T1/Heuristica-TLF/m/n/10 thermophysical model, it is needed to first check
- []
-
-<rsc/self_2D.png, id=179, 2262.051pt x 1158.4881pt>
+<rsc/self_2D.png, id=178, 2262.051pt x 1158.4881pt>
 File: rsc/self_2D.png Graphic file (type png)
 <use rsc/self_2D.png>
 Package pdftex.def Info: rsc/self_2D.png  used on input line 48.
 (pdftex.def)             Requested size: 250.24178pt x 128.15884pt.
-<rsc/self_2D_diff.png, id=180, 2201.3442pt x 1175.8329pt>
+<rsc/self_2D_diff.png, id=179, 2201.3442pt x 1175.8329pt>
 File: rsc/self_2D_diff.png Graphic file (type png)
 <use rsc/self_2D_diff.png>
 Package pdftex.def Info: rsc/self_2D_diff.png  used on input line 49.
@@ -2246,12 +2218,6 @@ Package pdftex.def Info: rsc/self_2D_diff.png  used on input line 49.
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 50.
 See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 5832) in paragraph at lines 50--50
-[]\T1/Heuristica-TLF/b/n/8 Figure 10: |[]\T1/Heuristica-TLF/m/n/8 The first fig
-ure is the thermal map of the surface
- []
 
 <rsc/self_contribution.png, id=183, 429.16335pt x 309.43605pt>
 File: rsc/self_contribution.png Graphic file (type png)
@@ -2291,11 +2257,6 @@ Underfull \hbox (badness 3396) in paragraph at lines 12--13
 []\T1/Heuristica-TLF/m/n/10 This section describes the implementation of the
  []
 
-
-Underfull \hbox (badness 2469) in paragraph at lines 12--13
-\T1/Heuristica-TLF/m/n/10 obliquity and the explanation of the impact on the
- []
-
 <rsc/obliquity.png, id=203, 323.7696pt x 229.3368pt>
 File: rsc/obliquity.png Graphic file (type png)
 <use rsc/obliquity.png>
@@ -2307,7 +2268,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-Underfull \vbox (badness 4819) has occurred while \output is active []
+Underfull \vbox (badness 1975) has occurred while \output is active []
 
 
 Underfull \hbox (badness 1466) in paragraph at lines 18--19
@@ -2345,8 +2306,9 @@ Underfull \hbox (badness 4036) in paragraph at lines 31--1
  []
 
 
-Underfull \hbox (badness 3977) in paragraph at lines 4--5
-[]\T1/Heuristica-TLF/m/n/10 This section introduce another scientific mission,
+Underfull \hbox (badness 1728) in paragraph at lines 4--5
+[]\T1/Heuristica-TLF/m/n/10 This section introduces another scientific mission,
+
  []
 
 
@@ -2390,33 +2352,45 @@ Underfull \hbox (badness 1796) in paragraph at lines 17--17
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 17--17
-\T1/Heuristica-TLF/m/n/8 temperature surface. Every other parameters has been s
-et as in
+Underfull \hbox (badness 2828) in paragraph at lines 17--17
+\T1/Heuristica-TLF/m/n/8 temperature surface. Every other parameter has been se
+t as in
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 21--22
-[]\T1/Heuristica-TLF/m/n/10 The difference between the two graphs are the
+\T1/Heuristica-TLF/m/n/10 the asteroid rotates, the less extreme the surface
  []
 
-<rsc/HO3_3D_normalspeed.png, id=225, 994.71625pt x 779.91376pt>
+
+Underfull \hbox (badness 1448) in paragraph at lines 21--22
+\T1/Heuristica-TLF/m/n/10 a fast rotating asteroid, the position on the asteroi
+d
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 21--22
+\T1/Heuristica-TLF/m/n/10 less influenced from the Sun orientation toward the
+ []
+
+[8 <./rsc/hourangle_obl0.png (PNG copy)> <./rsc/hourangle_obl162.png (PNG copy)
+> <./rsc/HO3_shapemodel.png> <./rsc/theo20mn.png> <./rsc/theo12h.png>]
+<rsc/HO3_3D_normalspeed.png, id=235, 994.71625pt x 779.91376pt>
 File: rsc/HO3_3D_normalspeed.png Graphic file (type png)
 <use rsc/HO3_3D_normalspeed.png>
 Package pdftex.def Info: rsc/HO3_3D_normalspeed.png  used on input line 25.
 (pdftex.def)             Requested size: 156.97534pt x 123.07507pt.
-<rsc/HO3_Xaxis_normalspeed.png, id=226, 994.71625pt x 779.91376pt>
+<rsc/HO3_Xaxis_normalspeed.png, id=236, 994.71625pt x 779.91376pt>
 File: rsc/HO3_Xaxis_normalspeed.png Graphic file (type png)
 <use rsc/HO3_Xaxis_normalspeed.png>
 Package pdftex.def Info: rsc/HO3_Xaxis_normalspeed.png  used on input line 26.
 (pdftex.def)             Requested size: 156.97534pt x 123.07507pt.
-<rsc/HO3_Yaxis_normalspeed.png, id=227, 994.71625pt x 779.91376pt>
+<rsc/HO3_Yaxis_normalspeed.png, id=237, 994.71625pt x 779.91376pt>
 File: rsc/HO3_Yaxis_normalspeed.png Graphic file (type png)
 <use rsc/HO3_Yaxis_normalspeed.png>
 Package pdftex.def Info: rsc/HO3_Yaxis_normalspeed.png  used on input line 27.
 (pdftex.def)             Requested size: 156.97534pt x 123.07507pt.
-[8 <./rsc/hourangle_obl0.png (PNG copy)> <./rsc/hourangle_obl162.png (PNG copy)
-> <./rsc/HO3_shapemodel.png> <./rsc/theo20mn.png> <./rsc/theo12h.png>])
+)
 (src/influence.tex
 LaTeX Font Info:    Font shape `T1/Heuristica-TLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 4.
@@ -2426,28 +2400,13 @@ Underfull \hbox (badness 1383) in paragraph at lines 4--5
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 4--5
-\T1/Heuristica-TLF/m/n/10 in thermal inertia. Studying the evolution of the
+Underfull \hbox (badness 1048) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 other tools on board rely on the changes in thermal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-\T1/Heuristica-TLF/m/n/10 temperature with different heliocentric distance is
- []
-
-
-Underfull \hbox (badness 5077) in paragraph at lines 4--5
-\T1/Heuristica-TLF/m/n/10 important as the position of asteroids change and
- []
-
-
-Underfull \hbox (badness 1968) in paragraph at lines 4--5
-\T1/Heuristica-TLF/m/n/10 it has the mission to land on Didymoon to analyse
- []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 4--5
-\T1/Heuristica-TLF/m/n/10 The range of landing is around 1.7 AU and 1.9 AU,
+Underfull \hbox (badness 3291) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 inertia. Studying the evolution of the temperature
  []
 
 <rsc/juventas_d1,7_g50.png, id=241, 2312.64pt x 1228.59pt>
@@ -2481,9 +2440,9 @@ File: rsc/juventas_d1,9_g500.png Graphic file (type png)
 Package pdftex.def Info: rsc/juventas_d1,9_g500.png  used on input line 13.
 (pdftex.def)             Requested size: 156.97534pt x 83.38554pt.
 
-Underfull \hbox (badness 1028) in paragraph at lines 18--19
-\T1/Heuristica-TLF/m/n/10 inertia influe on the heat sensibility (pretty much a
-s
+Underfull \hbox (badness 3068) in paragraph at lines 18--19
+[]\T1/Heuristica-TLF/m/n/10 Results can be seen in [][]Fig. 18[][][]. Variation
+ of the
  []
 
 
@@ -2523,6 +2482,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--1
 []\T1/Heuristica-TLF/m/n/10 When the thermal inertia varies, the maximum
  []
 
+<rsc/cosmo1.png, id=254, 1445.4pt x 797.98125pt>
+File: rsc/cosmo1.png Graphic file (type png)
+<use rsc/cosmo1.png>
+Package pdftex.def Info: rsc/cosmo1.png  used on input line 6.
+(pdftex.def)             Requested size: 235.45901pt x 129.99307pt.
+<rsc/cosmo2.png, id=255, 1445.4pt x 797.98125pt>
+File: rsc/cosmo2.png Graphic file (type png)
+<use rsc/cosmo2.png>
+Package pdftex.def Info: rsc/cosmo2.png  used on input line 7.
+(pdftex.def)             Requested size: 235.45901pt x 129.99307pt.
 
 Underfull \vbox (badness 1406) has occurred while \output is active []
 
@@ -2531,56 +2500,121 @@ _Yaxis_normalspeed.png> <./rsc/temp_r1,0501_gammas.png> <./rsc/juventas_d1,7_g5
 0.png> <./rsc/juventas_d1,7_g250.png> <./rsc/juventas_d1,7_g500.png> <./rsc/juv
 entas_d1,9_g50.png> <./rsc/juventas_d1,9_g250.png> <./rsc/juventas_d1,9_g500.pn
 g>]
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+<rsc/cosmo-matlab1.png, id=274, 421.575pt x 316.18124pt>
+File: rsc/cosmo-matlab1.png Graphic file (type png)
+<use rsc/cosmo-matlab1.png>
+Package pdftex.def Info: rsc/cosmo-matlab1.png  used on input line 14.
+(pdftex.def)             Requested size: 256.39333pt x 192.29616pt.
+<rsc/cosmo-matlab2.png, id=275, 421.575pt x 316.18124pt>
+File: rsc/cosmo-matlab2.png Graphic file (type png)
+<use rsc/cosmo-matlab2.png>
+Package pdftex.def Info: rsc/cosmo-matlab2.png  used on input line 15.
+(pdftex.def)             Requested size: 256.39333pt x 192.29616pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 []\T1/Heuristica-TLF/m/n/10 Spice is an observation geometry information
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 6--7
+Underfull \hbox (badness 1728) in paragraph at lines 22--23
 \T1/Heuristica-TLF/m/n/10 system designed by NASA's Navigation and Ancillary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 \T1/Heuristica-TLF/m/n/10 Information Facility (NAIF) to assist scientists in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 []\T1/Heuristica-TLF/m/n/10 By combining known positions of Didymoon,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 \T1/Heuristica-TLF/m/n/10 Didymain, expected positions of HERA and the
  []
 
 
-Underfull \hbox (badness 7944) in paragraph at lines 12--13
-\T1/Heuristica-TLF/m/n/10 (fovray) provided in the NAIF Spice toolkit which
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+\T1/Heuristica-TLF/m/n/10 characteristics of the on-board AFC -- Asteroid
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 12--13
-\T1/Heuristica-TLF/m/n/10 instrument. By using this API, we are theoretically
+Underfull \hbox (badness 7203) in paragraph at lines 26--27
+\T1/Heuristica-TLF/m/n/10 representation of the visibility HERA will have on
  []
 
+<rsc/cosmo-matlab3.png, id=281, 421.575pt x 316.18124pt>
+File: rsc/cosmo-matlab3.png Graphic file (type png)
+<use rsc/cosmo-matlab3.png>
+Package pdftex.def Info: rsc/cosmo-matlab3.png  used on input line 33.
+(pdftex.def)             Requested size: 150.14659pt x 112.60938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-\T1/Heuristica-TLF/m/n/10 ways. Firstly, by linking NAIF Spice data with
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 34.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 38--39
+\T1/Heuristica-TLF/m/n/10 is visible by the framing camera on board to HERA.
  []
 
-
-Underfull \hbox (badness 2781) in paragraph at lines 14--15
-\T1/Heuristica-TLF/m/n/10 Cosmographia and using its "point at" and field of
- []
-
+[10 <./rsc/temp_r1,0501_gammas_max.png> <./rsc/temp_gammas_delta.png> <./rsc/co
+smo-matlab3.png (PNG copy)> <./rsc/cosmo1.png (PNG copy)> <./rsc/cosmo2.png (PN
+G copy)>]
+<rsc/areacov1.png, id=294, 374.8404pt x 199.58565pt>
+File: rsc/areacov1.png Graphic file (type png)
+<use rsc/areacov1.png>
+Package pdftex.def Info: rsc/areacov1.png  used on input line 41.
+(pdftex.def)             Requested size: 256.39333pt x 136.52652pt.
+<rsc/areacov2.png, id=295, 2249.0424pt x 1197.5139pt>
+File: rsc/areacov2.png Graphic file (type png)
+<use rsc/areacov2.png>
+Package pdftex.def Info: rsc/areacov2.png  used on input line 42.
+(pdftex.def)             Requested size: 256.39333pt x 136.51434pt.
 ) (src/furtherworks.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--1
-[]\T1/Heuristica-TLF/m/n/10 IMG: Screenshot of blue FOV in cosmographia
+Underfull \hbox (badness 3884) in paragraph at lines 4--5
+[]\T1/Heuristica-TLF/m/n/10 A thermophysical model of the secondary in the
  []
 
-) (src/aknowledgements.tex)
+
+Underfull \hbox (badness 1715) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 document also showed the impact of the revolution
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 4--5
+\T1/Heuristica-TLF/m/n/10 to single points -- medians of the facet -- and their
+
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 6--7
+[]\T1/Heuristica-TLF/m/n/10 In addition to the HERA mission, we were asked
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+\T1/Heuristica-TLF/m/n/10 to participate in the 2016 HO3 mission using
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+\T1/Heuristica-TLF/m/n/10 our thermophysical model to understand what
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 6--7
+\T1/Heuristica-TLF/m/n/10 temperatures to expect from a fast rotation small
+ []
+
+) (src/aknowledgements.tex
+Underfull \hbox (badness 1253) in paragraph at lines 8--1
+\T1/Heuristica-TLF/m/n/10 been carried out. An early estimation of the visible
+ []
+
+)
 Underfull \hbox (badness 7944) in paragraph at lines 4--25
 \T1/Heuristica-TLF/m/n/10 Özgür Karatekin and Elodie Gloesener, as well as
  []
@@ -2590,7 +2624,8 @@ Underfull \hbox (badness 2065) in paragraph at lines 4--25
 \T1/Heuristica-TLF/m/n/10 Rubino from IPSA. Thank you for accompanying us
  []
 
-(/home/greg/hera/report/etc/pmi.bbl
+[11 <./rsc/cosmo-matlab1.png (PNG copy)> <./rsc/cosmo-matlab2.png (PNG copy)> <
+./rsc/areacov1.png> <./rsc/areacov2.png>] (/home/greg/hera/report/etc/pmi.bbl
 Underfull \hbox (badness 1221) in paragraph at lines 34--42
 []\T1/Heuristica-TLF/m/n/10 P. Michel, A. Cheng, M. Küppers, P. Pravec, J. Blum
 ,
@@ -2617,7 +2652,7 @@ Underfull \hbox (badness 6927) in paragraph at lines 34--42
 0 Advances in Space
  []
 
-[10 <./rsc/temp_r1,0501_gammas_max.png> <./rsc/temp_gammas_delta.png>]
+
 Underfull \hbox (badness 4886) in paragraph at lines 45--50
 []\T1/Heuristica-TLF/m/n/10 I. Pelivan, L. Drube, E. Kührt, J. Helbert, J. Biel
 e,
@@ -2641,7 +2676,7 @@ Underfull \hbox (badness 2486) in paragraph at lines 45--50
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
- [11
+ [12
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
@@ -2649,16 +2684,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `pmi.out' has not changed.
-(rerunfilecheck)             Checksum: AD7D925768DB783D8A3BBE0BEC4AF28D;957.
+(rerunfilecheck)             Checksum: B0166DBA8DC70633EDF4D3ED09CEB5A1;957.
  ) 
 Here is how much of TeX's memory you used:
- 24778 strings out of 494414
- 453188 string characters out of 3174621
- 510050 words of memory out of 3000000
- 28447 multiletter control sequences out of 15000+200000
+ 24836 strings out of 494414
+ 454285 string characters out of 3174621
+ 511018 words of memory out of 3000000
+ 28493 multiletter control sequences out of 15000+200000
  612813 words of font info for 86 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 63i,21n,100p,1090b,939s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,21n,100p,1085b,939s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/greg/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rm.enc}{/home/greg/.
 miktex/texmfs/install/fonts/enc/dvips/heuristica/zut_5b7xz5.enc}{/home/greg/.mi
 ktex/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc}{/home/greg/.miktex/texmfs
@@ -2680,9 +2715,9 @@ public/lm/lmr8.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lms
 y10.pfb></home/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmsy6.pfb></ho
 me/greg/.miktex/texmfs/install/fonts/type1/public/lm/lmsy7.pfb></home/greg/.mik
 tex/texmfs/install/fonts/type1/public/lm/lmsy8.pfb>
-Output written on pmi.pdf (11 pages, 12137156 bytes).
+Output written on pmi.pdf (12 pages, 12883328 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 321 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 356 words of extra memory for PDF output out of 10000 (max. 10000000)
 

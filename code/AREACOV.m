@@ -14,7 +14,7 @@ day        = 86400;
 nt         = 1;
 timedur    = 4.33;
 timeinit   = { ...
-    '2027-JUN-05 2:50'...
+    '2027-JUN-05 4:00'...
 };
 path       = '../kernels/';
 
@@ -107,10 +107,12 @@ close all;
 hold on; grid on; axis equal; box on;
 xlim([0 359]);
 ylim([-90 90]);
+yticks(-80:20:80);
 level = 0:1:maxvw;
 xlabel('Longitude [deg]'); ylabel('Latitude [deg]');
 contourf(Lo,La,vw,level,'showtext','on','linestyle','none');
-colormap gray; colorbar; caxis([0 maxvw]);
+colormap 'gray'; cb=colorbar; caxis([0 maxvw]);
+set(cb,'YTick', 0:1:10)
 %title(sprintf('DIDYMOON visible area wrt HERA on %s',timestr));
 %movegui([1920 550]);
 end; toc;
