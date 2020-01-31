@@ -17,7 +17,7 @@
     \label{fig:9.2}
 \end{figure*}
 
-In order to get a more visual grasp on HERA's vision on Didymoon, it is possible to make us of the NASA/NAIF Spice database, coupled with Cosmographia. 
+In order to get a more visual grasp on HERA's vision on Didymoon, it is possible to make use of the NASA/NAIF Spice database, coupled with Cosmographia. 
 
 Spice is an observation geometry information system designed by NASA's Navigation and Ancillary Information Facility (NAIF) to assist scientists in planning and interpreting scientific observations from space-based instruments aboard planetary spacecraft. 
 
@@ -27,7 +27,7 @@ By combining known positions of Didymoon, Didymain, expected positions of HERA a
 
 It relies on the FOV condition API set of functions --cspice\_fovray -- provided in the NAIF Spice toolkit which verifies if a ray is withing the boundaries of a specified instrument. By using this API, it is theoretically capable to determine which parts of Didymoon are visible at any moment in time. 
 
-A script has been written to reproduce the view of \autoref{fig:9.1} in MATLAB for easier studies and it gives \autoref{fig:9.2}. The script detects wheter Didymoon is outside the field of view of the framing camera as shown in \autoref{fig:9.3}.
+A script has been written to reproduce the view of \autoref{fig:9.1} in MATLAB for easier studies and it gives \autoref{fig:9.2}. The script detects whether Didymoon is outside the field of view of the framing camera as shown in \autoref{fig:9.3}.
 
 \begin{center}
     \includegraphics[width=0.6\linewidth]{rsc/cosmo-matlab3.png}
@@ -35,7 +35,7 @@ A script has been written to reproduce the view of \autoref{fig:9.1} in MATLAB f
     \label{fig:9.3}
 \end{center}
 
-\autoref{fig:9.2} and \autoref{fig:9.3} show the results wheter Didymoon is visible by the framing camera on board to HERA. Another aim of this document is to determine is the percentage of visible surface. \autoref{fig:9.4} shows the results.
+\autoref{fig:9.2} and \autoref{fig:9.3} show the results whether Didymoon is visible by the framing camera on board to HERA. Another aim of this document is to determine the percentage of visible surface. \autoref{fig:9.4} shows the results.
 
 \begin{figure*}[t]
     \includegraphics[width=0.49\linewidth]{rsc/areacov1.png}
@@ -44,4 +44,4 @@ A script has been written to reproduce the view of \autoref{fig:9.1} in MATLAB f
     \label{fig:9.4}
 \end{figure*}
 
-There seems to be a small difference from the reality in the second image of \autoref{fig:9.4}. After studying the different possibilities to explain the cause, we have observed this weird-looking occurs only during the closest flyby of 1 \si{AU}. The visible surface is theoritically supposed to be the cross section of a sphere -- this case actually happens at infinite distance from the observer to the sphere. The visible surface tends to reach half of the sphere. The closer the observer is to the object, the smaller the visible area must be. Further works will consist into studying this phenomenon.
+There seems to be a small difference from the reality in the second image of \autoref{fig:9.4}. After studying the different possibilities to explain the cause, we have observed this weird-looking occurs only during the closest flyby of 1 \si{AU}. The visible surface is theoritically supposed to be the cross section of a sphere -- this case actually happens when the observer is at infinite distance of the sphere. The visible surface tends to reach half of the sphere area. The closer the observer is to the object, the smaller the visible area must be. Further works will consist into studying this phenomenon.
